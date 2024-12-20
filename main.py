@@ -144,6 +144,7 @@ class DMTracker:
                 elif 'asking_info' in intent:
                     self.asking_info.field = input[field]
 
+        return intent
 
         # slots = [x["slots"] for x in self.intentions if x["intent"] == input["intent"]][0]
 
@@ -190,10 +191,42 @@ class NLU():
         nlu_js = parsing_json(nlu_output)
         return nlu_js
 
+class DM():
+    def __init__(self, tracker, intent):
+        self.info_text = tracker.dictionary(intent)
+        pass
+
+    def __call__(self):
+        
+        dm_text = PROMPTS["DM"] +'\n'+ str(self.info_text)
+        dm_output = generate_response_Ollama(dm_text)
+        dm_output = dm_output.strip()
+
+        with open("dm_output.txt", "w") as file:
+            file.write(dm_output)
+        
+        print(f"DM: {dm_output}")
+        action, argument = self.extract_action_and_argument(dm_output)
+        return action, argument
+    
+    def extract_action_and_argument(input_string):
+        ## TODO add check in case there is more in the output string from the LLM
+        # Remove any ' characters from the input string
+        input_string = input_string.replace("'", "")
+        input_string = input_string.replace("\"", "")
+        # Define the regex pattern for extracting action and argument
+        pattern = r'(\w+)\((\w+)\)'
+        match = re.match(pattern, input_string)
+        
+        if match:
+            action = match.group(1)  # Extract the action
+            argument = match.group(2)  # Extract the argument
+            return action, argument
+
 class Dialogue:
     def __init__(self):
         self.nlu = NLU()
-        self.dm = None
+        self.dm = DM()
         self.nlg = None
         self.tracker = DMTracker()
         self.history = History()
@@ -209,12 +242,12 @@ class Dialogue:
             
             # get the NLU output
             infos = self.nlu(user_input)
-            print(type(infos))
             print(f"NLU: {infos}")
-            self.tracker.update(infos)
-            print(f"Tracker: {self.tracker.intentions, self.tracker.ordering, self.tracker.paring_food, self.tracker.ask_info}")
-            # #class DMTracker
-            # dm_tracker.update(nlu_js)
+            intent = self.tracker.update(infos)
+            # print(f"Tracker: {self.tracker.intentions, self.tracker.ordering, self.tracker.paring_food, self.tracker.ask_info}")
+            
+            # get the DM output
+            action, arg = self.dm(self.tracker, intent)
 
             # nlu_output = dm_tracker.return_values(nlu_js["intent"])
 
