@@ -7,7 +7,7 @@ import os
 from utils import PROMPTS
 import requests
 from typing import Union
-from slots import Ordering, ParingFood, AskInfo
+from slots import Ordering, ParingFood, AskInfo, assign_field
 
 def generate_response_Ollama(prompt, model="llama3.1:70b"):
     
@@ -81,6 +81,20 @@ class DrinkSlots:
     def __init__(self):
         self.type = None
 
+def extract_action_and_argument(input_string):
+    ## TODO add check in case there is more in the output string from the LLM
+    # Remove any ' characters from the input string
+    input_string = input_string.replace("'", "")
+    input_string = input_string.replace("\"", "")
+    # Define the regex pattern for extracting action and argument
+    pattern = r'(\w+)\((\w+)\)'
+    match = re.match(pattern, input_string)
+    
+    if match:
+        action = match.group(1)  # Extract the action
+        argument = match.group(2)  # Extract the argument
+        return action, argument
+
 class History():
     def __init__(self):
         self.messages = []
@@ -133,16 +147,15 @@ class DMTracker:
         #consider the slots of the intent = nlu_json["intent"]
 
         input = input["slots"] 
-
         for field in input:
-            if input[field] != 'null':
-                print(f"Field: {field}")
+            if input[field] != 'null' and input[field] != None and input[field] != 'None':
+                # print(f"Field: {field}")
                 if 'ordering' in intent:
-                    self.ordering.field = input[field]
+                    assign_field(self.ordering, field, input[field])
                 elif 'paring_food' in intent:
-                    self.paring_food.field = input[field]
+                    assign_field(self.paring_food, field, input[field])
                 elif 'asking_info' in intent:
-                    self.asking_info.field = input[field]
+                    assign_field(self.asking_info, field, input[field])
 
         return intent
 
@@ -163,18 +176,19 @@ class DMTracker:
                 if 'ordering' in x:
                     dict_ret = {
                         "intent": x,
-                        "slots": self.ordering
+                        "slots": self.ordering.extract()
                     }
                 elif 'paring_food' in x:
                     dict_ret = {
                         "intent": x,
-                        "slots": self.paring_food
+                        "slots": self.paring_food.extract()
                     }
                 elif 'asking_info' in x:
                     dict_ret = {
                         "intent": x,
-                        "slots": self.asking_info
+                        "slots": self.asking_info.extract()
                     }
+                print(f"Dict: {dict_ret}")
                 return dict_ret
 
 class NLU():
@@ -192,12 +206,12 @@ class NLU():
         return nlu_js
 
 class DM():
-    def __init__(self, tracker, intent):
-        self.info_text = tracker.dictionary(intent)
+    def __init__(self):
         pass
 
-    def __call__(self):
+    def __call__(self, tracker, intent):
         
+        self.info_text = tracker.dictionary(intent)
         dm_text = PROMPTS["DM"] +'\n'+ str(self.info_text)
         dm_output = generate_response_Ollama(dm_text)
         dm_output = dm_output.strip()
@@ -206,22 +220,9 @@ class DM():
             file.write(dm_output)
         
         print(f"DM: {dm_output}")
-        action, argument = self.extract_action_and_argument(dm_output)
+        action, argument = extract_action_and_argument(dm_output)
         return action, argument
     
-    def extract_action_and_argument(input_string):
-        ## TODO add check in case there is more in the output string from the LLM
-        # Remove any ' characters from the input string
-        input_string = input_string.replace("'", "")
-        input_string = input_string.replace("\"", "")
-        # Define the regex pattern for extracting action and argument
-        pattern = r'(\w+)\((\w+)\)'
-        match = re.match(pattern, input_string)
-        
-        if match:
-            action = match.group(1)  # Extract the action
-            argument = match.group(2)  # Extract the argument
-            return action, argument
 
 class Dialogue:
     def __init__(self):
@@ -244,11 +245,10 @@ class Dialogue:
             infos = self.nlu(user_input)
             print(f"NLU: {infos}")
             intent = self.tracker.update(infos)
-            # print(f"Tracker: {self.tracker.intentions, self.tracker.ordering, self.tracker.paring_food, self.tracker.ask_info}")
-            
+            #
             # get the DM output
             action, arg = self.dm(self.tracker, intent)
-
+            print(f"Action: {action}, Argument: {arg}")
             # nlu_output = dm_tracker.return_values(nlu_js["intent"])
 
             # # get the DM output
