@@ -110,25 +110,25 @@ class History():
 
 class DMTracker:
     def __init__(self):
-        self.possible_intent = ['wine_ordering', 'paring_food', 'ask_info', 'out_of_domain']
+        self.possible_intent = ['wine_ordering', 'paring_food', 'asking_info', 'out_of_domain']
         self.intentions = []
         self.ordering = None
         self.paring_food = None
-        self.ask_info = None
+        self.asking_info = None
     
     def update(self, input: dict):
         intent = input["intent"]
 
         if intent in self.possible_intent:
-            if intent not in [x["intent"] for x in self.intentions]:
+            if intent not in [x for x in self.intentions]:
                 self.intentions.append(intent)
 
                 if 'ordering' in intent:
                     self.ordering = Ordering()
                 elif 'paring_food' in intent:
                     self.paring_food = ParingFood()
-                elif 'ask_info' in intent:
-                    self.ask_info = AskInfo()
+                elif 'asking_info' in intent:
+                    self.asking_info = AskInfo()
         
         #consider the slots of the intent = nlu_json["intent"]
 
@@ -136,12 +136,13 @@ class DMTracker:
 
         for field in input:
             if input[field] != 'null':
+                print(f"Field: {field}")
                 if 'ordering' in intent:
-                    setattr(self.ordering, field, input[field])
+                    self.ordering.field = input[field]
                 elif 'paring_food' in intent:
-                    setattr(self.paring_food, field, input[field])
+                    self.paring_food.field = input[field]
                 elif 'asking_info' in intent:
-                    setattr(self.ask_info, field, input[field])
+                    self.asking_info.field = input[field]
 
 
         # slots = [x["slots"] for x in self.intentions if x["intent"] == input["intent"]][0]
@@ -171,7 +172,7 @@ class DMTracker:
                 elif 'asking_info' in x:
                     dict_ret = {
                         "intent": x,
-                        "slots": self.ask_info
+                        "slots": self.asking_info
                     }
                 return dict_ret
 
@@ -211,7 +212,7 @@ class Dialogue:
             print(type(infos))
             print(f"NLU: {infos}")
             self.tracker.update(infos)
-            print(f"Tracker: {self.tracker.intentions}")
+            print(f"Tracker: {self.tracker.intentions, self.tracker.ordering, self.tracker.paring_food, self.tracker.ask_info}")
             # #class DMTracker
             # dm_tracker.update(nlu_js)
 
