@@ -6,7 +6,7 @@ class Ordering():
         self.phone = None
         self.gift = None
         self.pagament = None
-        self.price = None
+        #self.price = None
 
         self.possibilities = {
             "name": True,
@@ -15,7 +15,7 @@ class Ordering():
             "phone": True,
             "gift": [True, False],
             "pagament": ['cash', 'credit card', 'paypal'],
-            "price": True
+            #"price": True
         }
 
     def __str__(self):
@@ -32,7 +32,6 @@ class Ordering():
             "price": self.price
         }
 
-
 class ParingFood():
     def __init__(self):
         self.kind = None
@@ -40,6 +39,7 @@ class ParingFood():
         self.year = None
         self.name = None
         self.grape = None
+        self.color = None
         self.style = None
 
         self.possibilities = {
@@ -48,12 +48,13 @@ class ParingFood():
             "year": True,
             "name": True,
             "grape": True,
+            "color": ['white', 'red', 'rose'],
             "style": True
             
         }
 
     def __str__(self):
-        return f"Kind: {self.kind}, Food Pairing: {self.food_pairing}, Year: {self.year}, Name: {self.name}, Grape: {self.grape}, Style: {self.style}"
+        return f"Kind: {self.kind}, Food Pairing: {self.food_pairing}, Year: {self.year}, Name: {self.name}, Grape: {self.grape}, Color:{self.color}, Style: {self.style}"
 
     def extract(self):
         return {
@@ -62,6 +63,7 @@ class ParingFood():
             "year": self.year,
             "name": self.name,
             "grape": self.grape,
+            "color": self.color,
             "style": self.style
         }
 
