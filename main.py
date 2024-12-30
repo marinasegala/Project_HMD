@@ -5,7 +5,7 @@ import torch
 import json
 import os
 import logging
-from utils import PROMPTS
+from utils import generate, load_model, PROMPTS, TEMPLATES, MODELS
 import requests
 from typing import Union
 from slots import Ordering, ParingFood, AskInfo, assign_field
@@ -16,6 +16,51 @@ from component.NLG import NLG
 
 logger = logging.getLogger('Dialogue')
 logger.setLevel(logging.DEBUG)
+
+def get_args() -> Namespace:
+    parser = argparse.ArgumentParser(
+        prog="python -m query_model",
+        description="Query a specific model with a given input.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+
+    parser.add_argument(
+        "model_name",
+        type=str,
+        choices=list(MODELS.keys()),
+        help="The model to query.",
+    )
+    parser.add_argument(
+        "--device",
+        type=str,
+        default="cuda" if torch.cuda.is_available() else "cpu",
+        help="The device to use for the model.",
+    )
+    parser.add_argument(
+        "--parallel",
+        action="store_true",
+        help="Split the model across multiple devices.",
+    )
+    parser.add_argument(
+        "--dtype",
+        type=str,
+        choices=["f32", "bf16"],
+        default="bf16",
+        help="The data type to use for the model.",
+    )
+    parser.add_argument(
+        "--max-new-tokens",
+        type=int,
+        default=128,
+        help="The maximum sequence length to use for the model.",
+    )
+
+    parsed_args = parser.parse_args()
+    parsed_args.chat_template = TEMPLATES[parsed_args.model_name]
+    parsed_args.model_name = MODELS[parsed_args.model_name]
+
+    return parsed_args
+
 
 class History():
     def __init__(self):
@@ -54,7 +99,7 @@ class DMTracker:
     
     def update(self, input: dict):
         intent = input["intent"]
-
+        refactoring = []
         if intent in self.possible_intent:
             if intent not in [x for x in self.intentions]:
                 self.intentions.append(intent)
@@ -71,15 +116,17 @@ class DMTracker:
             if input[field] != 'null' and input[field] != None and input[field] != 'None':
                 # print(f"Field: {field}")
                 if 'ordering' in intent:
-                    assign_field(self.ordering, field, input[field])
+                    refactor = assign_field(self.ordering, field, input[field])
+                    refactoring.append(refactor)
                 elif 'paring_food' in intent:
-                    assign_field(self.paring_food, field, input[field])
+                    refactor = assign_field(self.paring_food, field, input[field])
+                    refactoring.append(refactor)
                 elif 'asking_info' in intent:
-                    assign_field(self.asking_info, field, input[field])
-
+                    refactor = assign_field(self.asking_info, field, input[field])
+                    refactoring.append(refactor)
 
         logger.info(f"Tracker: {input}")
-        return intent
+        return intent, refactoring
     
     def dictionary(self, intent_ret):
         for x in self.intentions:
@@ -104,12 +151,12 @@ class DMTracker:
 
 
 class Dialogue:
-    def __init__(self):
+    def __init__(self, model, tokenizer, args):
         self.tracker = DMTracker()
         self.history = History()
-        self.nlu = NLU(self.history)
-        self.dm = DM()
-        self.nlg = NLG()
+        self.nlu = NLU(self.history, model, tokenizer, args)
+        self.dm = DM(model, tokenizer, args)
+        self.nlg = NLG(self.history, model, tokenizer, args)
 
     def start(self):
         starting = PROMPTS["START"]
@@ -123,13 +170,13 @@ class Dialogue:
             # get the NLU output
             infos = self.nlu(user_input)
             print(f"NLU: {infos}")
-            intent = self.tracker.update(infos)
+            intent, refactor = self.tracker.update(infos)
 
             logger.info(self.tracker)
             possible_wine_list = searching_wine(self.tracker, intent)
 
             # get the DM output
-            action, arg = self.dm(self.tracker, intent)
+            action, arg = self.dm(self.tracker, intent, refactor)
             logger.info(f'Action: {action}, Argument: {arg}')
 
             # get the NLG output
@@ -143,7 +190,9 @@ def main():
     # args = get_args()
     logging.basicConfig(filename="app.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")
-    dg = Dialogue()
+    args = get_args()
+    model, tokenizer = load_model(args)
+    dg = Dialogue(model, tokenizer, args)
     dg.start()
     print(dg.history.to_msg_history())
 
