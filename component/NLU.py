@@ -1,10 +1,13 @@
 import logging
-from utils import PROMPTS, generate_response_Ollama, parsing_json
+from utils import PROMPTS, generate, parsing_json
 
 class Analizer():
     # used for pre-processing the input text - find all the intent possible in the text
-    def __init__(self, history):
+    def __init__(self, history, model, tokenizer, args):
         self.history = history
+        self.model = model
+        self.tokenizer = tokenizer
+        self.args = args
         pass
     
     def __call__(self, text):
@@ -14,9 +17,13 @@ class Analizer():
         last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
         # logger.info(f"History: {last_int}")
         
-        nlu_text = PROMPTS["PRE-NLU"] + '\n' + last_int + '\n' + text
+        text = last_int + '\n' + text
+        text = self.args.chat_template.format(PROMPTS["PRE-NLU"], text)
+        pre_nlu_input = self.tokenizer(text, return_tensors="pt").to(self.model.device)
+        intents = generate(self.model, pre_nlu_input, self.tokenizer, self.args)
 
-        intents = generate_response_Ollama(nlu_text)
+
+        # intents = generate_response_Ollama(nlu_text)
         print(f"Intents: {intents}")
         # convert the string to a list
         intents = intents.replace("[", "").replace("]", "").replace('"', "").split(",")
@@ -24,9 +31,12 @@ class Analizer():
         
 
 class NLU():
-    def __init__(self, history):
+    def __init__(self, history, model, tokenizer, args):
         self.history = history
-        self.analizer = Analizer(history)
+        self.analizer = Analizer(history, model, tokenizer, args)
+        self.model = model
+        self.tokenizer = tokenizer
+        self.args = args
         pass
     
     def __call__(self, user_input):
@@ -48,9 +58,13 @@ class NLU():
         last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
         # logger.info(f"History: {last_int}")
 
-        nlu_text = prompt + '\n' + last_int + '\n' + user_input
+        nlu_text = last_int + '\n' + user_input
 
-        nlu_output = generate_response_Ollama(nlu_text)
+        nlu_text = self.args.chat_template.format(prompt, nlu_text)
+        nlu_input = self.tokenizer(nlu_text, return_tensors="pt").to(self.model.device)
+        nlu_output = generate(self.model, nlu_input, self.tokenizer, self.args)
+
+        # nlu_output = generate_response_Ollama(nlu_text)
         nlu_output = nlu_output.strip()
 
         with open("nlu_output.txt", "w") as file:
