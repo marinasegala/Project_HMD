@@ -2,15 +2,15 @@ PROMPTS = {
     "START": """Hi, I am your wine assistant. How can I help you?""",
 
     "Infos": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is asking_info, extract the slots values from the input of the user. The slots are: [title, typology, country, region, color, grape, abv, closure, flavor, style].
+If the intent is asking_info, extract the slots values from the input of the user. The slots are: [title_bottle, typology, country, region, color, grape, abv, closure, flavor, style].
 """,
 
     "Food": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is paring_food, extract the slots values from the input of the user. The slots are: [title, typology, food, year, grape, color, style].
+If the intent is paring_food, extract the slots values from the input of the user. The slots are: [title_bottle, typology, food, year, grape, color, style].
 """,
 
     "Order": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is wine_ordering, extract the slots values from the input of the user. The slots are: [title, typology, quantity, address, phone, gift, pagament].
+If the intent is wine_ordering, extract the slots values from the input of the user. The slots are: [title_bottle, typology, quantity, address, phone, gift, pagament].
 """,
 
     "NLU": """Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
@@ -29,23 +29,71 @@ Return only the list.
 
     "DM": """You are the Dialogue Manager.
 Given the output of the NLU component, you should only generate the next best action from this list:
+- request_clarification(slot), if there is a list of possible values for a slot
 - provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
 - request_info(slot), if a slot value is missing (null)
 - confirmation(intent), if all slots have been filled
-Return only the next best action""",
+Return only the next best action, nothing more""",
 
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
-Given the next best action classified by the Dialogue Manager (DM),
-you should only generate a lexicalized response for the user.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
 Possible next best actions are:
+- request_clarification(slot): generate an appropriate message, attached to the list of possible values for the slot for a clarification
 - provide_list(intent): generate an appropriate message, attached to the list of wines
 - request_info(slot): generate an appropriate question to ask the user for the missing slot value
 - confirmation(intent): generate an appropriate confirmation message for the user intent"""
- }
+}
+
+MODELS = {
+    "llama2": "meta-llama/Llama-2-7b-chat-hf",
+    "llama3": "meta-llama/Meta-Llama-3-8B-Instruct",
+}
+
+TEMPLATES = {
+    "llama2": "<s>[INST] <<SYS>>\n{}\n<</SYS>>\n\n{} [/INST]",
+    "llama3": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{}<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+}
 
 import requests
 import json
 import re
+from argparse import Namespace
+from typing import Tuple
+
+import torch
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BatchEncoding,
+    PreTrainedTokenizer,
+    PreTrainedModel,
+)
+
+def load_model(args: Namespace) -> Tuple[PreTrainedModel, PreTrainedTokenizer]:
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model_name,
+        device_map="auto" if args.parallel else args.device, 
+        torch_dtype=torch.float32 if args.dtype == "f32" else torch.bfloat16,
+    )
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+    return model, tokenizer  # type: ignore
+
+
+def generate(
+    model: PreTrainedModel,
+    inputs: BatchEncoding,
+    tokenizer: PreTrainedTokenizer,
+    args: Namespace,
+) -> str:
+    output = model.generate(
+        inputs.input_ids,
+        attention_mask=inputs.attention_mask,
+        max_new_tokens=args.max_new_tokens,
+        pad_token_id=tokenizer.eos_token_id,
+    )
+    return tokenizer.decode(
+        output[0][len(inputs.input_ids[0]) :], skip_special_tokens=True
+    )
 
 def generate_response_Ollama(prompt, model="llama3.1:70b"):
     
