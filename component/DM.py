@@ -1,4 +1,4 @@
-from utils import PROMPTS, generate_response_Ollama
+from utils import PROMPTS, generate_response_Ollama, generate
 import re
 
 def extract_action_and_argument(input_string):
@@ -18,14 +18,21 @@ def extract_action_and_argument(input_string):
         return action, argument
     
 class DM():
-    def __init__(self):
+    def __init__(self, model, tokenizer, args):
+        self.model = model
+        self.tokenizer = tokenizer
+        self.args = args
         pass
 
-    def __call__(self, tracker, intent):
+    def __call__(self, tracker, intent, refactor):
         
         self.info_text = tracker.dictionary(intent)
-        dm_text = PROMPTS["DM"] +'\n'+ str(self.info_text)
-        dm_output = generate_response_Ollama(dm_text)
+        dm_text = str(self.info_text) + '\n' + str(refactor)
+        # dm_output = generate_response_Ollama(dm_text)
+        dm_text = self.args.chat_template.format(PROMPTS["NLU"], dm_text)
+        dm_input = self.tokenizer(dm_text, return_tensors="pt").to(self.model.device)
+        dm_output = generate(self.model, dm_input, self.tokenizer, self.args)
+
         dm_output = dm_output.strip()
 
         with open("dm_output.txt", "w") as file:
