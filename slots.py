@@ -1,4 +1,4 @@
-from extractor_csv import *
+from extractor_data import *
 
 possible_title = extract_db_init('title')
 possible_typology = extract_db_init('typology')
