@@ -4,7 +4,7 @@ import json
 import json
 
 def extract_db_init(field):
-    with open('data.json', 'r') as file:
+    with open('FinalWineDataset.json', 'r') as file:
         data = json.load(file)
     
     #capitalize each word
@@ -82,7 +82,7 @@ def searching_wine(tracker, intent):
     dict_info = tracker.dictionary(intent)
     slots = dict_info["slots"]
 
-    with open('data.json', 'r') as file:
+    with open('FinalWineDataset.json', 'r') as file:
         data = json.load(file)
     
     # filter the data according to the slots
