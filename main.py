@@ -9,7 +9,7 @@ from utils import generate, load_model, PROMPTS, TEMPLATES, MODELS
 import requests
 from typing import Union
 from slots import Ordering, ParingFood, AskInfo, assign_field
-from extractor_csv import *
+from extractor_data import *
 from component.NLU import NLU
 from component.DM import DM
 from component.NLG import NLG
