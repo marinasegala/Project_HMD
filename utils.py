@@ -18,6 +18,61 @@ Do not assume any value as default! If they are not specified by the user, put '
 Return only the json object composed as {"intent": "", "slots": {}}. 
 """, 
 
+    "NLU2": """You are the NLU component. Given the user message extract the intent of the message and slots according to the instructions.
+Return them in JSON format
+Only output valid json responses!
+Json response must have correct indentation!
+Only short answers!
+NO chatty responses!
+NO explanation!
+Intent options: {'wine_ordering', 'paring_food', 'asking_info', 'out_of_domain'}
+For each intent select the required slots. If a slot is missing insert null.
+DO NOT invent!
+If a value is not specified by the user it must be null!
+If a custom message is not desired, output an empty custom message
+
+{[
+    {
+        "intent" : "wine_ordering",
+        "slots" : {
+            "name_wine": str,
+            "typology": str,
+            "quantity": int,
+            "address": str,
+            "phone": str,
+            "gift": bool,
+            "pagament": str
+            }
+    },
+    {
+        "intent" : "paring_food",
+        "slots" : {
+            "typology": str,
+            "food": str,
+            "year": int,
+            "name_wine": str,
+            "grape": str,
+            "color": str,
+            "style": str
+            }
+    },
+    {
+        "intent" : "asking_info",
+        "slots" : {
+            "name_wine": str,
+            "typology": str,
+            "country": str,
+            "region": str,
+            "color": str,
+            "grape": str,
+            "abv": str,
+            "closure": str,
+            "flavor": str,
+            "style": str
+        }
+    }
+]}""",
+
     "PRE-NLU": """Break the user input into multiple sentences based on the following intents:
 - wine_ordering, if the user wants to buy wine.
 - paring_food, if the user wants to know what food pairs with the wine.
