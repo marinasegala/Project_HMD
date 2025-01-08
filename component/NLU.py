@@ -43,16 +43,16 @@ class NLU():
         list_intents = self.analizer(user_input) #TODO 
         print(f"List intents: {list_intents}")
         list_int = list_intents[0]
-        match list_int:
-            case "wine_ordering":
-                prompt = PROMPTS["Order"]
-            case "paring_food":
-                prompt = PROMPTS["Food"]
-            case "asking_info":
-                prompt = PROMPTS["Infos"]
+        # match list_int:
+        #    case "wine_ordering":
+        #        prompt = PROMPTS["Order"]
+        #    case "paring_food":
+        #        prompt = PROMPTS["Food"]
+        #    case "asking_info":
+        #        prompt = PROMPTS["Infos"]
         
-        prompt = prompt + '\n' + PROMPTS["NLU"]
-
+        # prompt = prompt + '\n' + PROMPTS["NLU"]
+        prompt = PROMPTS["NLU2"]
         last_int = self.history.to_msg_history()
         last_int = last_int[-5:] if (len(last_int) > 5) else last_int
         last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
