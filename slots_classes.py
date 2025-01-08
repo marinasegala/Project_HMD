@@ -126,26 +126,3 @@ class AskInfo():
             "flavor": self.flavor,
             "style": self.style
         }
-    
-
-def assign_field (intent: object, field: str, value: str):
-    # find the correct possible field
-    for possible_field in intent.possibilities:
-        if field in possible_field:
-            # check if the value is in the possible values
-            for ins in intent.possibilities[possible_field]:
-                if ins == value or (ins == value.lower()):
-                    setattr(intent, field, value)
-                    break
-            expanded_search(field, value, intent)
-            break
-
-def expanded_search(field_to_exclude, value, intent):
-    for new_field in intent.possibilities:
-        if field_to_exclude in new_field:
-            continue
-
-        for ins in intent.possibilities[new_field]:
-            if ins == value:
-                setattr(intent, new_field, value)
-                break

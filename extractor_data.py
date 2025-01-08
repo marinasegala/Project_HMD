@@ -76,27 +76,3 @@ def searching_wine(tracker, intent):
 
     return list_wine
 '''
-import json
-
-def searching_wine(tracker, intent):
-    dict_info = tracker.dictionary(intent)
-    slots = dict_info["slots"]
-
-    with open('FinalWineDataset.json', 'r') as file:
-        data = json.load(file)
-    
-    # filter the data according to the slots
-    list_wine = [x for x in range(1, len(data)+1)]
-
-    for index, item in enumerate(data):
-        for slot in slots:
-            field = slot.split('_')[0] if '_' in slot else slot
-            if slots[slot] is not None:
-                if str(item.get(field.capitalize(), 'nan')) == 'nan':
-                    list_wine.remove(index+1)
-                    continue
-                search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
-                if search not in item[field.capitalize()]:
-                    list_wine.remove(index+1)
-
-    return list_wine

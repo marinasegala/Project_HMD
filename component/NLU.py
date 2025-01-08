@@ -1,4 +1,4 @@
-import logging
+import re
 from utils import PROMPTS, generate, parsing_json
 
 class Analizer():
@@ -12,21 +12,28 @@ class Analizer():
     
     def __call__(self, text):
         # extract all the intent in the text
-        last_int = self.history.to_msg_history()
-        last_int = last_int[-5:] if (len(last_int) > 5) else last_int
-        last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
+        # last_int = self.history.to_msg_history()
+        # last_int = last_int[-5:] if (len(last_int) > 5) else last_int
+        # last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
         # logger.info(f"History: {last_int}")
         
-        text = last_int + '\n' + text
-        text = self.args.chat_template.format(PROMPTS["PRE-NLU"], text)
+        # text = last_int + '\n' + text
+        text = self.args.chat_template.format(PROMPTS["PRE_NLU"], text)
         pre_nlu_input = self.tokenizer(text, return_tensors="pt").to(self.model.device)
         intents = generate(self.model, pre_nlu_input, self.tokenizer, self.args)
 
-
-        # intents = generate_response_Ollama(nlu_text)
-        print(f"Intents: {intents}")
+        print(f"Intents list: {intents}")
         # convert the string to a list
-        intents = intents.replace("[", "").replace("]", "").replace('"', "").split(",")
+        # intents = intents.replace("[", "").replace("]", "").replace('"', "").split(",")
+        matches = re.findall(r'\[.*\]', intents)
+        if matches:
+            intents = eval(matches[0])
+            print(intents)
+            print(type(intents))
+        else:
+            intents = []
+            print("No list found in the text.")
+
         return intents
         
 
@@ -43,16 +50,12 @@ class NLU():
         list_intents = self.analizer(user_input) #TODO 
         print(f"List intents: {list_intents}")
         list_int = list_intents[0]
-        # match list_int:
-        #    case "wine_ordering":
-        #        prompt = PROMPTS["Order"]
-        #    case "paring_food":
-        #        prompt = PROMPTS["Food"]
-        #    case "asking_info":
-        #        prompt = PROMPTS["Infos"]
-        
-        # prompt = prompt + '\n' + PROMPTS["NLU"]
-        prompt = PROMPTS["NLU2"]
+        if list_int == "wine_ordering": prompt = PROMPTS["Order"] + PROMPTS["NLU"]
+        elif list_int == "paring_food": prompt = PROMPTS["Food"] + PROMPTS["NLU"]
+        elif list_int ==  "asking_info": prompt = PROMPTS["Infos"] + PROMPTS["NLU"]
+        else: prompt = PROMPTS["NLU"]
+        # TODO -> GESTIRE IL CASO IN CUI è OUT_OF_DOMAIN
+    
         last_int = self.history.to_msg_history()
         last_int = last_int[-5:] if (len(last_int) > 5) else last_int
         last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])

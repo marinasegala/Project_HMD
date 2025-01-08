@@ -1,4 +1,4 @@
-from utils import PROMPTS, generate_response_Ollama, generate
+from utils import PROMPTS, generate
 
 class NLG():
     def __init__(self, history, model, tokenizer, args):

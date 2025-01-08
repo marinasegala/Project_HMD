@@ -1,3 +1,16 @@
+import argparse
+from argparse import Namespace
+from typing import Tuple
+
+import torch
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BatchEncoding,
+    PreTrainedTokenizer,
+    PreTrainedModel,
+)
+
 PROMPTS = {
     "START": """Hi, I am your wine assistant. How can I help you?""",
 
@@ -13,65 +26,12 @@ If the intent is paring_food, extract the slots values from the input of the use
 If the intent is wine_ordering, extract the slots values from the input of the user. The slots are: [title_bottle, typology, quantity, address, phone, gift, pagament].
 """,
 
-    "NLU": """Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
-Do not assume any value as default! If they are not specified by the user, put 'null' as value. If the user specifies a value, put it in the slot. If the user specifically says that does not know somwthing, put 'unknown' in the slot.
-Return only the json object composed as {"intent": "", "slots": {}}. 
+    "NLU": """You are a component for a wine bot assistant.  Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
+Do not assume any value as default! If they are not specified by the user, put 'null' as value.
+If the user specifies a value, put it in the slot. If the user specifically says that does not know somwthing, put 'null' in the slot.
+Return only the json object composed as {"intent": "", "slots": {}}.
+Return ONLY the json
 """, 
-
-    "NLU2": """You are the NLU component. Given the user message extract the intent of the message and slots according to the instructions.
-Return them in JSON format
-Only output valid json responses!
-Json response must have correct indentation!
-Only short answers!
-NO chatty responses!
-NO explanation!
-Intent options: {'wine_ordering', 'paring_food', 'asking_info', 'out_of_domain'}
-For each intent select the required slots. If a slot is missing insert null.
-DO NOT invent!
-If a value is not specified by the user it must be null!
-If a custom message is not desired, output an empty custom message
-
-{[
-    {
-        "intent" : "wine_ordering",
-        "slots" : {
-            "name_wine": str,
-            "typology": str,
-            "quantity": int,
-            "address": str,
-            "phone": str,
-            "gift": bool,
-            "pagament": str
-            }
-    },
-    {
-        "intent" : "paring_food",
-        "slots" : {
-            "typology": str,
-            "food": str,
-            "year": int,
-            "name_wine": str,
-            "grape": str,
-            "color": str,
-            "style": str
-            }
-    },
-    {
-        "intent" : "asking_info",
-        "slots" : {
-            "name_wine": str,
-            "typology": str,
-            "country": str,
-            "region": str,
-            "color": str,
-            "grape": str,
-            "abv": str,
-            "closure": str,
-            "flavor": str,
-            "style": str
-        }
-    }
-]}""",
 
     "PRE-NLU": """Break the user input into multiple sentences based on the following intents:
 - wine_ordering, if the user wants to buy wine.
@@ -82,7 +42,17 @@ Only provide the sequences of intents, as follow: ["sentence1", "sentence2", ...
 Return only the list.
 """,
 
-    "DM": """You are the Dialogue Manager.
+    "PRE_NLU": """You are a component for a wine bot assistant.
+Break the user input into multiple sentences based on the following intents:
+- wine_ordering, if the user wants to buy wine.
+- paring_food, if the user wants to know what food pairs with the wine.
+- asking_info, if the user wants to know more about the wine.
+- out_of_domain, if the input does not match any of the above and none of them is predicted.
+Provide a list of intents as follow: ["intent1", "intent2", ...].
+Return ONLY the list of intents, nothing more!
+""",
+
+    "DM": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should only generate the next best action from this list:
 - request_clarification(slot), if there is a list of possible values for a slot
 - provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
@@ -90,12 +60,20 @@ Given the output of the NLU component, you should only generate the next best ac
 - confirmation(intent), if all slots have been filled
 Return only the next best action, nothing more""",
 
+    "DM2": """You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list:
+- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
+- request_info(slot), if a slot value is missing (null)
+- confirmation(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! """,
+
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
 Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
 Possible next best actions are:
+- request_info(slot): generate an appropriate question to ask the user for the missing slot value
 - request_clarification(slot): generate an appropriate message, attached to the list of possible values for the slot for a clarification
 - provide_list(intent): generate an appropriate message, attached to the list of wines
-- request_info(slot): generate an appropriate question to ask the user for the missing slot value
 - confirmation(intent): generate an appropriate confirmation message for the user intent"""
 }
 
@@ -109,20 +87,49 @@ TEMPLATES = {
     "llama3": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{}<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
 }
 
-import requests
-import json
-import re
-from argparse import Namespace
-from typing import Tuple
+def get_args() -> Namespace:
+    parser = argparse.ArgumentParser(
+        prog="python -m query_model",
+        description="Query a specific model with a given input.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
 
-import torch
-from transformers import (
-    AutoModelForCausalLM,
-    AutoTokenizer,
-    BatchEncoding,
-    PreTrainedTokenizer,
-    PreTrainedModel,
-)
+    parser.add_argument(
+        "model_name",
+        type=str,
+        choices=list(MODELS.keys()),
+        help="The model to query.",
+    )
+    parser.add_argument(
+        "--device",
+        type=str,
+        default="cuda" if torch.cuda.is_available() else "cpu",
+        help="The device to use for the model.",
+    )
+    parser.add_argument(
+        "--parallel",
+        action="store_true",
+        help="Split the model across multiple devices.",
+    )
+    parser.add_argument(
+        "--dtype",
+        type=str,
+        choices=["f32", "bf16"],
+        default="bf16",
+        help="The data type to use for the model.",
+    )
+    parser.add_argument(
+        "--max-new-tokens",
+        type=int,
+        default=128,
+        help="The maximum sequence length to use for the model.",
+    )
+
+    parsed_args = parser.parse_args()
+    parsed_args.chat_template = TEMPLATES[parsed_args.model_name]
+    parsed_args.model_name = MODELS[parsed_args.model_name]
+
+    return parsed_args
 
 def load_model(args: Namespace) -> Tuple[PreTrainedModel, PreTrainedTokenizer]:
     model = AutoModelForCausalLM.from_pretrained(
@@ -149,32 +156,3 @@ def generate(
     return tokenizer.decode(
         output[0][len(inputs.input_ids[0]) :], skip_special_tokens=True
     )
-
-def generate_response_Ollama(prompt, model="llama3.1:70b"):
-    
-    url = "http://10.234.0.160:11434/api/generate"
-    headers = {"Content-Type": "application/json"}
-    data = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False
-    }
-    response = requests.post(url, headers=headers, json=data)
-    if response.status_code == 200:
-        text = response.json()
-        return text.get("response", "")
-        # return response.json().get("generated_text", "")
-    else:
-        print(f"Errore nella richiesta: {response.status_code}")
-        return ""
-
-def parsing_json(text):
-    json_match = re.search(r"{.*}", text, re.DOTALL)
-
-    if json_match:
-        extracted_json = json_match.group()
-        # Optionally format it without spaces or newlines
-        compact_json = json.dumps(json.loads(extracted_json), separators=(',', ':'))
-        # convert the json string to a dictionary
-        compact_json = json.loads(compact_json)
-        return compact_json
