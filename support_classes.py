@@ -39,7 +39,7 @@ class Tracker:
     
     def update(self, input: dict):
         intent = input["intent"]
-        refactoring = []
+        # refactoring = []
         if intent in self.possible_intent:
             if intent not in [x for x in self.intentions]:
                 self.intentions.append(intent)
@@ -57,16 +57,16 @@ class Tracker:
                 # print(f"Field: {field}")
                 if 'ordering' in intent:
                     refactor = assign_field(self.ordering, field, input[field])
-                    refactoring.append(refactor)
+                    # refactoring.append(refactor)
                 elif 'paring_food' in intent:
                     refactor = assign_field(self.paring_food, field, input[field])
-                    refactoring.append(refactor)
+                    # refactoring.append(refactor)
                 elif 'asking_info' in intent:
                     refactor = assign_field(self.asking_info, field, input[field])
-                    refactoring.append(refactor)
+                    # refactoring.append(refactor)
 
         self.logger.info(f"Tracker: {input}")
-        return intent, refactoring
+        return intent
     
     def dictionary(self, intent_ret):
         for x in self.intentions:

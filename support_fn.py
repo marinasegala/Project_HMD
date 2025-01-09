@@ -1,24 +1,5 @@
-import requests
 import json
 import re
-
-def generate_response_Ollama(prompt, model="llama3.1:70b"):
-    
-    url = "http://10.234.0.160:11434/api/generate"
-    headers = {"Content-Type": "application/json"}
-    data = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False
-    }
-    response = requests.post(url, headers=headers, json=data)
-    if response.status_code == 200:
-        text = response.json()
-        return text.get("response", "")
-        # return response.json().get("generated_text", "")
-    else:
-        print(f"Errore nella richiesta: {response.status_code}")
-        return ""
 
 def parsing_json(text):
     """

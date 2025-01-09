@@ -1,8 +1,8 @@
 from extractor_data import *
 
-possible_title = extract_db_init('title')
+possible_title_bottle = extract_db_init('title_bottle')
 possible_typology = extract_db_init('typology')
-possble_year = extract_db_init('vintage')
+possble_year = extract_db_init('year')
 possible_grape = extract_db_init('grape') + extract_db_init('Secondary grape')
 possible_style = extract_db_init('style')
 possible_region = extract_db_init('region')
@@ -15,14 +15,14 @@ class Ordering():
         self.typology = None
         self.quantity = None
         self.address = None
-        self.title = None
+        self.title_bottle = None
         self.phone = None
         self.gift = None
         self.pagament = None
         #self.price = None
 
         self.possibilities = {
-            "title": possible_title,
+            "title_bottle": possible_title_bottle,
             "typology": possible_typology,
             "quantity": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
             "gift": [True, False],
@@ -30,14 +30,14 @@ class Ordering():
             #"price": True
         }
 
-        self.required = ['title', 'quantity', 'address', 'gift', 'pagament']
+        self.required = ['title_bottle', 'quantity', 'address', 'gift', 'pagament']
 
     def __str__(self):
-        return f"Title: {self.title}, Typology: {self.typology}, Quantity: {self.quantity}, Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.pagament}"
+        return f"Title: {self.title_bottle}, Typology: {self.typology}, Quantity: {self.quantity}, Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.pagament}"
 
     def extract(self):
         return {
-            "title": self.title,
+            "title_bottle": self.title_bottle,
             "typology": self.typology,
             "quantity": self.quantity,
             "address": self.address,
@@ -48,7 +48,7 @@ class Ordering():
 
 class ParingFood():
     def __init__(self):
-        self.title = None
+        self.title_bottle = None
         self.typology = None
         self.food = None
         self.year = None
@@ -57,7 +57,7 @@ class ParingFood():
         self.style = None
 
         self.possibilities = {
-            "title": possible_title,
+            "title_bottle": possible_title_bottle,
             "typology": possible_typology,
             "food": possible_food,
             "year": possble_year,
@@ -69,14 +69,14 @@ class ParingFood():
         self.required = ['food', 'color']
 
     def __str__(self):
-        return f"Title: {self.title}, Typology: {self.typology}, Food Pairing: {self.food}, Year: {self.year}, Grape: {self.grape}, Color:{self.color}, Style: {self.style}"
+        return f"Title: {self.title_bottle}, Typology: {self.typology}, Food Pairing: {self.food}, Year: {self.year}, Grape: {self.grape}, Color:{self.color}, Style: {self.style}"
 
     def extract(self):
         return {
             "typology": self.typology,
             "food": self.food,
             "year": self.year,
-            "title": self.title,
+            "title_bottle": self.title_bottle,
             "grape": self.grape,
             "color": self.color,
             "style": self.style
@@ -93,7 +93,7 @@ class AskInfo():
         self.closure = None
         self.flavor = None
         self.style = None
-        self.title = None
+        self.title_bottle = None
 
         self.possibilities = {
             'typology': possible_typology,
@@ -105,17 +105,17 @@ class AskInfo():
             'closure': ['natural cork', 'screwcap', 'synthetic cork'],
             'flavor': possible_flavor,
             'style': possible_style,
-            'title': possible_title
+            'title_bottle': possible_title_bottle
         }
 
         self.required = []
         
     def __str__(self):
-        return f"Title: {self.title}, typology: {self.typology}, Country: {self.country}, Region: {self.region}, Color: {self.color}, Grape: {self.grape}, ABV: {self.abv}, Closure: {self.closure}, Flavor: {self.flavor}, Style: {self.style}"
+        return f"Title: {self.title_bottle}, typology: {self.typology}, Country: {self.country}, Region: {self.region}, Color: {self.color}, Grape: {self.grape}, ABV: {self.abv}, Closure: {self.closure}, Flavor: {self.flavor}, Style: {self.style}"
     
     def extract(self):
         return {
-            "title": self.title,
+            "title_bottle": self.title_bottle,
             "typology": self.typology,
             "country": self.country,
             "region": self.region,
