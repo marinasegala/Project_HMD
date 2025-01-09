@@ -1,5 +1,6 @@
 import re
-from utils import PROMPTS, generate, parsing_json
+from utils import PROMPTS, generate
+from support_fn import parsing_json
 
 class Analizer():
     # used for pre-processing the input text - find all the intent possible in the text

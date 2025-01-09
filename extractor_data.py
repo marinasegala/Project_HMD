@@ -1,8 +1,6 @@
 # import pandas as pd
 import json
 
-import json
-
 def extract_db_init(field):
     with open('FinalWineDataset.json', 'r') as file:
         data = json.load(file)
