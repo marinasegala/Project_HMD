@@ -10,6 +10,7 @@ possible_abv = extract_db_init('abv')
 possible_food = extract_db_init('food')
 possible_flavor = extract_db_init('flavor')
 
+
 class Ordering():
     def __init__(self):
         self.typology = None
