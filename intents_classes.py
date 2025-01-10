@@ -34,7 +34,14 @@ class Wine_details():
         self.year = None
         self.typology = None
 
-        self.possibilities = {
+    def __str__(self):
+        return f"Flavor: {self.flavor}, Grape: {self.grape}, Color: {self.color}, Sparkling: {self.sparkling}, ABV: {self.abv}, Year: {self.year}, Typology: {self.typology}"
+    
+    def name(self):
+        return 'Wine_details'
+    
+    def possibilities(self):
+        values = {
             'flavor': possible_flavor,
             'grape': possible_grape,
             'color': possible_color,
@@ -43,12 +50,7 @@ class Wine_details():
             'year': possible_year,
             'typology': possible_typology
         }
-
-    def __str__(self):
-        return f"Flavor: {self.flavor}, Grape: {self.grape}, Color: {self.color}, Sparkling: {self.sparkling}, ABV: {self.abv}, Year: {self.year}, Typology: {self.typology}"
-    
-    def name(self):
-        return 'Wine_details'
+        return values
 
 class Wine_origin():
     def __init__(self):
@@ -57,17 +59,20 @@ class Wine_origin():
         self.typology = None
         self.title_bottle = None
 
-        self.possibilities = {
-            'country': possible_country,
-            'region': possible_region,
-            'typology': possible_typology
-        }
-
     def __str__(self):
         return f"Country: {self.country}, Region: {self.region}, Typology: {self.typology}, Title: {self.title_bottle}"
 
     def name(self):
         return 'Wine_origin'
+    
+    def possibilities(self):
+        values = {
+            'country': possible_country,
+            'region': possible_region,
+            'typology': possible_typology,
+            'title_bottle': possible_title
+        }
+        return values
 
 class Wine_production():
     def __init__(self):
@@ -76,17 +81,19 @@ class Wine_production():
         self.closure = None
         # self.typology = None
 
-        self.possibilities = {
-            'grape': possible_grape,
-            'abv': possible_abv,
-            'closure': possible_closure
-        }
-
     def __str__(self):
         return f"Grape: {self.grape}, ABV: {self.abv}, Closure: {self.closure}"
 
     def name(self):
         return 'Wine_production'
+    
+    def possibilities(self):
+        values = {
+            'grape': possible_grape,
+            'abv': possible_abv,
+            'closure': possible_closure
+        }
+        return values
 
 class Wine_conservation():
     def __init__(self):
@@ -94,17 +101,19 @@ class Wine_conservation():
         self.cellar = None
         self.temperature = None
 
-        self.possibilities = {
-            'fridge': possible_fridge,
-            'cellar': possible_cellar,
-            'temperature': possible_temperature
-        }
-
     def __str__(self):
         return f"Fridge: {self.fridge}, Cellar: {self.cellar}, Temp: {self.temp}"
 
     def name(self):
         return 'Wine_conservation'
+    
+    def possibilities(self):
+        values = {
+            'fridge': possible_fridge,
+            'cellar': possible_cellar,
+            'temperature': possible_temperature
+        }
+        return values
 
 """
 classes for actions that can be grouped into 'paring the correct wine with food'
@@ -116,17 +125,19 @@ class Wine_paring(): # from the wine, suggest the best food
         self.color = None
         self.typology = None
 
-        self.possibilities = {
-            'style': possible_style,
-            'color': possible_color,
-            'typology': possible_typology
-        }
-
     def __str__(self):
         return f"Style: {self.style}, Color: {self.color}, Typology: {self.typology}"
 
     def name(self):
         return 'Wine_paring'
+    
+    def possibilities(self):
+        values = {
+            'style': possible_style,
+            'color': possible_color,
+            'typology': possible_typology
+        }
+        return values
 
 class Food_paring(): # from the food, suggest the best wine
     def __init__(self):
@@ -134,17 +145,19 @@ class Food_paring(): # from the food, suggest the best wine
         self.style = None
         self.abv = None
 
-        self.possibilities = {
-            'food': possible_food,
-            'style': possible_style,
-            'abv': possible_abv
-        }
-
     def __str__(self):
         return f"Food: {self.food}, Style: {self.style}, ABV: {self.abv}"
 
     def name(self):
         return 'Food_paring'
+    
+    def possibilities(self):
+        values = {
+            'food': possible_food,
+            'style': possible_style,
+            'abv': possible_abv
+        }
+        return values
 
 """
 classes for actions that can be grouped into 'ordering wine'
@@ -158,18 +171,20 @@ class Wine_order():
         self.budget = None
         self.title_bottle = None
 
-        self.possibilities = {
-            'typology': possible_typology,
-            'color': possible_color,
-            'quantity': possible_quantity,
-            'title_bottle': possible_title
-        }
-
     def __str__(self):
         return f"Typology: {self.typology}, Color: {self.color}, Quantity: {self.quantity}, Budget: {self.budget}, Title: {self.title_bottle}"
 
     def name(self):
         return 'Wine_order'
+    
+    def possibilities(self):
+        values = {
+            'typology': possible_typology,
+            'color': possible_color,
+            'quantity': possible_quantity,
+            'title_bottle': possible_title
+        }
+        return values
 
 """
 classes used ONLY by the systems 
@@ -184,10 +199,15 @@ class Shipping():
         self.gift = None
         self.pagament = None
 
-        self.possibilities = {
+    def __str__(self):
+        return f"Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.pagament}"
+    
+    def name(self):
+        return 'Shipping'
+    
+    def possibilities(self):
+        values = {
             'gift': possible_gift,
             'pagament': possible_pagament
         }
-
-    def __str__(self):
-        return f"Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.pagament}"
+        return values

@@ -31,13 +31,13 @@ class Dialogue:
             # get the NLU output
             infos = self.nlu(user_input)
             print(f"NLU: {infos}")
-            intent, refactor = self.tracker.update(infos)
+            intent = self.tracker.update(infos)
 
-            logger.info(intent, refactor)
+            logger.info(intent)
             #TODO possible_wine_list = searching_wine(self.tracker, intent)
 
             # get the DM output
-            action, arg = self.dm(self.tracker, intent, refactor)
+            action, arg = self.dm(self.tracker, intent)
             logger.info(f'Action: {action}, Argument: {arg}')
             
             #TODO - FINIRE DI SISTEMARE IL DM - ESTARRE CORRETTAMENTE LE AZIONI E GLI ARGOMENTI
