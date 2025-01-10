@@ -51,12 +51,16 @@ class NLU():
         list_intents = self.analizer(user_input) #TODO 
         print(f"List intents: {list_intents}")
         list_int = list_intents[0]
-        if list_int == "wine_ordering": prompt = PROMPTS["Order"] + PROMPTS["NLU"]
-        elif list_int == "paring_food": prompt = PROMPTS["Food"] + PROMPTS["NLU"]
-        elif list_int ==  "asking_info": prompt = PROMPTS["Infos"] + PROMPTS["NLU"]
+        if list_int == "wine_details": prompt = PROMPTS["NLU"] + PROMPTS["wine-details"]
+        elif list_int == "wine_origin": prompt = PROMPTS["NLU"] + PROMPTS["wine-origin"]
+        elif list_int == "wine_production": prompt = PROMPTS["NLU"] + PROMPTS["wine-production"]
+        elif list_int == "wine_conservation": prompt = PROMPTS["NLU"] + PROMPTS["wine-conservation"]
+        elif list_int == "wine_paring": prompt = PROMPTS["NLU"] + PROMPTS["wine-paring"]
+        elif list_int == "food_paring": prompt = PROMPTS["NLU"] + PROMPTS["food-paring"]
+        elif list_int == "wine_ordering": prompt = PROMPTS["NLU"] + PROMPTS["wine-ordering"]
         else: prompt = PROMPTS["NLU"]
         # TODO -> GESTIRE IL CASO IN CUI è OUT_OF_DOMAIN
-    
+
         last_int = self.history.to_msg_history()
         last_int = last_int[-5:] if (len(last_int) > 5) else last_int
         last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])

@@ -14,16 +14,32 @@ from transformers import (
 PROMPTS = {
     "START": """Hi, I am your wine assistant. How can I help you?""",
 
-    "Infos": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is asking_info, extract the slots values from the input of the user. The slots are: [title_bottle, typology, country, region, color, grape, abv, closure, flavor, style].
+    "wine-details": """The intent extracted is 'wine_details'. Extract the slots values from the input of the user.
+The slots are: [flavor, grape, color, sparkling, abv, year, typology].
 """,
 
-    "Food": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is paring_food, extract the slots values from the input of the user. The slots are: [title_bottle, typology, food, year, grape, color, style].
+    "wine-origin": """The intent extracted is 'wine_origin'. Extract the slots values from the input of the user.
+The slots are: [country, region, typology, title_bottle].
 """,
 
-    "Order": """Identify the user intent from this list: [wine_ordering, paring_food, asking_info, out_of_domain].
-If the intent is wine_ordering, extract the slots values from the input of the user. The slots are: [title_bottle, typology, quantity, address, phone, gift, pagament].
+    "wine-production": """The intent extracted is 'wine_production'. Extract the slots values from the input of the user.
+The slots are: [grape, abv, closure].
+""",
+
+    "wine-conservation": """The intent extracted is 'wine_conservation'. Extract the slots values from the input of the user.
+The slots are: [fridge, cellar, temperature].
+""",
+
+    "wine-paring": """The intent extracted is 'wine_paring'. Extract the slots values from the input of the user.
+The slots are: [style, color, typology].
+""",
+
+    "food-paring": """The intent extracted is 'food_paring'. Extract the slots values from the input of the user.
+The slots are: [food, style, abv].
+""",
+
+    "wine-ordering": """The intent extracted is 'wine_ordering'. Extract the slots values from the input of the user.
+The slots are: [typology, color, quantity, budget, title_bottle].
 """,
 
     "NLU": """You are a component for a wine bot assistant.  Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
@@ -34,19 +50,26 @@ Return ONLY the json
 """, 
 
     "PRE-NLU": """Break the user input into multiple sentences based on the following intents:
-- wine_ordering, if the user wants to buy wine.
-- paring_food, if the user wants to know what food pairs with the wine.
-- asking_info, if the user wants to know more about the wine.
-- out_of_domain, if the input does not match any of the above.
+- wine_details: if the user wants to know more about the characteristics of a wine.
+- wine_origin: if the user wants to know more about the origin of a wine.
+- wine_production: if the user wants to know more about the production of a wine.
+- wine_conservation: if the user wants to know more about the conservation of a wine.
+- wine_paring: if the user has a wine and he wants to pair it with a food.
+- food_paring: if the user has a dish and he wants to pair it with a wine.
+- wine_ordering: if the user wants to buy wine.
 Only provide the sequences of intents, as follow: ["sentence1", "sentence2", ...]
 Return only the list.
 """,
 
     "PRE_NLU": """You are a component for a wine bot assistant.
 Break the user input into multiple sentences based on the following intents:
-- wine_ordering, if the user wants to buy wine.
-- paring_food, if the user wants to know what food pairs with the wine.
-- asking_info, if the user wants to know more about the wine.
+- wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
+- wine_origin: if the user wants to know more about the origin of a wine.
+- wine_production: if the user wants to know more about the production of a wine.
+- wine_conservation: if the user wants to know more about the conservation of a wine.
+- wine_paring: if the user has a wine and he wants to pair it with a food.
+- food_paring: if the user has a dish and he wants to pair it with a wine.
+- wine_ordering: if the user wants to buy wine.
 - out_of_domain, if the input does not match any of the above and none of them is predicted.
 Provide a list of intents as follow: ["intent1", "intent2", ...].
 Return ONLY the list of intents, nothing more!
@@ -54,10 +77,10 @@ Return ONLY the list of intents, nothing more!
 
     "DM": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should only generate the next best action from this list:
-- request_clarification(slot), if there is a list of possible values for a slot
-- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
 - request_info(slot), if a slot value is missing (null)
 - confirmation(intent), if all slots have been filled
+- request_clarification(slot), if there is a list of possible values for a slot
+- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
 Return only the next best action, nothing more""",
 
     "DM2": """You are the Dialogue Manager of a wine bot assistent.

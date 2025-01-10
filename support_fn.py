@@ -43,31 +43,32 @@ def searching_wine(tracker, intent):
 
     return list_wine    
 
-def assign_field (intent: object, field: str, value: str):
+def assign_field (intent_class: object, field: str, value: str):
     """
     assign the valure to the field if it is in the possible values
     """
 
     # find the correct possible field
-    for possible_field in intent.possibilities:
+    for possible_field in intent_class.possibilities:
         if field in possible_field:
             # check if the value is in the possible values
-            for ins in intent.possibilities[possible_field]:
-                if ins == value or (ins == value.lower()):
-                    setattr(intent, field, value)
+            for v in intent_class.possibilities[possible_field]:
+                if v == value or (v == value.lower()):
+                    setattr(intent_class, field, value)
                     break
-            expanded_search(field, value, intent)
-            break
+            # expanded_search(field, value, intent_class)
+            #TODO - RETURN THE VALUE AND THE FIELD
 
-def expanded_search(field_to_exclude, value, intent):
-    for new_field in intent.possibilities:
-        if field_to_exclude in new_field:
-            continue
 
-        for ins in intent.possibilities[new_field]:
-            if ins == value:
-                setattr(intent, new_field, value)
-                break
+# def expanded_search(field_to_exclude, value, intent):
+#     for new_field in intent.possibilities:
+#         if field_to_exclude in new_field:
+#             continue
+
+#         for ins in intent.possibilities[new_field]:
+#             if ins == value:
+#                 setattr(intent, new_field, value)
+#                 break
 
 def extract_action_and_argument(input_string):
     """

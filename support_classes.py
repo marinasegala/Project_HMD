@@ -1,4 +1,4 @@
-from slots_classes import Ordering, ParingFood, AskInfo
+from intents_classes import *
 from support_fn import assign_field
 
 class History():
@@ -30,40 +30,59 @@ class History():
     
 class Tracker:
     def __init__(self, logger):
-        self.possible_intent = ['wine_ordering', 'paring_food', 'asking_info', 'out_of_domain']
+        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering']
         self.intentions = []
-        self.ordering = None
-        self.paring_food = None
-        self.asking_info = None
+        self.wine_details = None
+        self.wine_origin = None
+        self.wine_production = None
+        self.wine_conservation = None
+        self.wine_paring = None
+        self.food_paring = None
+        self.wine_ordering = None
+        self.shipping = None
         self.logger = logger
     
     def update(self, input: dict):
         intent = input["intent"]
-        # refactoring = []
+        assign = None
         if intent in self.possible_intent:
             if intent not in [x for x in self.intentions]:
                 self.intentions.append(intent)
 
-                if 'ordering' in intent:
-                    self.ordering = Ordering()
-                elif 'paring_food' in intent:
-                    self.paring_food = ParingFood()
-                elif 'asking_info' in intent:
-                    self.asking_info = AskInfo()
+                if 'details' in intent:
+                    self.wine_details = Wine_details()
+                elif 'origin' in intent:
+                    self.wine_origin = Wine_origin()
+                elif 'production' in intent:
+                    self.wine_production = Wine_production()
+                elif 'conservation' in intent:
+                    self.wine_conservation = Wine_conservation()
+                elif 'wine_paring' in intent:
+                    self.wine_paring = Wine_paring()
+                elif 'food_paring' in intent:
+                    self.food_paring = Food_paring()
+                elif 'ordering' in intent:
+                    self.wine_ordering = Wine_order()
 
         input = input["slots"] 
         for field in input:
             if input[field] != 'null' and input[field] != None and input[field] != 'None':
                 # print(f"Field: {field}")
-                if 'ordering' in intent:
-                    refactor = assign_field(self.ordering, field, input[field])
-                    # refactoring.append(refactor)
-                elif 'paring_food' in intent:
-                    refactor = assign_field(self.paring_food, field, input[field])
-                    # refactoring.append(refactor)
-                elif 'asking_info' in intent:
-                    refactor = assign_field(self.asking_info, field, input[field])
-                    # refactoring.append(refactor)
+                
+                if 'details' in intent:
+                    assign_field(self.wine_details, field, input[field])
+                elif 'origin' in intent:
+                    assign_field(self.wine_origin, field, input[field])
+                elif 'production' in intent:
+                    assign_field(self.wine_production, field, input[field])
+                elif 'conservation' in intent:
+                    assign_field(self.wine_conservation, field, input[field])
+                elif 'wine_paring' in intent:
+                    assign_field(self.wine_paring, field, input[field])
+                elif 'food_paring' in intent:
+                    assign_field(self.food_paring, field, input[field])
+                elif 'ordering' in intent:
+                    assign_field(self.wine_ordering, field, input[field])
 
         self.logger.info(f"Tracker: {input}")
         return intent
@@ -71,20 +90,20 @@ class Tracker:
     def dictionary(self, intent_ret):
         for x in self.intentions:
             if x == intent_ret:
-                if 'ordering' in x:
-                    dict_ret = {
-                        "intent": x,
-                        "slots": self.ordering.extract()
-                    }
-                elif 'paring_food' in x:
-                    dict_ret = {
-                        "intent": x,
-                        "slots": self.paring_food.extract()
-                    }
-                elif 'asking_info' in x:
-                    dict_ret = {
-                        "intent": x,
-                        "slots": self.asking_info.extract()
-                    }
+                if 'details' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_details.__dict__}
+                elif 'origin' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_origin.__dict__}
+                elif 'production' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_production.__dict__}
+                elif 'conservation' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_conservation.__dict__}
+                elif 'wine_paring' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_paring.__dict__}
+                elif 'food_paring' in x:
+                    dict_ret = { "intent": x, "slots": self.food_paring.__dict__}
+                elif 'ordering' in x:
+                    dict_ret = { "intent": x, "slots": self.wine_ordering.__dict__}
+
                 print(f"Dict: {dict_ret}")
                 return dict_ret
