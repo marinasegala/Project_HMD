@@ -42,7 +42,7 @@ The slots are: [food, style, abv].
 The slots are: [typology, color, quantity, budget, title_bottle].
 """,
 
-    "NLU": """You are a component for a wine bot assistant.  Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
+    "NLU_slots": """You are a component for a wine bot assistant.  Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
 Do not assume any value as default! If they are not specified by the user, put 'null' as value.
 If the user specifies a value, put it in the slot. If the user specifically says that does not know somwthing, put 'null' in the slot.
 Return only the json object composed as {"intent": "", "slots": {}}.
@@ -61,7 +61,7 @@ Only provide the sequences of intents, as follow: ["sentence1", "sentence2", ...
 Return only the list.
 """,
 
-    "PRE_NLU": """You are a component for a wine bot assistant.
+    "NLU_intents": """You are a component for a wine bot assistant.
 Break the user input into multiple sentences based on the following intents:
 - wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
 - wine_origin: if the user wants to know more about the origin of a wine.

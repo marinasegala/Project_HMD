@@ -28,6 +28,11 @@ class History():
             return history[-5:]
         return history
     
+    def last_iterations(self):
+        last_int = self.to_msg_history()
+        last_int = "\n".join([f"{k['role']}: {k['content']}"  for k in last_int])
+        return last_int
+    
 class Tracker():
     def __init__(self, logger):
         self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering']
