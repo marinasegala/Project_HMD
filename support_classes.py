@@ -28,7 +28,7 @@ class History():
             return history[-5:]
         return history
     
-class Tracker:
+class Tracker():
     def __init__(self, logger):
         self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering']
         self.intentions = []

@@ -39,12 +39,13 @@ class Analizer():
         
 
 class NLU():
-    def __init__(self, history, model, tokenizer, args):
+    def __init__(self, history, model, tokenizer, args, logger):
         self.history = history
         self.analizer = Analizer(history, model, tokenizer, args)
         self.model = model
         self.tokenizer = tokenizer
         self.args = args
+        self.logger = logger
         pass
     
     def __call__(self, user_input):
@@ -75,8 +76,7 @@ class NLU():
         # nlu_output = generate_response_Ollama(nlu_text)
         nlu_output = nlu_output.strip()
 
-        with open("nlu_output.txt", "w") as file:
-            file.write(nlu_output)
+        self.logger.info(f"NLU output: {nlu_output}")
         nlu_js = parsing_json(nlu_output)
         # logger.info(f"NLU output: {nlu_js}")
         return nlu_js
