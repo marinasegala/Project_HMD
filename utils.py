@@ -94,10 +94,9 @@ Return ONLY the next best action! """,
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
 Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
 Possible next best actions are:
-- request_info(slot): generate an appropriate question to ask the user for the missing slot value
-- request_clarification(slot): generate an appropriate message, attached to the list of possible values for the slot for a clarification
-- provide_list(intent): generate an appropriate message, attached to the list of wines
-- confirmation(intent): generate an appropriate confirmation message for the user intent"""
+- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
+- request_info(slot), if a slot value is missing (null)
+- confirmation(intent), if all slots have been filled"""
 }
 
 MODELS = {

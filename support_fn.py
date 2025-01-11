@@ -24,7 +24,7 @@ def searching_wine(tracker, intent):
     dict_info = tracker.dictionary(intent)
     slots = dict_info["slots"]
 
-    with open('FinalWineDataset.json', 'r') as file:
+    with open('WineDataset.json', 'r') as file:
         data = json.load(file)
     
     # filter the data according to the slots

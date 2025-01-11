@@ -2,7 +2,7 @@
 import json
 
 def extract_db_init(field):
-    with open('FinalWineDataset.json', 'r') as file:
+    with open('WineDataset.json', 'r') as file:
         data = json.load(file)
     
     #capitalize each word

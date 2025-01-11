@@ -41,20 +41,13 @@ class Dialogue:
             logger.info(f'Action: {action}, Argument: {arg}')
             
             #TODO - FINIRE DI SISTEMARE IL DM - ESTARRE CORRETTAMENTE LE AZIONI E GLI ARGOMENTI
-            ''' The next best action based on the input provided is:
-
-action: request_info(slot='typology')
-parameters: None
-
-Explanation:
-The user has not provided any value for the 'typology' slot, so the bot should request more information to fill this slot.
-'''
-            # get the NLG output
-            # nlg_output = self.nlg(action, arg)
-            # self.history.add_msg(nlg_output, 'assistant', action)
             
-            # user_input = input(nlg_output + '\n')
-            # self.history.add_msg(user_input, 'user', 'input')
+            # get the NLG output
+            nlg_output = self.nlg(action, arg)
+            self.history.add_msg(nlg_output, 'assistant', action)
+            
+            user_input = input(nlg_output + '\n')
+            self.history.add_msg(user_input, 'user', 'input')
 
 def main():
     logging.basicConfig(filename="app.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
