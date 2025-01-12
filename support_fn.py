@@ -80,7 +80,7 @@ def extract_action_and_argument(input_string):
     input_string = input_string.replace("'", "")
     input_string = input_string.replace("\"", "")
     # Define the regex pattern for extracting action and argument
-    pattern = r'(\w+)\(([\w\s=]+)\)' #r'(\w+)\((.*)\)\s*=\s*(.*)' #r'(\w+)\((\w+)\)'
+    pattern = r'(\w+)\((.*?)\))' #r'(\w+)\((.*)\)\s*=\s*(.*)' #r'(\w+)\((\w+)\)'
     match = re.match(pattern, input_string)
     
     if match:

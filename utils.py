@@ -85,18 +85,23 @@ Return only the next best action, nothing more""",
 
     "DM2": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should ONLY generate the next best action from this list:
-- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
 - request_info(slot), if a slot value is missing (null)
-- confirmation(intent), if all slots have been filled
+- provide_suggestios(intent),
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- confermation(intent), if all slots have been filled
 You need to write the name of the action with also the correspondings parameters.
 Return ONLY the next best action! """,
 
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
 Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
 Possible next best actions are:
-- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
-- request_info(slot), if a slot value is missing (null)
-- confirmation(intent), if all slots have been filled"""
+- request_info(slot): generate an appropriate question to ask the user for the missing slot value
+- provide_suggestios(intent): generate an appropriate message, attached to the list of wines
+- goal_assistant(intent): generate a message with the main goal of the assistant (wine assistance)
+- repeat(slot): generate an appropriate message for reasking the same slot value
+- confirmation(intent): generate an appropriate confirmation message for the user intent
+"""
 }
 
 MODELS = {
