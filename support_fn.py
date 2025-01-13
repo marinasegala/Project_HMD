@@ -76,9 +76,9 @@ def extract_action_and_argument(input_string):
     used by the DM component, extract the action and the argument from the output string
     """
     ## TODO add check in case there is more in the output string from the LLM
-    # Remove any ' characters from the input string
     input_string = input_string.replace("'", "")
     input_string = input_string.replace("\"", "")
+
     # Define the regex pattern for extracting action and argument
     pattern = r'(\w+)\((.*?)\))' #r'(\w+)\((.*)\)\s*=\s*(.*)' #r'(\w+)\((\w+)\)'
     match = re.match(pattern, input_string)

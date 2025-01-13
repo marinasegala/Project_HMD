@@ -50,9 +50,7 @@ class NLU():
         elif list_int == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
         elif list_int == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
         elif list_int == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
-        else: prompt = PROMPTS["NLU_slots"]
-        # TODO -> GESTIRE IL CASO IN CUI è OUT_OF_DOMAIN
-
+        else: return parsing_json('{"intent": "out_of_domain"}')
         
         nlu_text = self.history.last_iteration() + '\n' + user_input
 

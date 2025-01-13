@@ -11,8 +11,8 @@ class DM():
 
     def __call__(self, tracker, intent):
         
-        self.info_text = tracker.dictionary(intent)
-        dm_text = str(self.info_text)
+        info_text = tracker.dictionary(intent)
+        dm_text = str(info_text)
         
         dm_text = self.args.chat_template.format(PROMPTS["DM2"], dm_text)
         dm_input = self.tokenizer(dm_text, return_tensors="pt").to(self.model.device)

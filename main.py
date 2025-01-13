@@ -17,7 +17,7 @@ class Dialogue:
         self.history = History()
         self.nlu = NLU(self.history, model, tokenizer, args, logger)
         self.dm = DM(model, tokenizer, args, logger)
-        self.nlg = NLG(self.history, model, tokenizer, args)
+        self.nlg = NLG(self.history, model, tokenizer, args, logger)
 
     def start(self):
         starting = PROMPTS["START"]

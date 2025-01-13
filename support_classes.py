@@ -49,7 +49,9 @@ class Tracker():
     
     def update(self, input: dict):
         intent = input["intent"]
-        assign = None
+
+        if intent == 'out_of_domain': return intent
+
         if intent in self.possible_intent:
             if intent not in [x for x in self.intentions]:
                 self.intentions.append(intent)
@@ -112,3 +114,6 @@ class Tracker():
 
                 print(f"Dict: {dict_ret}")
                 return dict_ret
+
+        if intent_ret == 'out_of_domain':
+            return {"intent": "out_of_domain"}
