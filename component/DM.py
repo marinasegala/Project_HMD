@@ -9,12 +9,21 @@ class DM():
         self.logger = logger
         pass
 
-    def __call__(self, tracker, intent):
+    def __call__(self, tracker, intent, list_possible_wine = []):
         
         info_text = tracker.dictionary(intent)
         dm_text = str(info_text)
+
+        if intent == "wine_ordering": nba = PROMPTS['list_nba'] + PROMPTS['delivery']
+        elif intent == "general_info": nba = PROMPTS['general_info'] + PROMPTS['list_nba']
+        else: nba = PROMPTS['list_nba'] + PROMPTS['confermation']
+
+        if list_possible_wine != []:
+            nba = PROMPTS['list_wine'] + nba
+
+        prompt = PROMPTS["DM_start"] + nba + PROMPTS["DM_end"]
         
-        dm_text = self.args.chat_template.format(PROMPTS["DM2"], dm_text)
+        dm_text = self.args.chat_template.format(prompt, dm_text)
         dm_input = self.tokenizer(dm_text, return_tensors="pt").to(self.model.device)
         dm_output = generate(self.model, dm_input, self.tokenizer, self.args)
 

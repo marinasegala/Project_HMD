@@ -42,6 +42,10 @@ The slots are: [food, style, abv].
 The slots are: [typology, color, quantity, budget, title_bottle].
 """,
 
+    "wine_delivery": """The intent extracted is 'wine_delivery'. Extract the slots values from the input of the user.
+The slots are: [address, phone, gift, kind_pagament].
+""",
+
     "NLU_slots": """You are a component for a wine bot assistant.  Do not invent! If values are not present in the user input, and so they are not specified, you have to put 'null' as value in the slot.
 Do not assume any value as default! If they are not specified by the user, put 'null' as value.
 If the user specifies a value, put it in the slot. If the user specifically says that does not know somwthing, put 'null' in the slot.
@@ -63,6 +67,7 @@ Return only the list.
 
     "NLU_intents": """You are a component for a wine bot assistant.
 Break the user input into multiple sentences based on the following intents:
+- general_info: if the user wants general informations about a wine.
 - wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
 - wine_origin: if the user wants to know more about the origin of a wine.
 - wine_production: if the user wants to know more about the production of a wine.
@@ -70,18 +75,34 @@ Break the user input into multiple sentences based on the following intents:
 - wine_paring: if the user has a wine and he wants to pair it with a food.
 - food_paring: if the user has a dish and he wants to pair it with a wine.
 - wine_ordering: if the user wants to buy wine.
+- delivery: if the user is giving information about the delivery.
 - out_of_domain, if the input does not match any of the above and none of them is predicted.
 Provide a list of intents as follow: ["intent1", "intent2", ...].
 Return ONLY the list of intents, nothing more!
 """,
 
-    "DM": """You are the Dialogue Manager of a wine bot assistent.
-Given the output of the NLU component, you should only generate the next best action from this list:
+    "DM_start": """You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: """,
+
+    "DM_end": """ You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action!""",
+
+    "list_nba": """
 - request_info(slot), if a slot value is missing (null)
-- confirmation(intent), if all slots have been filled
-- request_clarification(slot), if there is a list of possible values for a slot
-- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
-Return only the next best action, nothing more""",
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value""",
+
+    "general_info":"""
+- specific_info(intent), if the intent is equal to general_info""",
+
+    "confermation": """
+- confermation(intent), if all slots have been filled""",
+
+    "list_wine": """
+- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines""",
+
+    "delivery": """
+- delivery_info(intent), if all slots have been filled""",
 
     "DM2": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should ONLY generate the next best action from this list:
@@ -95,13 +116,27 @@ Return ONLY the next best action! """,
 
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
 Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
 Possible next best actions are:
+""", 
+
+    "list_nba_nlg": """
 - request_info(slot): generate an appropriate question to ask the user for the missing slot value
-- provide_suggestios(intent): generate an appropriate message, attached to the list of wines
-- goal_assistant(intent): generate a message with the main goal of the assistant (wine assistance)
-- repeat(slot): generate an appropriate message for reasking the same slot value
-- confirmation(intent): generate an appropriate confirmation message for the user intent
-"""
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information""",
+
+    "general_info":"""
+- specific_info(intent): generate a message where there is a list of possible information that the user can ask. These are: deatils of the wine, origin of the wine, production of the wine, conservation of the wine""",
+
+    "confermation_nlg": """
+- confermation(intent): generate an appropriate confirmation message for the user intent""",
+
+    "list_wine_nlg": """
+- provide_list(intent): generate an appropriate message for introducing the list of wines to the user""",
+
+    "shopper_nlg": """
+- delivery_info(intent), if all slots have been filled"""
+
 }
 
 MODELS = {

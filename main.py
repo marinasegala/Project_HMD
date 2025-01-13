@@ -31,7 +31,7 @@ class Dialogue:
             # get the NLU output
             infos = self.nlu(user_input)
             print(f"NLU: {infos}")
-            intent = self.tracker.update(infos)
+            intent = self.tracker.update(infos, self.history)
 
             logger.info(intent)
             #TODO possible_wine_list = searching_wine(self.tracker, intent)
@@ -43,7 +43,7 @@ class Dialogue:
             #TODO - FINIRE DI SISTEMARE IL DM - ESTARRE CORRETTAMENTE LE AZIONI E GLI ARGOMENTI
             
             # get the NLG output
-            nlg_output = self.nlg(action, arg)
+            nlg_output = self.nlg(action, arg, intent)
             self.history.add_msg(nlg_output, 'assistant', action)
             
             user_input = input(nlg_output + '\n')

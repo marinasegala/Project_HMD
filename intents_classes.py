@@ -73,6 +73,13 @@ class Wine_origin():
             'title_bottle': possible_title
         }
         return values
+    
+    def required(self):
+        # false -> the two fields are not required TOGETHER
+        if self.country or self.region:
+            return [False, 'typology', 'title_bottle']
+        if self.typology or self.title_bottle:
+            return [False, 'country', 'region']
 
 class Wine_production():
     def __init__(self):
@@ -192,22 +199,22 @@ classes used ONLY by the systems
 class ListWines():
     pass
 
-class Shipping():
+class Delivery():
     def __init__(self):
         self.address = None
         self.phone = None
         self.gift = None
-        self.pagament = None
+        self.kind_pagament = None
 
     def __str__(self):
-        return f"Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.pagament}"
+        return f"Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.kind_pagament}"
     
     def name(self):
-        return 'Shipping'
+        return 'Delivery'
     
     def possibilities(self):
         values = {
             'gift': possible_gift,
-            'pagament': possible_pagament
+            'kind_pagament': possible_pagament
         }
         return values

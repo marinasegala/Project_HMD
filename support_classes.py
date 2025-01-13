@@ -6,6 +6,10 @@ class History():
         self.messages = []
         self.intent = []
         self.roles = []
+        self.last_intent = ''
+
+    def update_last_int(self, intent):
+        self.last_intent = intent
 
     def add_msg(self, msg, role, intent):
         self.roles.append(role)
@@ -35,7 +39,7 @@ class History():
     
 class Tracker():
     def __init__(self, logger):
-        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering']
+        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering', 'delivery']
         self.intentions = []
         self.wine_details = None
         self.wine_origin = None
@@ -44,32 +48,36 @@ class Tracker():
         self.wine_paring = None
         self.food_paring = None
         self.wine_ordering = None
-        self.shipping = None
+        self.delivery = None
         self.logger = logger
     
-    def update(self, input: dict):
+    def update(self, input: dict, history: History):
         intent = input["intent"]
 
-        if intent == 'out_of_domain': return intent
+        if intent == 'out_of_domain' or intent == 'general_info': 
+            history.update_last_int(intent)
+            return intent
 
-        if intent in self.possible_intent:
-            if intent not in [x for x in self.intentions]:
-                self.intentions.append(intent)
+        #if intent in self.possible_intent:
+        if intent not in [x for x in self.intentions]:
+            self.intentions.append(intent)
 
-                if 'details' in intent:
-                    self.wine_details = Wine_details()
-                elif 'origin' in intent:
-                    self.wine_origin = Wine_origin()
-                elif 'production' in intent:
-                    self.wine_production = Wine_production()
-                elif 'conservation' in intent:
-                    self.wine_conservation = Wine_conservation()
-                elif 'wine_paring' in intent:
-                    self.wine_paring = Wine_paring()
-                elif 'food_paring' in intent:
-                    self.food_paring = Food_paring()
-                elif 'ordering' in intent:
-                    self.wine_ordering = Wine_order()
+            if 'details' in intent:
+                self.wine_details = Wine_details()
+            elif 'origin' in intent:
+                self.wine_origin = Wine_origin()
+            elif 'production' in intent:
+                self.wine_production = Wine_production()
+            elif 'conservation' in intent:
+                self.wine_conservation = Wine_conservation()
+            elif 'wine_paring' in intent:
+                self.wine_paring = Wine_paring()
+            elif 'food_paring' in intent:
+                self.food_paring = Food_paring()
+            elif 'ordering' in intent:
+                self.wine_ordering = Wine_order()
+
+        history.update_last_int(intent)
 
         input = input["slots"] 
         for field in input:
@@ -91,6 +99,7 @@ class Tracker():
                 elif 'ordering' in intent:
                     assign_field(self.wine_ordering, field, input[field])
 
+            
         self.logger.info(f"Tracker: {input}")
         return intent
     
@@ -117,3 +126,5 @@ class Tracker():
 
         if intent_ret == 'out_of_domain':
             return {"intent": "out_of_domain"}
+        if intent_ret == 'general_info':
+            return {"intent": "general_info"}

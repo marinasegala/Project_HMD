@@ -16,8 +16,15 @@ class NLU():
         self.logger.info(f"List intents: {list_intents}")
         list_int = list_intents[0]
 
-        json_output = self.extract_slots(user_input, list_int)
+        if list_int == 'general_info':
+            json_output = parsing_json('{"intent": "general_info"}')
+        elif list_int == 'out_of_domain':
+            json_output = parsing_json('{"intent": "out_of_domain"}')
+        else:
+            json_output = self.extract_slots(user_input, list_int)
+        
         self.logger.info(f"NLU output: {json_output}")
+        
         return json_output
 
     def extract_intents_list(self, user_input):
@@ -50,7 +57,6 @@ class NLU():
         elif list_int == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
         elif list_int == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
         elif list_int == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
-        else: return parsing_json('{"intent": "out_of_domain"}')
         
         nlu_text = self.history.last_iteration() + '\n' + user_input
 
