@@ -28,10 +28,10 @@ class NLU():
         return json_output
 
     def extract_intents_list(self, user_input):
-        last_int = self.history.last_iteration()
+        last_int = self.history.last_iterations()
         self.logger.info(f"History: {last_int}")
         
-        text = last_int + '\n' + text
+        text = last_int + '\n' + user_input
         text = self.args.chat_template.format(PROMPTS["NLU_intents"], text)
         pre_nlu_input = self.tokenizer(text, return_tensors="pt").to(self.model.device)
         intents = generate(self.model, pre_nlu_input, self.tokenizer, self.args)
@@ -58,7 +58,7 @@ class NLU():
         elif list_int == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
         elif list_int == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
         
-        nlu_text = self.history.last_iteration() + '\n' + user_input
+        nlu_text = self.history.last_iterations() + '\n' + user_input
 
         nlu_text = self.args.chat_template.format(prompt, nlu_text)
         nlu_input = self.tokenizer(nlu_text, return_tensors="pt").to(self.model.device)

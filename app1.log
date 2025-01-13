@@ -1,0 +1,44 @@
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:Resetting dropped connection: huggingface.co
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:NLU output: {"intent": "order_food", "slots": {"food": "pizza", "type": "null", "location": "null"}}
+INFO:Dialogue:Tracker: {'food': 'pizza', 'type': 'null', 'location': 'null'}
+INFO:Dialogue:order_food
+DEBUG:Dialogue:DM output: request_info("wine_name")
+INFO:Dialogue:Action: request_info, Argument: wine_name
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:NLU output: {"intent": "order", "slots": {"food": "pizza", "null": null}}
+INFO:Dialogue:Tracker: {'food': 'pizza', 'null': None}
+INFO:Dialogue:order
+DEBUG:Dialogue:DM output: request_info(name)
+INFO:Dialogue:Action: request_info, Argument: name
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+Possible next best actions are:
+- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines
+- request_info(slot), if a slot value is missing (null)
+- confirmation(intent), if all slots have been filled<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(name)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: i want to order a pizza<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
