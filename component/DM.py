@@ -9,7 +9,7 @@ class DM():
         self.logger = logger
         pass
 
-    def __call__(self, tracker, intent, list_possible_wine = []):
+    def __call__(self, tracker, intent, provide_list):
         
         info_text = tracker.dictionary(intent)
         dm_text = str(info_text)
@@ -18,9 +18,10 @@ class DM():
         elif intent == "general_info": nba = PROMPTS['general_info'] + PROMPTS['list_nba']
         else: nba = PROMPTS['list_nba'] + PROMPTS['confermation']
 
-        if list_possible_wine != []:
+        if provide_list:
             nba = PROMPTS['list_wine'] + nba
-
+        
+        if intent == 'wine_origin': nba = nba + PROMPTS['origin_dm']
         prompt = PROMPTS["DM_start"] + nba + PROMPTS["DM_end"]
         
         dm_text = self.args.chat_template.format(prompt, dm_text)

@@ -77,7 +77,7 @@ class Tracker():
             elif 'ordering' in intent:
                 self.wine_ordering = Wine_order()
 
-        history.update_last_int(intent)
+        history.update_last_int(self.name_current_intent(intent))
 
         input = input["slots"] 
         for field in input:
@@ -128,3 +128,21 @@ class Tracker():
             return {"intent": "out_of_domain"}
         if intent_ret == 'general_info':
             return {"intent": "general_info"}
+
+    def name_current_intent(self, intent):
+        if 'details' in intent:
+            return self.wine_details.name()
+        elif 'origin' in intent:
+            return self.wine_origin.name()
+        elif 'production' in intent:
+            return self.wine_production.name()
+        elif 'conservation' in intent:
+            return self.wine_conservation.name()
+        elif 'wine_paring' in intent:
+            return self.wine_paring.name()
+        elif 'food_paring' in intent:
+            return self.food_paring.name()
+        elif 'ordering' in intent:
+            return self.wine_ordering.name()
+        elif 'delivery' in intent:
+            return self.delivery.name()

@@ -22,9 +22,19 @@ possible_title = extract_db_init('title_bottle')
 
 
 """
+general class
+"""
+class ClassBase:
+    def __init__(self):
+        pass
+
+    def name(self):
+        return self.__class__.__name__
+
+"""
 classes for actions that can be grouped into 'asking for information' 
 """
-class Wine_details():
+class Wine_details(ClassBase):
     def __init__(self):
         self.flavor = None
         self.grape = None
@@ -33,12 +43,6 @@ class Wine_details():
         self.abv = None
         self.year = None
         self.typology = None
-
-    def __str__(self):
-        return f"Flavor: {self.flavor}, Grape: {self.grape}, Color: {self.color}, Sparkling: {self.sparkling}, ABV: {self.abv}, Year: {self.year}, Typology: {self.typology}"
-    
-    def name(self):
-        return 'Wine_details'
     
     def possibilities(self):
         values = {
@@ -51,20 +55,17 @@ class Wine_details():
             'typology': possible_typology
         }
         return values
+    
+    def required(self):
+        return [['flavor', 'grape', 'color', 'sparkling', 'abv', 'year'], ['typology']]
 
-class Wine_origin():
+class Wine_origin(ClassBase):
     def __init__(self):
         self.country = None
         self.region = None
         self.typology = None
         self.title_bottle = None
 
-    def __str__(self):
-        return f"Country: {self.country}, Region: {self.region}, Typology: {self.typology}, Title: {self.title_bottle}"
-
-    def name(self):
-        return 'Wine_origin'
-    
     def possibilities(self):
         values = {
             'country': possible_country,
@@ -75,68 +76,60 @@ class Wine_origin():
         return values
     
     def required(self):
-        # false -> the two fields are not required TOGETHER
-        if self.country or self.region:
-            return [False, 'typology', 'title_bottle']
-        if self.typology or self.title_bottle:
-            return [False, 'country', 'region']
+        return [['country', 'region'], ['typology', 'title_bottle']]
+        #if all are None
+        #if all(getattr(self, field) is None for field in poss1):
+        
+        #if at least one is not None for values of self
+        #count = sum(getattr(self, key) is not None for key in slots)
 
-class Wine_production():
+class Wine_production(ClassBase):
     def __init__(self):
         self.grape = None
         self.abv = None
         self.closure = None
-        # self.typology = None
-
-    def __str__(self):
-        return f"Grape: {self.grape}, ABV: {self.abv}, Closure: {self.closure}"
-
-    def name(self):
-        return 'Wine_production'
+        self.typology = None
     
     def possibilities(self):
         values = {
             'grape': possible_grape,
             'abv': possible_abv,
-            'closure': possible_closure
+            'closure': possible_closure,
+            'typology': possible_typology
         }
         return values
+    
+    def required(self):
+        return [['grape', 'abv', 'closure'], ['typology']]
 
-class Wine_conservation():
+class Wine_conservation(ClassBase):
     def __init__(self):
         self.fridge = None
         self.cellar = None
         self.temperature = None
+        self.typology = None
 
-    def __str__(self):
-        return f"Fridge: {self.fridge}, Cellar: {self.cellar}, Temp: {self.temp}"
-
-    def name(self):
-        return 'Wine_conservation'
-    
     def possibilities(self):
         values = {
             'fridge': possible_fridge,
             'cellar': possible_cellar,
-            'temperature': possible_temperature
+            'temperature': possible_temperature, 
+            'typology': possible_typology
         }
         return values
+    
+    def required(self):
+        return [['fridge', 'cellar', 'temperature'], ['typology']]
 
 """
 classes for actions that can be grouped into 'paring the correct wine with food'
 """
 
-class Wine_paring(): # from the wine, suggest the best food
+class Wine_paring(ClassBase): # from the wine, suggest the best food
     def __init__(self):
         self.style = None
         self.color = None
         self.typology = None
-
-    def __str__(self):
-        return f"Style: {self.style}, Color: {self.color}, Typology: {self.typology}"
-
-    def name(self):
-        return 'Wine_paring'
     
     def possibilities(self):
         values = {
@@ -145,18 +138,15 @@ class Wine_paring(): # from the wine, suggest the best food
             'typology': possible_typology
         }
         return values
+    
+    def required(self):
+        return [['style', 'color'], ['typology']]
 
-class Food_paring(): # from the food, suggest the best wine
+class Food_paring(ClassBase): # from the food, suggest the best wine
     def __init__(self):
         self.food = None
         self.style = None
         self.abv = None
-
-    def __str__(self):
-        return f"Food: {self.food}, Style: {self.style}, ABV: {self.abv}"
-
-    def name(self):
-        return 'Food_paring'
     
     def possibilities(self):
         values = {
@@ -165,33 +155,34 @@ class Food_paring(): # from the food, suggest the best wine
             'abv': possible_abv
         }
         return values
+    
+    def required(self):
+        return ['food']
 
 """
 classes for actions that can be grouped into 'ordering wine'
 """
 
-class Wine_order():
+class Wine_order(ClassBase):
     def __init__(self):
         self.typology = None
         self.color = None
         self.quantity = None
         self.budget = None
         self.title_bottle = None
-
-    def __str__(self):
-        return f"Typology: {self.typology}, Color: {self.color}, Quantity: {self.quantity}, Budget: {self.budget}, Title: {self.title_bottle}"
-
-    def name(self):
-        return 'Wine_order'
     
     def possibilities(self):
         values = {
             'typology': possible_typology,
             'color': possible_color,
             'quantity': possible_quantity,
-            'title_bottle': possible_title
+            'title_bottle': possible_title, 
+            'budget': True
         }
         return values
+    
+    def required(self):
+        return ['budget', 'color', 'quantity','typology']
 
 """
 classes used ONLY by the systems 
@@ -199,22 +190,21 @@ classes used ONLY by the systems
 class ListWines():
     pass
 
-class Delivery():
+class Delivery(ClassBase):
     def __init__(self):
         self.address = None
         self.phone = None
         self.gift = None
         self.kind_pagament = None
-
-    def __str__(self):
-        return f"Address: {self.address}, Phone: {self.phone}, Gift: {self.gift}, Pagament: {self.kind_pagament}"
-    
-    def name(self):
-        return 'Delivery'
     
     def possibilities(self):
         values = {
             'gift': possible_gift,
-            'kind_pagament': possible_pagament
+            'kind_pagament': possible_pagament, 
+            'address': True,
+            'phone': True
         }
         return values
+    
+    def required(self):
+        return ['address', 'phone', 'gift', 'kind_pagament']

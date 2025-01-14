@@ -1,6 +1,6 @@
 import logging
 from utils import generate, load_model, get_args, PROMPTS, TEMPLATES, MODELS
-from support_fn import searching_wine
+from support_fn import searching_wine, can_find_wines
 from extractor_data import *
 from component.NLU import NLU
 from component.DM import DM
@@ -34,16 +34,20 @@ class Dialogue:
             intent = self.tracker.update(infos, self.history)
 
             logger.info(intent)
+            can_search, list = can_find_wines(self.tracker, self.history)
+            
+            logger.info(f"Can search: {can_search}, List: {list}")
+            
             #TODO possible_wine_list = searching_wine(self.tracker, intent)
 
             # get the DM output
-            action, arg = self.dm(self.tracker, intent)
+            action, arg = self.dm(self.tracker, intent, can_search)
             logger.info(f'Action: {action}, Argument: {arg}')
             
             #TODO - FINIRE DI SISTEMARE IL DM - ESTARRE CORRETTAMENTE LE AZIONI E GLI ARGOMENTI
             
             # get the NLG output
-            nlg_output = self.nlg(action, arg, intent)
+            nlg_output = self.nlg(action, arg, intent, can_search)
             self.history.add_msg(nlg_output, 'assistant', action)
             
             user_input = input(nlg_output + '\n')

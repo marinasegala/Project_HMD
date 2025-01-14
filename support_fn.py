@@ -15,6 +15,35 @@ def parsing_json(text):
         # convert the json string to a dictionary
         compact_json = json.loads(compact_json)
         return compact_json
+    
+def can_find_wines(tracker, history):
+    """
+    check if at least the required slots are filled 
+    """
+    # Recupera il nome della classe corretta dall'intento precedente nella cronologia
+    correct_class_name = history.get_last_int().lower()
+
+    # Ottieni l'istanza della classe corretta dal tracker
+    correct_class_instance = getattr(tracker, correct_class_name)
+
+    required = correct_class_instance.required()
+
+    if len(required) > 1:
+        required_list_1 = required[0]
+        required_list_2 = required[1]
+    else:
+        required_list_1 = required
+        required_list_2 = []
+
+    # understand if the required fields are filled
+    if any(getattr(correct_class_instance, field) is not None for field in required_list_1) and all(getattr(correct_class_instance, field) is None for field in required_list_2):
+        return True, required_list_1
+    elif any(getattr(correct_class_instance, field) is not None for field in required_list_2) and all(getattr(correct_class_instance, field) is None for field in required_list_1):
+        return True, required_list_2
+    elif any(getattr(correct_class_instance, field) is not None for field in required_list_1) and any(getattr(correct_class_instance, field) is not None for field in required_list_2):
+        return True, required_list_1 + required_list_2
+    else:
+        return False, []
 
 def searching_wine(tracker, intent):
     """
