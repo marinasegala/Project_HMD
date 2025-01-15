@@ -14,15 +14,21 @@ class DM():
         info_text = tracker.dictionary(intent)
         dm_text = str(info_text)
 
-        if intent == "wine_ordering": nba = PROMPTS['list_nba'] + PROMPTS['delivery']
-        elif intent == "general_info": nba = PROMPTS['general_info'] + PROMPTS['list_nba']
-        else: nba = PROMPTS['list_nba'] + PROMPTS['confermation']
+        nba = PROMPTS['nba']
 
         if provide_list:
-            nba = PROMPTS['list_wine'] + nba
+            nba = PROMPTS['listing_wine'] + nba
+            adding = "\nThe action provide_list has greater priority than request_slot! Respect that!\n" + PROMPTS["DM_end"]
+            info_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
+        else: 
+            adding = PROMPTS["DM_end"]
+
+        if 'ordering' in intent:
+            nba = nba + PROMPTS['delivery']
+        else:
+            nba = nba + PROMPTS['confermation']
         
-        if intent == 'wine_origin': nba = nba + PROMPTS['origin_dm']
-        prompt = PROMPTS["DM_start"] + nba + PROMPTS["DM_end"]
+        prompt = PROMPTS["DM_start"] + nba + adding
         
         dm_text = self.args.chat_template.format(prompt, dm_text)
         dm_input = self.tokenizer(dm_text, return_tensors="pt").to(self.model.device)

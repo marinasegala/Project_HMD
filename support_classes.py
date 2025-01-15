@@ -50,6 +50,7 @@ class Tracker():
         self.wine_ordering = None
         self.delivery = None
         self.logger = logger
+        self.give_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring']
     
     def update(self, input: dict, history: History):
         intent = input["intent"]

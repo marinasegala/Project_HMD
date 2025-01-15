@@ -14,12 +14,11 @@ class NLG():
         
         nlg_text =  f"{action}({argument})\n" + last_int 
 
-        if intent == "wine_ordering": nba_add = PROMPTS['list_nba_nlg'] + PROMPTS['shopper_nlg']
-        elif intent == "general_info": nba_add = PROMPTS['general_info'] + PROMPTS['list_nba_nlg']
-        else: nba_add = PROMPTS['list_nba_nlg'] + PROMPTS['confermation']
+        if intent == "wine_ordering": nba_add = PROMPTS['nba_nlg']
+        else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation']
 
         if possible_list:
-            nba_add = PROMPTS['list_wine'] + nba_add
+            nba_add = PROMPTS['listing_wine_nlg'] + nba_add
          
         prompt = PROMPTS["NLG"] + nba_add
         

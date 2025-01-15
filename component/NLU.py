@@ -15,6 +15,7 @@ class NLU():
         list_intents = self.extract_intents_list(user_input) 
         self.logger.info(f"List intents: {list_intents}")
         list_int = list_intents[0]
+        #TODO GESTIRE PIU INTENT
 
         if list_int == 'general_info':
             json_output = parsing_json('{"intent": "general_info"}')

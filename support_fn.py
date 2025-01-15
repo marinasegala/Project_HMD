@@ -26,24 +26,31 @@ def can_find_wines(tracker, history):
     # Ottieni l'istanza della classe corretta dal tracker
     correct_class_instance = getattr(tracker, correct_class_name)
 
-    required = correct_class_instance.required()
+    if correct_class_name in tracker.give_list:
 
-    if len(required) > 1:
-        required_list_1 = required[0]
-        required_list_2 = required[1]
-    else:
-        required_list_1 = required
-        required_list_2 = []
+        # Ottieni l'istanza della classe corretta dal tracker
+        correct_class_instance = getattr(tracker, correct_class_name)
 
-    # understand if the required fields are filled
-    if any(getattr(correct_class_instance, field) is not None for field in required_list_1) and all(getattr(correct_class_instance, field) is None for field in required_list_2):
-        return True, required_list_1
-    elif any(getattr(correct_class_instance, field) is not None for field in required_list_2) and all(getattr(correct_class_instance, field) is None for field in required_list_1):
-        return True, required_list_2
-    elif any(getattr(correct_class_instance, field) is not None for field in required_list_1) and any(getattr(correct_class_instance, field) is not None for field in required_list_2):
-        return True, required_list_1 + required_list_2
-    else:
-        return False, []
+        required = correct_class_instance.required()
+
+        if type(required[0]) == list:
+            required_list_1 = required[0]
+            required_list_2 = required[1]
+        else:
+            required_list_1 = required
+            required_list_2 = []
+
+        # understand if the required fields are filled
+        if any(getattr(correct_class_instance, field) is not None for field in required_list_1) and all(getattr(correct_class_instance, field) is None for field in required_list_2):
+            return True, required_list_2
+        elif any(getattr(correct_class_instance, field) is not None for field in required_list_2) and all(getattr(correct_class_instance, field) is None for field in required_list_1):
+            return True, required_list_1
+        elif any(getattr(correct_class_instance, field) is not None for field in required_list_1) and any(getattr(correct_class_instance, field) is not None for field in required_list_2):
+            # return the list of those that are not None
+            list_none = [field for field in required_list_1 + required_list_2 if getattr(correct_class_instance, field) is None]
+            return True, list_none
+    
+    return False, []
 
 def searching_wine(tracker, intent):
     """
@@ -57,20 +64,20 @@ def searching_wine(tracker, intent):
         data = json.load(file)
     
     # filter the data according to the slots
-    list_wine = [x for x in range(1, len(data)+1)]
+    id_wine = [x for x in range(1, len(data)+1)]
 
     for index, item in enumerate(data):
         for slot in slots:
             field = slot.split('_')[0] if '_' in slot else slot
             if slots[slot] is not None:
                 if str(item.get(field.capitalize(), 'nan')) == 'nan':
-                    list_wine.remove(index+1)
+                    id_wine.remove(index+1)
                     continue
                 search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
                 if search not in item[field.capitalize()]:
-                    list_wine.remove(index+1)
+                    id_wine.remove(index+1)
 
-    return list_wine    
+    return id_wine    
 
 def assign_field (intent_class: object, field: str, value: str):
     """
@@ -106,7 +113,7 @@ def extract_action_and_argument(input_string):
     """
     print(input_string)
     ## TODO add check in case there is more in the output string from the LLM
-    input_string = input_string.replace("'", "")
+    input_string = input_string.replace("'`", "")
     input_string = input_string.replace("\"", "")
     print(input_string)
     # Define the regex pattern for extracting action and argument
@@ -115,10 +122,10 @@ def extract_action_and_argument(input_string):
     print(match)
     if match:
         action = match.group(1)  # Extract the action
-        #argument = match.group(2)  # Extract the argument
-        #if '=' in argument:
-        #    argument = argument.split('=')[1]
+        argument = match.group(2)  # Extract the argument
+        if '=' in argument:
+           argument = argument.split('=')[1]
         # return action, argument
-        arguments = match.group(2).split(',')  # Extract the arguments and split by comma
-        arguments = [arg.strip() for arg in arguments]  # Remove any leading/trailing whitespace
-        return action, arguments
+        # arguments = match.group(2).split(',')  # Extract the arguments and split by comma
+        # arguments = [arg.strip() for arg in arguments]  # Remove any leading/trailing whitespace
+        return action, argument

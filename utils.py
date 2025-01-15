@@ -51,18 +51,6 @@ Do not assume any value as default! If they are not specified by the user, put '
 If the user specifies a value, put it in the slot. If the user specifically says that does not know somwthing, put 'null' in the slot.
 Return only the json object composed as {"intent": "", "slots": {}}.
 Return ONLY the json
-""", 
-
-    "PRE-NLU": """Break the user input into multiple sentences based on the following intents:
-- wine_details: if the user wants to know more about the characteristics of a wine.
-- wine_origin: if the user wants to know more about the origin of a wine.
-- wine_production: if the user wants to know more about the production of a wine.
-- wine_conservation: if the user wants to know more about the conservation of a wine.
-- wine_paring: if the user has a wine and he wants to pair it with a food.
-- food_paring: if the user has a dish and he wants to pair it with a wine.
-- wine_ordering: if the user wants to buy wine.
-Only provide the sequences of intents, as follow: ["sentence1", "sentence2", ...]
-Return only the list.
 """,
 
     "NLU_intents": """You are a component for a wine bot assistant.
@@ -87,32 +75,22 @@ Given the output of the NLU component, you should ONLY generate the next best ac
     "DM_end": """ You need to write the name of the action with also the correspondings parameters.
 Return ONLY the next best action!""",
 
-    "list_nba": """
+    "nba": """
 - request_info(slot), if a slot value is missing (null)
 - goal_assistant(intent), if the intent is equal to out_of_domain
 - repeat(slot), if the system needs clarification on a slot value""",
 
-    "general_info":"""
-- specific_info(intent), if the intent is equal to general_info""",
+    "request": """
+- request_info(slot), if a slot value is missing (null)""",
 
     "confermation": """
 - confermation(intent), if all slots have been filled""",
 
-    "list_wine": """
-- provide_list(intent), if there are sufficient slots filled or the user asks for a list of wines""",
+    "listing_wine": """
+- provide_list(intent), if the field provide_list in NLU output is True""",
 
     "delivery": """
 - delivery_info(intent), if all slots have been filled""",
-
-    "DM2": """You are the Dialogue Manager of a wine bot assistent.
-Given the output of the NLU component, you should ONLY generate the next best action from this list:
-- request_info(slot), if a slot value is missing (null)
-- provide_suggestios(intent),
-- goal_assistant(intent), if the intent is equal to out_of_domain
-- repeat(slot), if the system needs clarification on a slot value
-- confermation(intent), if all slots have been filled
-You need to write the name of the action with also the correspondings parameters.
-Return ONLY the next best action! """,
 
     "NLG": """You are the NLG component of a wine bot assistent: you must be very polite.
 Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
@@ -120,22 +98,18 @@ The response has to match the next best action of the DM.
 Possible next best actions are:
 """, 
 
-    "list_nba_nlg": """
+    "nba_nlg": """
 - request_info(slot): generate an appropriate question to ask the user for the missing slot value
 - goal_assistant(intent): generate an appropriate message with the domain of the bot
 - repeat(slot): generate a message to ask the user to repeat the information""",
 
-    "general_info":"""
-- specific_info(intent): generate a message where there is a list of possible information that the user can ask. These are: deatils of the wine, origin of the wine, production of the wine, conservation of the wine""",
-
     "confermation_nlg": """
 - confermation(intent): generate an appropriate confirmation message for the user intent""",
 
-    "list_wine_nlg": """
-- provide_list(intent): generate an appropriate message for introducing the list of wines to the user""",
+    "listing_wine_nlg": """
+- provide_list(intent): generate an appropriate message for introducing the list of wines to the user. You do NOT have to give the list. For example: "I can suggest you the following wines" """,
 
-    "shopper_nlg": """
-- delivery_info(intent), if all slots have been filled"""
+    "NLG_end": """DO NOT give suggestions! Return ONLY the message to the user!""",
 
 }
 
