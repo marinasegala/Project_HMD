@@ -19,7 +19,7 @@ class DM():
         if provide_list:
             nba = PROMPTS['listing_wine'] + nba
             adding = "\nThe action provide_list has greater priority than request_slot! Respect that!\n" + PROMPTS["DM_end"]
-            info_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
+            dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
         else: 
             adding = PROMPTS["DM_end"]
 
@@ -31,6 +31,7 @@ class DM():
         prompt = PROMPTS["DM_start"] + nba + adding
         
         dm_text = self.args.chat_template.format(prompt, dm_text)
+        self.logger.debug(f"DM input: {dm_text}")
         dm_input = self.tokenizer(dm_text, return_tensors="pt").to(self.model.device)
         dm_output = generate(self.model, dm_input, self.tokenizer, self.args)
 
