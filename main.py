@@ -49,17 +49,10 @@ class Dialogue:
             # get the NLG output
             nlg_output = self.nlg(action, arg, intent, can_search)
             self.history.add_msg(nlg_output, 'assistant', action)
-            
+            print(nlg_output)
 
-            list_wines = []
-            slots = []
             if action == 'provide_list': 
                 list_wines, slots = searching_wine(self.tracker, list, intent)
-
-            user_input = input(nlg_output + '\n')
-            self.history.add_msg(user_input, 'user', 'input')
-
-            if list_wines != []:
                 for slot, value in slots.items():
                     print(f'Given this information: {slot}: {value}')
 
@@ -68,6 +61,8 @@ class Dialogue:
                     print(item)
                 self.history.add_msg(list_wines, 'assistant', 'list')
             
+            user_input = input('\n')
+            self.history.add_msg(user_input, 'user', 'input')
 
 def main():
     logging.basicConfig(filename="app.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
