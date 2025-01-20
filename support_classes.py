@@ -11,6 +11,9 @@ class History():
     def update_last_int(self, intent):
         self.last_intent = intent
 
+    def get_last_int(self):
+        return self.last_intent
+
     def add_msg(self, msg, role, intent):
         self.roles.append(role)
         self.messages.append(msg)

@@ -50,11 +50,19 @@ class Dialogue:
             nlg_output = self.nlg(action, arg, intent, can_search)
             self.history.add_msg(nlg_output, 'assistant', action)
             
+
+            list_wines = []
+            slots = []
+            if action == 'provide_list': 
+                list_wines, slots = searching_wine(self.tracker, list, intent)
+
             user_input = input(nlg_output + '\n')
             self.history.add_msg(user_input, 'user', 'input')
 
-            if action == 'provide_list': 
-                list_wines = searching_wine(self.tracker, list, intent)
+            if list_wines != []:
+                for slot, value in slots.items():
+                    print(f'Given this information: {slot}: {value}')
+
                 print('The wines that match the information you provided are:')
                 for item in list_wines:
                     print(item)

@@ -78,11 +78,8 @@ def searching_wine(tracker, intent):
     # fill the fields with slots
 
     full_slots = [field for field in slots if slots[field] is not None] #TODO - field + values
-    print('The slots that are not None are: {}'.format(full_slots))
+    # print('The slots that are not None are: {}'.format(full_slots))
     
-    for slot, value in slots.items():
-        print(f'Given this information: {slot}: {value}')
-
     # fields the ListWines class with slots exept the one in full_slots
     for index, item in enumerate(data):
         if index+1 in id_wine:
@@ -94,7 +91,7 @@ def searching_wine(tracker, intent):
                     setattr(wine, slot, values)
             list_wines.append(wine)
     
-    return list_wines
+    return list_wines, full_slots
 
 def assign_field (intent_class: object, field: str, value: str):
     """
