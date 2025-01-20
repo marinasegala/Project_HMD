@@ -53,6 +53,14 @@ class Dialogue:
             user_input = input(nlg_output + '\n')
             self.history.add_msg(user_input, 'user', 'input')
 
+            if action == 'provide_list': 
+                list_wines = searching_wine(self.tracker, list, intent)
+                print('The wines that match the information you provided are:')
+                for item in list_wines:
+                    print(item)
+                self.history.add_msg(list_wines, 'assistant', 'list')
+            
+
 def main():
     logging.basicConfig(filename="app.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")

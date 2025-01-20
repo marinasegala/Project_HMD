@@ -187,8 +187,43 @@ class Wine_order(ClassBase):
 """
 classes used ONLY by the systems 
 """
-class ListWines():
-    pass
+class Wine_Bottle():
+    def __init__(self):
+        self.title_bottle = None
+        self.description = None
+        self.typology = None
+        self.price = None
+        self.grape = None
+        self.closure = None
+        self.country = None
+        self.region = None
+        self.flavor = None
+        self.color = None
+        self.abv = None
+        self.style = None
+        self.year = None
+        self.food = None
+        self.sparkling = None
+        self.temperature = None
+        self.fridge = None
+        self.cellar = None
+        self.quantity = None
+        self.gift = None
+        self.kind_pagament = None
+        self.phone = None
+        self.address = None
+
+    def __str__(self):
+        
+        # return fields that are not None
+        fields = [field for field in self.__dict__ if getattr(self, field) is not None]
+        ret = ''
+        for field in fields:
+            ret += f"\t{field}: {getattr(self, field)}\n"
+
+        if ret == '':
+            return "There are no wines that match the information you provided"
+        return ret 
 
 class Delivery(ClassBase):
     def __init__(self):

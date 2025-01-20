@@ -15,12 +15,12 @@ class NLG():
         nlg_text =  f"{action}({argument})\n" + last_int 
 
         if intent == "wine_ordering": nba_add = PROMPTS['nba_nlg']
-        else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation']
+        else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation_nlg']
 
         if possible_list:
             nba_add = PROMPTS['listing_wine_nlg'] + nba_add
          
-        prompt = PROMPTS["NLG"] + nba_add
+        prompt = PROMPTS["NLG"] + nba_add + PROMPTS["NLG_end"]
         
         nlg_text = self.args.chat_template.format(prompt, nlg_text)
         nlg_input = self.tokenizer(nlg_text, return_tensors="pt").to(self.model.device)

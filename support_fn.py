@@ -1,5 +1,6 @@
 import json
 import re
+from intents_classes import Wine_Bottle
 
 def parsing_json(text):
     """
@@ -22,10 +23,6 @@ def can_find_wines(tracker, history):
     """
     # Recupera il nome della classe corretta dall'intento precedente nella cronologia
     correct_class_name = history.get_last_int().lower()
-
-    # Ottieni l'istanza della classe corretta dal tracker
-    correct_class_instance = getattr(tracker, correct_class_name)
-
     if correct_class_name in tracker.give_list:
 
         # Ottieni l'istanza della classe corretta dal tracker
@@ -77,7 +74,27 @@ def searching_wine(tracker, intent):
                 if search not in item[field.capitalize()]:
                     id_wine.remove(index+1)
 
-    return id_wine    
+    list_wines = []
+    # fill the fields with slots
+
+    full_slots = [field for field in slots if slots[field] is not None] #TODO - field + values
+    print('The slots that are not None are: {}'.format(full_slots))
+    
+    for slot, value in slots.items():
+        print(f'Given this information: {slot}: {value}')
+
+    # fields the ListWines class with slots exept the one in full_slots
+    for index, item in enumerate(data):
+        if index+1 in id_wine:
+            wine = Wine_Bottle()
+            for slot in slots:
+                field = slot if 'sparkling' not in slot else 'sparkling_still'
+                if slots[slot] is None:
+                    values = item[field.capitalize()]
+                    setattr(wine, slot, values)
+            list_wines.append(wine)
+    
+    return list_wines
 
 def assign_field (intent_class: object, field: str, value: str):
     """

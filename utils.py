@@ -73,7 +73,7 @@ Return ONLY the list of intents, nothing more!
 Given the output of the NLU component, you should ONLY generate the next best action from this list: """,
 
     "DM_end": """ You need to write the name of the action with also the correspondings parameters.
-Return ONLY the next best action!""",
+Return ONLY the next best action! Nothing more!""",
 
     "nba": """
 - request_info(slot), if a slot value is missing (null)
