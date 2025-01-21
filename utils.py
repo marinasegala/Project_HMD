@@ -63,7 +63,7 @@ Break the user input into multiple sentences based on the following intents:
 - wine_paring: if the user has a wine and he wants to pair it with a food.
 - food_paring: if the user has a dish and he wants to pair it with a wine.
 - wine_ordering: if the user wants to buy wine.
-- delivery: if the user is giving information about the delivery.
+- delivery: if the user is giving information about the delivery information.
 - out_of_domain, if the input does not match any of the above and none of them is predicted.
 Provide a list of intents as follow: ["intent1", "intent2", ...].
 Return ONLY the list of intents, nothing more!
