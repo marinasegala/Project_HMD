@@ -48,6 +48,7 @@ class Dialogue:
             # get the DM output
             action, arg = self.dm(self.tracker, intent, can_search)
             self.logger.info(f'Action: {action}, Argument: {arg}')
+            print(f'Action: {action}, Argument: {arg}')
             
             if action == 'delivery_info':
                 intent, _ = self.tracker.creation(infos, self.history, False)
