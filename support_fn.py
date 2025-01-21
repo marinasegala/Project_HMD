@@ -107,6 +107,9 @@ def assign_field (intent_class: object, field: str, value: str):
     for possible_field in possibilities:
         if field in possible_field:
             # check if the value is in the possible values
+            if possibilities[possible_field] == True:
+                setattr(intent_class, field, value)
+                break
             for v in possibilities[possible_field]:
                 if v == value or (v == value.lower()):
                     setattr(intent_class, field, value)
