@@ -166,27 +166,26 @@ classes for actions that can be grouped into 'ordering wine'
 class Wine_ordering(ClassBase):
     def __init__(self):
         self.typology = None
-        self.color = None
         self.quantity = None
-        self.budget = None
+        self.total_budget = None
         self.title_bottle = None
     
     def possibilities(self):
         values = {
             'typology': possible_typology,
-            'color': possible_color,
             'quantity': possible_quantity,
             'title_bottle': possible_title, 
-            'budget': True
+            'total_budget': True
         }
         return values
     
     def required(self):
-        return ['budget', 'color', 'quantity','typology']
+        return ['total_budget', 'quantity','typology']
 
 """
 classes used ONLY by the systems 
 """
+
 class Wine_Bottle():
     def __init__(self):
         self.title_bottle = None
@@ -224,6 +223,7 @@ class Wine_Bottle():
         if ret == '':
             return "There are no wines that match the information you provided"
         return ret 
+
 
 class Delivery(ClassBase):
     def __init__(self):
