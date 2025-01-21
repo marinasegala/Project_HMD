@@ -34,12 +34,10 @@ class Dialogue:
             intent = self.tracker.update(infos, self.history)
 
             logger.info(intent)
-            can_search, list = can_find_wines(self.tracker, self.history)
+            can_search, _ = can_find_wines(self.tracker, self.history)
             
             logger.info(f"Can search: {can_search}, List: {list}")
             
-            #TODO possible_wine_list = searching_wine(self.tracker, intent)
-
             # get the DM output
             action, arg = self.dm(self.tracker, intent, can_search)
             logger.info(f'Action: {action}, Argument: {arg}')
@@ -52,16 +50,14 @@ class Dialogue:
             print(nlg_output)
 
             if action == 'provide_list': 
-                list_wines, slots = searching_wine(self.tracker, list, intent)
-                for slot, value in slots.items():
-                    print(f'Given this information: {slot}: {value}')
-
+                list_wines = searching_wine(self.tracker, intent)
+                
                 print('The wines that match the information you provided are:')
                 for item in list_wines:
                     print(item)
                 self.history.add_msg(list_wines, 'assistant', 'list')
             
-            user_input = input('\n')
+            user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
 
 def main():

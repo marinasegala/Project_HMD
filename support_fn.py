@@ -65,21 +65,25 @@ def searching_wine(tracker, intent):
 
     for index, item in enumerate(data):
         for slot in slots:
-            field = slot.split('_')[0] if '_' in slot else slot
+            if index+1 not in id_wine:
+                break
+            field = slot if 'sparkling' not in slot else 'sparkling_still'
             if slots[slot] is not None:
-                if str(item.get(field.capitalize(), 'nan')) == 'nan':
-                    id_wine.remove(index+1)
-                    continue
                 search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
-                if search not in item[field.capitalize()]:
-                    id_wine.remove(index+1)
+                multiple_search = search.split(',') if ',' in search else [search]
+                for s in multiple_search:
+                    if s not in item[field.capitalize()]:
+                        id_wine.remove(index+1)
+                        break
 
     list_wines = []
     # fill the fields with slots
 
     full_slots = [field for field in slots if slots[field] is not None] #TODO - field + values
-    # print('The slots that are not None are: {}'.format(full_slots))
-    
+    print('Given this information:')
+    for slot in full_slots:
+        print(f'\t\t{slot}: {slots[slot]}')
+
     # fields the ListWines class with slots exept the one in full_slots
     for index, item in enumerate(data):
         if index+1 in id_wine:
@@ -91,7 +95,7 @@ def searching_wine(tracker, intent):
                     setattr(wine, slot, values)
             list_wines.append(wine)
     
-    return list_wines, full_slots
+    return list_wines
 
 def assign_field (intent_class: object, field: str, value: str):
     """
