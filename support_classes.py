@@ -65,33 +65,33 @@ class Tracker():
         if intent == 'out_of_domain' or intent == 'general_info':
             history.update_last_int('')
             return intent, False
-        
         if intent not in [x for x in self.intentions]:
             self.intentions.append(intent)
 
             if 'details' in intent:
                 self.wine_details = Wine_details()
             elif 'origin' in intent:
-                self.wine_origin = Wine_origin()            
+                self.wine_origin = Wine_origin()
             elif 'production' in intent:
                 self.wine_production = Wine_production()
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
             elif 'wine_paring' in intent:
-                self.wine_paring = Wine_paring()            
+                self.wine_paring = Wine_paring()
             elif 'food_paring' in intent:
-                self.food_paring = Food_paring()            
+                self.food_paring = Food_paring()
             elif 'ordering' in intent:
                 self.wine_ordering = Wine_ordering()
             elif 'delivery' in intent:
                 self.delivery = Delivery()
-                    
         name, counting_slot = self.name_slot_current_intent(intent)
         history.update_last_int(name)
 
         if update:
             return self.update(input, counting_slot)
-    
+        else:
+            return intent, False
+
     def update(self, input: dict, total_slots: int):
         intent = input["intent"]
         input = input["slots"] 

@@ -101,7 +101,7 @@ def assign_field (intent_class: object, field: str, value: str):
     """
     assign the valure to the field if it is in the possible values
     """
-
+    value = str(value) if type(value) == int else value
     # find the correct possible field
     possibilities = intent_class.possibilities()
     for possible_field in possibilities:
