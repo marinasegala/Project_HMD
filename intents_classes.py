@@ -163,7 +163,7 @@ class Food_paring(ClassBase): # from the food, suggest the best wine
 classes for actions that can be grouped into 'ordering wine'
 """
 
-class Wine_order(ClassBase):
+class Wine_ordering(ClassBase):
     def __init__(self):
         self.typology = None
         self.color = None

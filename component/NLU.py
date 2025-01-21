@@ -58,6 +58,7 @@ class NLU():
         elif list_int == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
         elif list_int == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
         elif list_int == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
+        elif list_int == "delivery": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-delivery"]
         
         nlu_text = self.history.last_iterations() + '\n' + user_input
 

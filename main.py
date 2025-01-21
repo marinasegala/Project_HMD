@@ -18,6 +18,7 @@ class Dialogue:
         self.nlu = NLU(self.history, model, tokenizer, args, logger)
         self.dm = DM(model, tokenizer, args, logger)
         self.nlg = NLG(self.history, model, tokenizer, args, logger)
+        self.logger = logger
 
     def start(self):
         starting = PROMPTS["START"]
@@ -31,18 +32,25 @@ class Dialogue:
             # get the NLU output
             infos = self.nlu(user_input)
             print(f"NLU: {infos}")
-            intent = self.tracker.update(infos, self.history)
 
-            logger.info(intent)
+            intent, all_slots_filled = self.tracker.creation(infos, self.history, True)
+
+            if all_slots_filled:
+                # print('All slots are filled')
+                self.history.update_number_last(2)
+            else:
+                # print('Not all slots are filled')
+                self.history.update_number_last(5)
+
+            self.logger.info(intent)
             can_search, _ = can_find_wines(self.tracker, self.history)
-            
-            logger.info(f"Can search: {can_search}, List: {list}")
-            
+        
             # get the DM output
             action, arg = self.dm(self.tracker, intent, can_search)
-            logger.info(f'Action: {action}, Argument: {arg}')
+            self.logger.info(f'Action: {action}, Argument: {arg}')
             
-            #TODO - FINIRE DI SISTEMARE IL DM - ESTARRE CORRETTAMENTE LE AZIONI E GLI ARGOMENTI
+            if action == 'delivery_info':
+                intent, _ = self.tracker.creation(infos, self.history, False)
             
             # get the NLG output
             nlg_output = self.nlg(action, arg, intent, can_search)

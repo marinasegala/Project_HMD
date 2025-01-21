@@ -18,7 +18,7 @@ class DM():
 
         if provide_list:
             nba = PROMPTS['listing_wine'] + nba
-            adding = "\nThe action provide_list has greater priority than request_slot! Respect that!\n" + PROMPTS["DM_end"]
+            adding = "\nThe action provide_list has greater priority than request_slot! Respect that!" + PROMPTS["DM_end"]
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
         else: 
             adding = PROMPTS["DM_end"]

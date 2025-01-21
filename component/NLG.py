@@ -14,7 +14,7 @@ class NLG():
         
         nlg_text =  f"{action}({argument})\n" + last_int 
 
-        if intent == "wine_ordering": nba_add = PROMPTS['nba_nlg']
+        if intent == "wine_ordering": nba_add = PROMPTS['nba_nlg'] + PROMPTS['delivery_nlg']
         else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation_nlg']
 
         if possible_list:

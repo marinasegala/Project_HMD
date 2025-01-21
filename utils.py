@@ -42,7 +42,7 @@ The slots are: [food, style, abv].
 The slots are: [typology, color, quantity, budget, title_bottle].
 """,
 
-    "wine_delivery": """The intent extracted is 'wine_delivery'. Extract the slots values from the input of the user.
+    "wine-delivery": """The intent extracted is 'wine_delivery'. Extract the slots values from the input of the user.
 The slots are: [address, phone, gift, kind_pagament].
 """,
 
@@ -72,16 +72,13 @@ Return ONLY the list of intents, nothing more!
     "DM_start": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should ONLY generate the next best action from this list: """,
 
-    "DM_end": """ You need to write the name of the action with also the correspondings parameters.
+    "DM_end": """\nYou need to write the name of the action with also the correspondings parameters.
 Return ONLY the next best action! Nothing more!""",
 
     "nba": """
 - request_info(slot), if a slot value is missing (null)
 - goal_assistant(intent), if the intent is equal to out_of_domain
 - repeat(slot), if the system needs clarification on a slot value""",
-
-    "request": """
-- request_info(slot), if a slot value is missing (null)""",
 
     "confermation": """
 - confermation(intent), if all slots have been filled""",
@@ -108,6 +105,9 @@ Possible next best actions are:
 
     "listing_wine_nlg": """
 - provide_list(intent): generate an appropriate message for introducing the list of wines to the user. You do NOT have to give the list. For example: "I can suggest you the following wines" """,
+
+    "delivery_nlg": """
+- delivery_info(intent): generate an appropriate message for confirming the delivery information""",
 
     "NLG_end": """DO NOT give suggestions! Return ONLY the message to the user!""",
 

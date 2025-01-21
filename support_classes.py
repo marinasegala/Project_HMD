@@ -7,6 +7,10 @@ class History():
         self.intent = []
         self.roles = []
         self.last_intent = ''
+        self.number_last = 5
+
+    def update_number_last(self, num: int):
+        self.number_last = num
 
     def update_last_int(self, intent):
         self.last_intent = intent
@@ -55,39 +59,45 @@ class Tracker():
         self.logger = logger
         self.give_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring']
     
-    def update(self, input: dict, history: History):
+    def creation (self, input: dict, history: History, update: bool):
         intent = input["intent"]
 
-        if intent == 'out_of_domain' or intent == 'general_info': 
-            history.update_last_int(intent)
-            return intent
-
-        #if intent in self.possible_intent:
+        if intent == 'out_of_domain' or intent == 'general_info':
+            history.update_last_int('')
+            return intent, False
+        
         if intent not in [x for x in self.intentions]:
             self.intentions.append(intent)
 
             if 'details' in intent:
                 self.wine_details = Wine_details()
             elif 'origin' in intent:
-                self.wine_origin = Wine_origin()
+                self.wine_origin = Wine_origin()            
             elif 'production' in intent:
                 self.wine_production = Wine_production()
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
             elif 'wine_paring' in intent:
-                self.wine_paring = Wine_paring()
+                self.wine_paring = Wine_paring()            
             elif 'food_paring' in intent:
-                self.food_paring = Food_paring()
+                self.food_paring = Food_paring()            
             elif 'ordering' in intent:
-                self.wine_ordering = Wine_order()
+                self.wine_ordering = Wine_ordering()
+            elif 'delivery' in intent:
+                self.delivery = Delivery()
+                    
+        name, counting_slot = self.name_slot_current_intent(intent)
+        history.update_last_int(name)
 
-        history.update_last_int(self.name_current_intent(intent))
-
+        if update:
+            return self.update(input, counting_slot)
+    
+    def update(self, input: dict, total_slots: int):
+        intent = input["intent"]
         input = input["slots"] 
+        count = 0
         for field in input:
             if input[field] != 'null' and input[field] != None and input[field] != 'None':
-                # print(f"Field: {field}")
-                
                 if 'details' in intent:
                     assign_field(self.wine_details, field, input[field])
                 elif 'origin' in intent:
@@ -102,12 +112,13 @@ class Tracker():
                     assign_field(self.food_paring, field, input[field])
                 elif 'ordering' in intent:
                     assign_field(self.wine_ordering, field, input[field])
-
-            
+                count += 1
         self.logger.info(f"Tracker: {input}")
-        return intent
+
+        return intent, total_slots == count 
     
     def dictionary(self, intent_ret):
+        dict_ret = {}
         for x in self.intentions:
             if x == intent_ret:
                 if 'details' in x:
@@ -124,29 +135,32 @@ class Tracker():
                     dict_ret = { "intent": x, "slots": self.food_paring.__dict__}
                 elif 'ordering' in x:
                     dict_ret = { "intent": x, "slots": self.wine_ordering.__dict__}
+                elif 'delivery' in x:
+                    dict_ret = { "intent": x, "slots": self.delivery.__dict__}
 
                 print(f"Dict: {dict_ret}")
                 return dict_ret
-
+            
         if intent_ret == 'out_of_domain':
             return {"intent": "out_of_domain"}
         if intent_ret == 'general_info':
             return {"intent": "general_info"}
+        
 
-    def name_current_intent(self, intent):
+    def name_slot_current_intent(self, intent):
         if 'details' in intent:
-            return self.wine_details.name()
+            return self.wine_details.name(), len(self.wine_details.__dict__)
         elif 'origin' in intent:
-            return self.wine_origin.name()
+            return self.wine_origin.name(), len(self.wine_origin.__dict__)
         elif 'production' in intent:
-            return self.wine_production.name()
+            return self.wine_production.name(), len(self.wine_production.__dict__)
         elif 'conservation' in intent:
-            return self.wine_conservation.name()
+            return self.wine_conservation.name(), len(self.wine_conservation.__dict__)
         elif 'wine_paring' in intent:
-            return self.wine_paring.name()
+            return self.wine_paring.name(), len(self.wine_paring.__dict__)
         elif 'food_paring' in intent:
-            return self.food_paring.name()
+            return self.food_paring.name(), len(self.food_paring.__dict__)
         elif 'ordering' in intent:
-            return self.wine_ordering.name()
+            return self.wine_ordering.name(), len(self.wine_ordering.__dict__)
         elif 'delivery' in intent:
-            return self.delivery.name()
+            return self.delivery.name(), len(self.delivery.__dict__)
