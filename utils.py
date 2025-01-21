@@ -39,7 +39,7 @@ The slots are: [food, style, abv].
 """,
 
     "wine-ordering": """The intent extracted is 'wine_ordering'. Extract the slots values from the input of the user.
-The slots are: [typology, color, quantity, budget, title_bottle].
+The slots are: [typology, quantity, total_budget, title_bottle].
 """,
 
     "wine-delivery": """The intent extracted is 'wine_delivery'. Extract the slots values from the input of the user.
