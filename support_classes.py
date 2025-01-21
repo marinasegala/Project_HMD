@@ -112,6 +112,8 @@ class Tracker():
                     assign_field(self.food_paring, field, input[field])
                 elif 'ordering' in intent:
                     assign_field(self.wine_ordering, field, input[field])
+                elif 'delivery' in intent:
+                    assign_field(self.delivery, field, input[field])
                 count += 1
         self.logger.info(f"Tracker: {input}")
 

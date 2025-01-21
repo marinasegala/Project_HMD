@@ -51,6 +51,7 @@ class Dialogue:
             print(f'Action: {action}, Argument: {arg}')
             
             if action == 'delivery_info':
+                print('in teoria creazione del Delivery')
                 intent, _ = self.tracker.creation(infos, self.history, False)
             
             # get the NLG output
@@ -58,7 +59,7 @@ class Dialogue:
             self.history.add_msg(nlg_output, 'assistant', action)
             print(nlg_output)
 
-            if action == 'provide_list': 
+            if action == 'provide_list':
                 list_wines = searching_wine(self.tracker, intent)
                 
                 print('The wines that match the information you provided are:')
