@@ -28,6 +28,12 @@ class Dialogue:
         all_slots_filled = False
         # exit the loop using CTRL+C
         while True:
+            if all_slots_filled:
+                # print('All slots are filled')
+                self.history.update_number_last(2)
+            else:
+                # print('Not all slots are filled')
+                self.history.update_number_last(5)
             
             # get the NLU output
             infos = self.nlu(user_input, all_slots_filled)
@@ -35,12 +41,6 @@ class Dialogue:
 
             intent, all_slots_filled = self.tracker.creation(infos, self.history, True)
 
-            if all_slots_filled:
-                # print('All slots are filled')
-                self.history.update_number_last(2)
-            else:
-                # print('Not all slots are filled')
-                self.history.update_number_last(5)
 
             self.logger.info(intent)
             can_search, _ = can_find_wines(self.tracker, self.history)
