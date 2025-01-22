@@ -70,11 +70,11 @@ Return ONLY the list of intents, nothing more!
 - food_paring: if the user has a dish and he wants to pair it with a wine.
 """,
     
-    "order_nlu": """
-- wine_ordering: if the user wants to buy wine.""",
+    "order_nlu": """- wine_ordering: if the user wants to buy wine.""",
 
-    "delivery_nlu": """
-- delivery: if the user is giving information about the delivery information.""",
+    "delivery_nlu": """- delivery: if the user wants to buy wine.""",
+
+    "delivery_nlu_2": """- delivery: if the user is giving information about the delivery information.""",
 
     "out_domain": """
 - out_of_domain, if the input does not match any of the above and none of them is predicted.""",

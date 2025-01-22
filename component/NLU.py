@@ -16,7 +16,7 @@ class NLU():
         self.logger.info(f"List intents: {list_intents}")
         intent = list_intents[0]
         #TODO GESTIRE PIU INTENT
-        print(intent)
+        #print(intent, all_slots_filled)
         if intent == 'general_info':
             json_output = parsing_json('{"intent": "general_info"}')
         elif intent == 'out_of_domain':
@@ -34,13 +34,14 @@ class NLU():
 
         self.logger.info(f"History: {last_interaction}")
 
-        if last_intent == 'delivery' and all_slots_filled:
+        if last_intent == 'delivery' or (last_intent == 'wine_ordering' and all_slots_filled):
             list_intents = PROMPTS["list_intents"] + PROMPTS["delivery_nlu"] + PROMPTS["out_domain"]
         else:
             list_intents = PROMPTS["list_intents"] + PROMPTS["order_nlu"] + PROMPTS["out_domain"]
-
+        #print('\n', list_intents)
         list_intents = PROMPTS["NLU_intents_start"] + list_intents + PROMPTS["NLU_intents_end"]
-        
+        #print('RRR ', last_intent, all_slots_filled)
+
         text = last_interaction + '\n' + user_input
         text = self.args.chat_template.format(list_intents, text)
         pre_nlu_input = self.tokenizer(text, return_tensors="pt").to(self.model.device)
