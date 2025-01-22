@@ -53,8 +53,14 @@ Return only the json object composed as {"intent": "", "slots": {}}.
 Return ONLY the json
 """,
 
-    "NLU_intents": """You are a component for a wine bot assistant.
-Break the user input into multiple sentences based on the following intents:
+    "NLU_intents_start": """You are a component for a wine bot assistant.
+Break the user input into multiple sentences based on the following intents:""",
+
+    "NLU_intents_end":"""Provide a list of intents as follow: ["intent1", "intent2", ...].
+Return ONLY the list of intents, nothing more!
+""",
+
+    "list_intents": """
 - general_info: if the user wants general informations about a wine.
 - wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
 - wine_origin: if the user wants to know more about the origin of a wine.
@@ -62,12 +68,16 @@ Break the user input into multiple sentences based on the following intents:
 - wine_conservation: if the user wants to know more about the conservation of a wine.
 - wine_paring: if the user has a wine and he wants to pair it with a food.
 - food_paring: if the user has a dish and he wants to pair it with a wine.
-- wine_ordering: if the user wants to buy wine.
-- delivery: if the user is giving information about the delivery information.
-- out_of_domain, if the input does not match any of the above and none of them is predicted.
-Provide a list of intents as follow: ["intent1", "intent2", ...].
-Return ONLY the list of intents, nothing more!
 """,
+    
+    "order_nlu": """
+- wine_ordering: if the user wants to buy wine.""",
+
+    "delivery_nlu": """
+- delivery: if the user is giving information about the delivery information.""",
+
+    "out_domain": """
+- out_of_domain, if the input does not match any of the above and none of them is predicted.""",
 
     "DM_start": """You are the Dialogue Manager of a wine bot assistent.
 Given the output of the NLU component, you should ONLY generate the next best action from this list: """,

@@ -25,12 +25,12 @@ class Dialogue:
         self.history.add_msg(starting, 'assistant', 'init')
         user_input = input(starting + '\n')
         self.history.add_msg(user_input, 'user', 'input')
-
+        all_slots_filled = False
         # exit the loop using CTRL+C
         while True:
             
             # get the NLU output
-            infos = self.nlu(user_input)
+            infos = self.nlu(user_input, all_slots_filled)
             print(f"NLU: {infos}")
 
             intent, all_slots_filled = self.tracker.creation(infos, self.history, True)

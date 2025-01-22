@@ -11,29 +11,38 @@ class NLU():
         self.logger = logger
         pass
     
-    def __call__(self, user_input):
-        list_intents = self.extract_intents_list(user_input) 
+    def __call__(self, user_input, all_slots_filled):
+        list_intents = self.extract_intents_list(user_input, all_slots_filled) 
         self.logger.info(f"List intents: {list_intents}")
-        list_int = list_intents[0]
+        intent = list_intents[0]
         #TODO GESTIRE PIU INTENT
-        print(list_int)
-        if list_int == 'general_info':
+        print(intent)
+        if intent == 'general_info':
             json_output = parsing_json('{"intent": "general_info"}')
-        elif list_int == 'out_of_domain':
+        elif intent == 'out_of_domain':
             json_output = parsing_json('{"intent": "out_of_domain"}')
         else:
-            json_output = self.extract_slots(user_input, list_int)
+            json_output = self.extract_slots(user_input, intent)
         
         self.logger.info(f"NLU output: {json_output}")
         
         return json_output
 
-    def extract_intents_list(self, user_input):
-        last_int = self.history.last_iterations()
-        self.logger.info(f"History: {last_int}")
+    def extract_intents_list(self, user_input, all_slots_filled):
+        last_interaction = self.history.last_iterations()
+        last_intent = self.history.get_last_int()
+
+        self.logger.info(f"History: {last_interaction}")
+
+        if last_intent == 'delivery' and all_slots_filled:
+            list_intents = PROMPTS["list_intents"] + PROMPTS["delivery_nlu"] + PROMPTS["out_domain"]
+        else:
+            list_intents = PROMPTS["list_intents"] + PROMPTS["order_nlu"] + PROMPTS["out_domain"]
+
+        list_intents = PROMPTS["NLU_intents_start"] + list_intents + PROMPTS["NLU_intents_end"]
         
-        text = last_int + '\n' + user_input
-        text = self.args.chat_template.format(PROMPTS["NLU_intents"], text)
+        text = last_interaction + '\n' + user_input
+        text = self.args.chat_template.format(list_intents, text)
         pre_nlu_input = self.tokenizer(text, return_tensors="pt").to(self.model.device)
         intents = generate(self.model, pre_nlu_input, self.tokenizer, self.args)
 
@@ -50,15 +59,15 @@ class NLU():
 
         return intents
     
-    def extract_slots(self, user_input, list_int):
-        if list_int == "wine_details": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-details"]
-        elif list_int == "wine_origin": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-origin"]
-        elif list_int == "wine_production": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-production"]
-        elif list_int == "wine_conservation": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-conservation"]
-        elif list_int == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
-        elif list_int == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
-        elif list_int == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
-        elif list_int == "delivery": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-delivery"]
+    def extract_slots(self, user_input, intent):
+        if intent == "wine_details": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-details"]
+        elif intent == "wine_origin": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-origin"]
+        elif intent == "wine_production": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-production"]
+        elif intent == "wine_conservation": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-conservation"]
+        elif intent == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
+        elif intent == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
+        elif intent == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
+        elif intent == "delivery": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-delivery"]
         
         nlu_text = self.history.last_iterations() + '\n' + user_input
 
