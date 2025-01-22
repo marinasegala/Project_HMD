@@ -52,7 +52,8 @@ class Dialogue:
             
             if action == 'delivery_info':
                 # print('in teoria creazione del Delivery')
-                intent, _ = self.tracker.creation(infos, self.history, False)
+                action = {'intent': action}
+                intent, _ = self.tracker.creation(action, self.history, False)
                 can_search = False
             print(intent, action)
             # get the NLG output

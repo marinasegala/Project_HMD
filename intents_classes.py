@@ -29,7 +29,7 @@ class ClassBase:
         pass
 
     def name(self):
-        return self.__class__.__name__
+        return self.__class__.__name__.lower()
 
 """
 classes for actions that can be grouped into 'asking for information' 

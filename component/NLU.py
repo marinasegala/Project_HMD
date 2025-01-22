@@ -35,7 +35,7 @@ class NLU():
         self.logger.info(f"History: {last_interaction}")
 
         if last_intent == 'delivery' or (last_intent == 'wine_ordering' and all_slots_filled):
-            list_intents = PROMPTS["list_intents"] + PROMPTS["delivery_nlu"] + PROMPTS["out_domain"]
+            list_intents = PROMPTS["delivery_nlu"] + PROMPTS["list_intents"] + PROMPTS["out_domain"]
         else:
             list_intents = PROMPTS["list_intents"] + PROMPTS["order_nlu"] + PROMPTS["out_domain"]
         #print('\n', list_intents)
