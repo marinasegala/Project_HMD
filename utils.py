@@ -106,7 +106,7 @@ Possible next best actions are:
 """, 
 
     "nba_nlg": """
-- request_info(slot): generate an appropriate question to ask the user for the missing slot value
+- request_info(slot): generate an appropriate question to ask the user for the missing slot value. DO NOT give suggestion
 - goal_assistant(intent): generate an appropriate message with the domain of the bot
 - repeat(slot): generate a message to ask the user to repeat the information""",
 

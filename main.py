@@ -28,19 +28,14 @@ class Dialogue:
         all_slots_filled = False
         # exit the loop using CTRL+C
         while True:
-            if all_slots_filled:
-                # print('All slots are filled')
-                self.history.update_number_last(2)
-            else:
-                # print('Not all slots are filled')
-                self.history.update_number_last(5)
+            if all_slots_filled: self.history.update_number_last(2)
+            else: self.history.update_number_last(5)
             
             # get the NLU output
             infos = self.nlu(user_input, all_slots_filled)
-            print(f"NLU: {infos}")
+            # print(f"NLU: {infos}")
 
             intent, all_slots_filled = self.tracker.creation(infos, self.history, True)
-
 
             self.logger.info(intent)
             can_search, _ = can_find_wines(self.tracker, self.history)
@@ -48,14 +43,15 @@ class Dialogue:
             # get the DM output
             action, arg = self.dm(self.tracker, intent, can_search)
             self.logger.info(f'Action: {action}, Argument: {arg}')
-            print(f'Action: {action}, Argument: {arg}')
+            # print(f'Action: {action}, Argument: {arg}')
             
             if action == 'delivery_info':
                 # print('in teoria creazione del Delivery')
-                action = {'intent': action}
-                intent, _ = self.tracker.creation(action, self.history, False)
+                intent = {'intent': action}
+                intent, _ = self.tracker.creation(intent, self.history, False)
                 can_search = False
-            print(intent, action)
+            # print(intent, action)
+
             # get the NLG output
             nlg_output = self.nlg(action, arg, intent, can_search)
             self.history.add_msg(nlg_output, 'assistant', action)

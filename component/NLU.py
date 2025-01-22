@@ -53,7 +53,6 @@ class NLU():
         if matches:
             intents = eval(matches[0])
             self.logger.info(f"Intents: {intents}")
-            print(type(intents))
         else:
             intents = []
             print("No list found in the text.")
