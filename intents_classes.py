@@ -63,6 +63,7 @@ class Wine_origin(ClassBase):
     def __init__(self):
         self.country = None
         self.region = None
+        self.color = None
         self.typology = None
         self.title_bottle = None
 
@@ -70,13 +71,14 @@ class Wine_origin(ClassBase):
         values = {
             'country': possible_country,
             'region': possible_region,
+            'color': possible_color,
             'typology': possible_typology,
             'title_bottle': possible_title
         }
         return values
     
     def required(self):
-        return [['country', 'region'], ['typology', 'title_bottle']]
+        return [['country', 'region', 'color'], ['typology', 'title_bottle']]
         #if all are None
         #if all(getattr(self, field) is None for field in poss1):
         

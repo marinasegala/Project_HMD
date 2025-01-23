@@ -15,13 +15,17 @@ class DM():
         dm_text = str(info_text)
 
         nba = PROMPTS['nba']
+        adding = ''
 
         if provide_list:
             nba = PROMPTS['listing_wine'] + nba
-            adding = "\nThe action provide_list has greater priority than request_slot! Respect that!" + PROMPTS["DM_end"]
+            adding = "\nThe action provide_list has greater priority than request_slot! Respect that!"
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
-        else: 
-            adding = PROMPTS["DM_end"]
+
+        if tracker.required_list_user:
+            nba = PROMPTS['listing_wine']
+        
+        adding = adding + PROMPTS["DM_end"]
 
         if 'ordering' in intent:
             nba = nba + PROMPTS['delivery']

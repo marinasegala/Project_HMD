@@ -33,7 +33,6 @@ class Dialogue:
             
             # get the NLU output
             infos = self.nlu(user_input, all_slots_filled)
-            # print(f"NLU: {infos}")
 
             intent, all_slots_filled = self.tracker.creation(infos, self.history, True)
 
@@ -45,26 +44,25 @@ class Dialogue:
             self.logger.info(f'Action: {action}, Argument: {arg}')
             # print(f'Action: {action}, Argument: {arg}')
             
-            if action == 'delivery_info':
+            if action == 'delivery_info': #TODO DOMANDA
                 # print('in teoria creazione del Delivery')
                 intent = {'intent': action}
                 intent, _ = self.tracker.creation(intent, self.history, False)
                 can_search = False
-            # print(intent, action)
 
-            # get the NLG output
+            # get the NLG output + possible list 
             nlg_output = self.nlg(action, arg, intent, can_search)
             self.history.add_msg(nlg_output, 'assistant', action)
             print(nlg_output)
 
+            #TODO - LISTA EMESSA SE - MAGGIOR PARTE CAMPI PIENI O UTENTE LO CHIEDE 
             if action == 'provide_list':
+                list_to_print = 'The wines that match the information you provided are:'
                 list_wines = searching_wine(self.tracker, intent)
-                
-                print('The wines that match the information you provided are:')
-                for item in list_wines:
-                    print(item)
-                self.history.add_msg(list_wines, 'assistant', 'list')
-            
+                for value in list_wines:
+                    list_to_print = list_to_print + '\n\t' + value
+                print(list_to_print)
+
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
 

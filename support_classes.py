@@ -57,7 +57,8 @@ class Tracker():
         self.wine_ordering = None
         self.delivery = None
         self.logger = logger
-        self.give_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring']
+        self.required_list_user = False
+        self.type_for_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring']
     
     def creation (self, input: dict, history: History, update: bool):
         intent = input["intent"]
@@ -97,7 +98,9 @@ class Tracker():
         input = input["slots"] 
         count = 0
         for field in input:
-            if input[field] != 'null' and input[field] != None and input[field] != 'None':
+            if field == 'giving_list_wine' and (input[field] == 'true' or input[field] == 'True' or  input[field] == True or input[field] == 'yes' or input[field] == 'Yes'):
+                self.required_list_user = True
+            elif input[field] != 'null' and input[field] != None and input[field] != 'None':
                 if 'details' in intent:
                     assign_field(self.wine_details, field, input[field])
                 elif 'origin' in intent:

@@ -19,7 +19,7 @@ The slots are: [flavor, grape, color, sparkling, abv, year, typology].
 """,
 
     "wine-origin": """The intent extracted is 'wine_origin'. Extract the slots values from the input of the user.
-The slots are: [country, region, typology, title_bottle].
+The slots are: [country, region, color, typology, title_bottle, giving_list_wine].
 """,
 
     "wine-production": """The intent extracted is 'wine_production'. Extract the slots values from the input of the user.
@@ -74,8 +74,6 @@ Return ONLY the list of intents, nothing more!
 
     "delivery_nlu": """- delivery: if the user wants to buy wine.""",
 
-    "delivery_nlu_2": """- delivery: if the user is giving information about the delivery information.""",
-
     "out_domain": """
 - out_of_domain, if the input does not match any of the above and none of them is predicted.""",
 
@@ -89,6 +87,9 @@ Return ONLY the next best action! Nothing more!""",
 - request_info(slot), if a slot value is missing (null)
 - goal_assistant(intent), if the intent is equal to out_of_domain
 - repeat(slot), if the system needs clarification on a slot value""",
+
+    "give_list": """
+- give_list(intent), if the field provide_list in NLU output is True""",
 
     "confermation": """
 - confermation(intent), if all slots have been filled""",
@@ -114,7 +115,11 @@ Possible next best actions are:
 - confermation(intent): generate an appropriate confirmation message for the user intent""",
 
     "listing_wine_nlg": """
-- provide_list(intent): generate an appropriate message for introducing the list of wines to the user. You do NOT have to give the list. For example: "I can suggest you the following wines" """,
+- provide_list(intent): generate an appropriate question for propose a list of wine. Only the question""",
+
+    "give_list_nlg": """
+- give_list(intent): generate an appropriate message for present a list of wine. Only the message""",
+
 
     "delivery_nlg": """
 - delivery_info(intent): generate an appropriate message for confirming the delivery information""",

@@ -23,7 +23,7 @@ def can_find_wines(tracker, history):
     """
     # Recupera il nome della classe corretta dall'intento precedente nella cronologia
     correct_class_name = history.get_last_int().lower()
-    if correct_class_name in tracker.give_list:
+    if correct_class_name in tracker.type_for_list:
 
         # Ottieni l'istanza della classe corretta dal tracker
         correct_class_instance = getattr(tracker, correct_class_name)

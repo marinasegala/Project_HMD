@@ -1,5 +1,5 @@
 from utils import PROMPTS, generate
-
+from support_fn import searching_wine
 class NLG():
     def __init__(self, history, model, tokenizer, args, logger):
         self.history = history
@@ -21,10 +21,11 @@ class NLG():
             nba_add = PROMPTS['listing_wine_nlg'] + nba_add
          
         prompt = PROMPTS["NLG"] + nba_add + PROMPTS["NLG_end"]
-        
+
         nlg_text = self.args.chat_template.format(prompt, nlg_text)
         nlg_input = self.tokenizer(nlg_text, return_tensors="pt").to(self.model.device)
         nlg_output = generate(self.model, nlg_input, self.tokenizer, self.args)
         self.logger.info(f"NLG: {nlg_text}")
         nlg_output = nlg_output.strip()
+
         return nlg_output
