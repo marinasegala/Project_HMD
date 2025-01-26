@@ -91,7 +91,7 @@ class Tracker():
         if update:
             return self.update(input, counting_slot)
         else:
-            return intent, False
+            return intent, 1
 
     def update(self, input: dict, total_slots: int):
         intent = input["intent"]
@@ -120,7 +120,7 @@ class Tracker():
                 count += 1
         self.logger.info(f"Tracker: {input}")
 
-        return intent, total_slots == count 
+        return intent, total_slots - count 
     
     def dictionary(self, intent_ret):
         dict_ret = {}

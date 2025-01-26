@@ -11,12 +11,12 @@ class NLU():
         self.logger = logger
         pass
     
-    def __call__(self, user_input, all_slots_filled):
-        list_intents = self.extract_intents_list(user_input, all_slots_filled) 
+    def __call__(self, user_input, slots_empty):
+        list_intents = self.extract_intents_list(user_input, slots_empty) 
         self.logger.info(f"List intents: {list_intents}")
         intent = list_intents[0]
         #TODO GESTIRE PIU INTENT
-        #print(intent, all_slots_filled)
+        #print(intent, slots_empty)
         if intent == 'general_info':
             json_output = parsing_json('{"intent": "general_info"}')
         elif intent == 'out_of_domain':
@@ -28,19 +28,19 @@ class NLU():
         
         return json_output
 
-    def extract_intents_list(self, user_input, all_slots_filled):
+    def extract_intents_list(self, user_input, slots_empty):
         last_interaction = self.history.last_iterations()
         last_intent = self.history.get_last_int()
 
         self.logger.info(f"History: {last_interaction}")
 
-        if last_intent == 'delivery' or (last_intent == 'wine_ordering' and all_slots_filled):
+        if last_intent == 'delivery' or (last_intent == 'wine_ordering' and slots_empty == 0):
             list_intents = PROMPTS["delivery_nlu"] + PROMPTS["list_intents"] + PROMPTS["out_domain"]
         else:
             list_intents = PROMPTS["list_intents"] + PROMPTS["order_nlu"] + PROMPTS["out_domain"]
         #print('\n', list_intents)
         list_intents = PROMPTS["NLU_intents_start"] + list_intents + PROMPTS["NLU_intents_end"]
-        #print('RRR ', last_intent, all_slots_filled)
+        #print('RRR ', last_intent, slots_empty)
 
         text = last_interaction + '\n' + user_input
         text = self.args.chat_template.format(list_intents, text)

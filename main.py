@@ -25,17 +25,17 @@ class Dialogue:
         self.history.add_msg(starting, 'assistant', 'init')
         user_input = input(starting + '\n')
         self.history.add_msg(user_input, 'user', 'input')
-        all_slots_filled = False
+        slots_empty = 1
         action = ''
         # exit the loop using CTRL+C
         while True:
-            if all_slots_filled: self.history.update_number_last(2)
+            if slots_empty == 0: self.history.update_number_last(2)
             else: self.history.update_number_last(5)
             
             # get the NLU output
-            infos = self.nlu(user_input, all_slots_filled)
+            infos = self.nlu(user_input, slots_empty)
 
-            intent, all_slots_filled = self.tracker.creation(infos, self.history, True)
+            intent, slots_empty = self.tracker.creation(infos, self.history, True)
 
             self.logger.info(intent)
             can_search, _ = can_find_wines(self.tracker, self.history)
@@ -52,7 +52,10 @@ class Dialogue:
                 can_search = False
 
             # get the NLG output + possible list 
-            nlg_output = self.nlg(action, arg, intent, can_search)
+
+            # pass to NLG the class of the last intent
+
+            nlg_output = self.nlg(action, arg, intent, can_search, slots_empty)
             self.history.add_msg(nlg_output, 'assistant', action)
             print(nlg_output)
 

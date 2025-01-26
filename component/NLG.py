@@ -9,10 +9,16 @@ class NLG():
         self.logger = logger
         pass
 
-    def __call__(self, action, argument, intent, possible_list):
+    def __call__(self, action, argument, intent, possible_list, slots_empty):
         last_int = self.history.last_iterations()
         
         nlg_text =  f"{action}({argument})\n" + last_int 
+
+        #get the 
+        if slots_empty > 0 and action == 'request_info' and intent in ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring']:
+            nba_add = PROMPTS['knowing_title_nlg'] + PROMPTS['nba_nlg']
+        else:
+            nba_add = PROMPTS['request_info_nlg'] + PROMPTS['nba_nlg']
 
         if intent == "delivery_info": nba_add = PROMPTS['nba_nlg'] + PROMPTS['delivery_nlg']
         else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation_nlg']

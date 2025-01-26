@@ -106,11 +106,16 @@ The response has to match the next best action of the DM.
 Possible next best actions are:
 """, 
 
+    "request_info_nlg": """
+- request_info(slot): generate an appropriate question to ask the user for the missing slot value. DO NOT give suggestions """,
+
     "nba_nlg": """
-- request_info(slot): generate an appropriate question to ask the user for the missing slot value. DO NOT give suggestion
 - goal_assistant(intent): generate an appropriate message with the domain of the bot
 - repeat(slot): generate a message to ask the user to repeat the information""",
 
+    "knowing_title_nlg": """
+- request_info(slot): generate an appropriate question to have the title or topology of the wine, or if the user does not know and prefer to say the missing slot value. DO NOT give suggestions """,
+    
     "confermation_nlg": """
 - confermation(intent): generate an appropriate confirmation message for the user intent""",
 
