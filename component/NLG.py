@@ -19,6 +19,9 @@ class NLG():
 
         if possible_list:
             nba_add = PROMPTS['listing_wine_nlg'] + nba_add
+
+        if action == 'give_list':
+            nba_add = PROMPTS['give_list_nlg']
          
         prompt = PROMPTS["NLG"] + nba_add + PROMPTS["NLG_end"]
 

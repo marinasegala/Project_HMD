@@ -118,7 +118,7 @@ Possible next best actions are:
 - provide_list(intent): generate an appropriate question for propose a list of wine. Only the question: Can i suggest some wine?""",
 
     "give_list_nlg": """
-- give_list(intent): generate an appropriate message for present a list of wine. Only the message""",
+- give_list(intent): generate an appropriate message for present a list of wine. Only the message: the top choices are...""",
 
 
     "delivery_nlg": """
