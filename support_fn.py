@@ -118,7 +118,8 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
             if possibilities[possible_field] == False:
                 if getattr(intent_class, 'quantity') is not None:
                     quantity = int(getattr(intent_class, 'quantity'))
-                    compare_price_buget(quantity, value, intent_class, tracker)
+                    print('ok: ', quantity, value)
+                    compare_price_buget(quantity, value, tracker)
                 break
             for v in possibilities[possible_field]:
                 if v == value or (v == value.lower()):
@@ -138,18 +139,18 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
 #                 setattr(intent, new_field, value)
 #                 break
 
-def compare_price_buget(quantity, budget, intent_class, tracker):
+def compare_price_buget(quantity, budget, tracker):
     """
     check if the budget is enough for the quantity
     """
     # retrieve the price of the wine
-    dict_info = tracker.dictionary(intent_class)
+    dict_info = tracker.dictionary('wine_ordering')
     slots = dict_info["slots"]
     # search for the wine in the dataset
     with open('WineDataset.json', 'r') as file:
         data = json.load(file)
 
-    fields = ['Typology', 'Title_bottle']
+    fields = ['typology', 'title_bottle']
     for f in fields:
         if slots[f] is None:
             fields.remove(f)
@@ -160,13 +161,13 @@ def compare_price_buget(quantity, budget, intent_class, tracker):
     price = 0.0
     ids = []
     for index, item in enumerate(data):
-        if slots[fields[0]] in item[fields[0]]:
+        if slots[fields[0]] in item[fields[0].capitalize()]:
             ids.append(index)
             price = float(item['Price']) if price > float(item['Price']) else price
    
     if len(fields) == 2:
         for index, item in enumerate(data):
-            if index in ids and slots[fields[1]] in item[fields[1]]:
+            if index in ids and slots[fields[1]] in item[fields[1].capitalize()]:
                 price = float(item['Price'])
                 break
 
