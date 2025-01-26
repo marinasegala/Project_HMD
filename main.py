@@ -56,7 +56,6 @@ class Dialogue:
             self.history.add_msg(nlg_output, 'assistant', action)
             print(nlg_output)
 
-            #TODO - LISTA EMESSA SE - MAGGIOR PARTE CAMPI PIENI O UTENTE LO CHIEDE 
             if action == 'give_list':
                 # print('The top three choices I find are:\n')
                 list_wines = searching_wine(self.tracker, intent)

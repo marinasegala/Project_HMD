@@ -23,8 +23,8 @@ class DM():
             adding = "\nThe action provide_list has greater priority than request_slot! Respect that!"
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
 
-        print('REQUIRED USER',  tracker.required_list_user)
-        print(last_action)
+        # print('REQUIRED USER',  tracker.required_list_user)
+        # print(last_action)
 
         if tracker.required_list_user or last_action == 'provide_list':
             nba = PROMPTS['give_list']

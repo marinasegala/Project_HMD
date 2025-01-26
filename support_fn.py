@@ -102,7 +102,7 @@ def searching_wine(tracker, intent):
         list_wines = [list_wines[i] for i in rand_int]
     return list_wines
 
-def assign_field (intent_class: object, field: str, value: str):
+def assign_field (intent_class: object, field: str, value: str, tracker: object):
     """
     assign the valure to the field if it is in the possible values
     """
@@ -114,6 +114,11 @@ def assign_field (intent_class: object, field: str, value: str):
             # check if the value is in the possible values
             if possibilities[possible_field] == True:
                 setattr(intent_class, field, value)
+                break
+            if possibilities[possible_field] == False:
+                if getattr(intent_class, 'quantity') is not None:
+                    quantity = int(getattr(intent_class, 'quantity'))
+                    compare_price_buget(quantity, value, intent_class, tracker)
                 break
             for v in possibilities[possible_field]:
                 if v == value or (v == value.lower()):
@@ -132,6 +137,64 @@ def assign_field (intent_class: object, field: str, value: str):
 #             if ins == value:
 #                 setattr(intent, new_field, value)
 #                 break
+
+def compare_price_buget(quantity, budget, intent_class, tracker):
+    """
+    check if the budget is enough for the quantity
+    """
+    # retrieve the price of the wine
+    dict_info = tracker.dictionary(intent_class)
+    slots = dict_info["slots"]
+    # search for the wine in the dataset
+    with open('WineDataset.json', 'r') as file:
+        data = json.load(file)
+
+    fields = ['Typology', 'Title_bottle']
+    for f in fields:
+        if slots[f] is None:
+            fields.remove(f)
+
+    if len(fields) == 0:
+        return
+    
+    price = 0.0
+    ids = []
+    for index, item in enumerate(data):
+        if slots[fields[0]] in item[fields[0]]:
+            ids.append(index)
+            price = float(item['Price']) if price > float(item['Price']) else price
+   
+    if len(fields) == 2:
+        for index, item in enumerate(data):
+            if index in ids and slots[fields[1]] in item[fields[1]]:
+                price = float(item['Price'])
+                break
+
+    print(price, budget, quantity)
+    if price*quantity > float(budget):
+        print('The budget is not enough for the quantity requested')
+    else:
+        print('The budget is enough for the quantity requested')
+        setattr(intent_class, 'budget', budget)
+
+
+
+    # id_wine = [x for x in range(1, len(data)+1)]
+    # for index, item in enumerate(data):
+    #     for field in fields:
+    #         if index+1 not in id_wine:
+    #             break
+    #         slot = field
+    #         search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
+    #         multiple_search = search.split(',') if ',' in search else [search]
+    #         for s in multiple_search:
+    #             if s not in item[field.capitalize()]:
+    #                 id_wine.remove(index+1)
+    #                 break
+    
+        
+                    
+
 
 def extract_action_and_argument(input_string):
     """

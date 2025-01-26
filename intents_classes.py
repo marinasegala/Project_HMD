@@ -169,15 +169,15 @@ class Wine_ordering(ClassBase):
     def __init__(self):
         self.typology = None
         self.quantity = None
-        self.total_budget = None
         self.title_bottle = None
+        self.total_budget = None
     
     def possibilities(self):
         values = {
             'typology': possible_typology,
             'quantity': possible_quantity,
             'title_bottle': possible_title, 
-            'total_budget': True
+            'total_budget': False
         }
         return values
     

@@ -102,21 +102,21 @@ class Tracker():
                 self.required_list_user = True
             elif input[field] != 'null' and input[field] != None and input[field] != 'None':
                 if 'details' in intent:
-                    assign_field(self.wine_details, field, input[field])
+                    assign_field(self.wine_details, field, input[field], self)
                 elif 'origin' in intent:
-                    assign_field(self.wine_origin, field, input[field])
+                    assign_field(self.wine_origin, field, input[field], self)
                 elif 'production' in intent:
-                    assign_field(self.wine_production, field, input[field])
+                    assign_field(self.wine_production, field, input[field], self)
                 elif 'conservation' in intent:
-                    assign_field(self.wine_conservation, field, input[field])
+                    assign_field(self.wine_conservation, field, input[field], self)
                 elif 'wine_paring' in intent:
-                    assign_field(self.wine_paring, field, input[field])
+                    assign_field(self.wine_paring, field, input[field], self)
                 elif 'food_paring' in intent:
-                    assign_field(self.food_paring, field, input[field])
+                    assign_field(self.food_paring, field, input[field], self)
                 elif 'ordering' in intent:
-                    assign_field(self.wine_ordering, field, input[field])
+                    assign_field(self.wine_ordering, field, input[field], self)
                 elif 'delivery' in intent:
-                    assign_field(self.delivery, field, input[field])
+                    assign_field(self.delivery, field, input[field], self)
                 count += 1
         self.logger.info(f"Tracker: {input}")
 
