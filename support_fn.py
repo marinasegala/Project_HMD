@@ -1,6 +1,7 @@
 import json
 import re
 from intents_classes import Wine_Bottle
+import random
 
 def parsing_json(text):
     """
@@ -94,9 +95,11 @@ def searching_wine(tracker, intent):
                     values = item[field.capitalize()]
                     setattr(wine, slot, values)
             list_wines.append(wine)
-            if len(list_wines) == 3:
-                return list_wines
-    
+
+    #choose 3 items from the list randomly
+    if len(list_wines) > 3:
+        rand_int = random.sample(range(0, len(list_wines)), 3)
+        list_wines = [list_wines[i] for i in rand_int]
     return list_wines
 
 def assign_field (intent_class: object, field: str, value: str):

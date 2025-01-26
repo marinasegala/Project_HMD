@@ -57,11 +57,10 @@ class Dialogue:
 
             #TODO - LISTA EMESSA SE - MAGGIOR PARTE CAMPI PIENI O UTENTE LO CHIEDE 
             if action == 'provide_list':
-                list_to_print = 'The wines that match the information you provided are:'
+                print('The wines that match the information you provided are:\n')
                 list_wines = searching_wine(self.tracker, intent)
                 for value in list_wines:
-                    list_to_print = list_to_print + '\n\t' + value
-                print(list_to_print)
+                    print(value)
 
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
