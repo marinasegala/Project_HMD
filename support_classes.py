@@ -151,7 +151,6 @@ class Tracker():
         if intent_ret == 'general_info':
             return {"intent": "general_info"}
         
-
     def name_slot_current_intent(self, intent):
         if 'details' in intent:
             return self.wine_details.name(), len(self.wine_details.__dict__)

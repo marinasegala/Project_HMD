@@ -15,7 +15,7 @@ PROMPTS = {
     "START": """Hi, I am your wine assistant. How can I help you?""",
 
     "wine-details": """The intent extracted is 'wine_details'. Extract the slots values from the input of the user.
-The slots are: [flavor, grape, color, sparkling, abv, year, typology].
+The slots are: [flavor, grape, color, sparkling, abv, year, typology, giving_list_wine].
 """,
 
     "wine-origin": """The intent extracted is 'wine_origin'. Extract the slots values from the input of the user.
@@ -23,19 +23,19 @@ The slots are: [country, region, color, typology, title_bottle, giving_list_wine
 """,
 
     "wine-production": """The intent extracted is 'wine_production'. Extract the slots values from the input of the user.
-The slots are: [grape, abv, closure].
+The slots are: [grape, abv, closure, typology, giving_list_wine].
 """,
 
     "wine-conservation": """The intent extracted is 'wine_conservation'. Extract the slots values from the input of the user.
-The slots are: [fridge, cellar, temperature].
+The slots are: [fridge, cellar, temperature, typology, giving_list_wine].
 """,
 
     "wine-paring": """The intent extracted is 'wine_paring'. Extract the slots values from the input of the user.
-The slots are: [style, color, typology].
+The slots are: [style, color, typology, giving_list_wine].
 """,
 
     "food-paring": """The intent extracted is 'food_paring'. Extract the slots values from the input of the user.
-The slots are: [food, style, abv].
+The slots are: [food, style, abv, giving_list_wine].
 """,
 
     "wine-ordering": """The intent extracted is 'wine_ordering'. Extract the slots values from the input of the user.

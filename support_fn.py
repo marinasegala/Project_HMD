@@ -94,6 +94,8 @@ def searching_wine(tracker, intent):
                     values = item[field.capitalize()]
                     setattr(wine, slot, values)
             list_wines.append(wine)
+            if len(list_wines) == 3:
+                return list_wines
     
     return list_wines
 
