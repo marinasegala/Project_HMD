@@ -16,7 +16,7 @@ class Dialogue:
         self.tracker = Tracker(logger)
         self.history = History()
         self.nlu = NLU(self.history, model, tokenizer, args, logger)
-        self.dm = DM(model, tokenizer, args, logger)
+        self.dm = DM(self.history, model, tokenizer, args, logger)
         self.nlg = NLG(self.history, model, tokenizer, args, logger)
         self.logger = logger
 

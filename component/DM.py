@@ -2,7 +2,8 @@ from utils import PROMPTS, generate
 from support_fn import extract_action_and_argument
     
 class DM():
-    def __init__(self, model, tokenizer, args, logger):
+    def __init__(self, history, model, tokenizer, args, logger):
+        self.history = history
         self.model = model
         self.tokenizer = tokenizer
         self.args = args
@@ -22,7 +23,7 @@ class DM():
             adding = "\nThe action provide_list has greater priority than request_slot! Respect that!"
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
 
-        if tracker.required_list_user:
+        if tracker.required_list_user or self.history.last_int == 'provide_list':
             nba = PROMPTS['give_list']
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}"
         
