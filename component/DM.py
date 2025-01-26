@@ -23,7 +23,8 @@ class DM():
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
 
         if tracker.required_list_user:
-            nba = PROMPTS['listing_wine']
+            nba = PROMPTS['give_list']
+            dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}"
         
         adding = adding + PROMPTS["DM_end"]
 

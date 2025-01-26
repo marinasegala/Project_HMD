@@ -115,7 +115,7 @@ Possible next best actions are:
 - confermation(intent): generate an appropriate confirmation message for the user intent""",
 
     "listing_wine_nlg": """
-- provide_list(intent): generate an appropriate question for propose a list of wine. Only the question""",
+- provide_list(intent): generate an appropriate question for propose a list of wine. Only the question: Can i suggest some wine?""",
 
     "give_list_nlg": """
 - give_list(intent): generate an appropriate message for present a list of wine. Only the message""",

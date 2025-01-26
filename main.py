@@ -56,7 +56,7 @@ class Dialogue:
             print(nlg_output)
 
             #TODO - LISTA EMESSA SE - MAGGIOR PARTE CAMPI PIENI O UTENTE LO CHIEDE 
-            if action == 'provide_list':
+            if action == 'give_list':
                 print('The wines that match the information you provided are:\n')
                 list_wines = searching_wine(self.tracker, intent)
                 for value in list_wines:
@@ -66,7 +66,7 @@ class Dialogue:
             self.history.add_msg(user_input, 'user', 'input')
 
 def main():
-    logging.basicConfig(filename="app.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
+    logging.basicConfig(filename="app-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")
 
     args = get_args()
