@@ -10,7 +10,7 @@ class DM():
         self.logger = logger
         pass
 
-    def __call__(self, tracker, intent, provide_list):
+    def __call__(self, tracker, intent, provide_list, last_action):
         
         info_text = tracker.dictionary(intent)
         dm_text = str(info_text)
@@ -23,7 +23,10 @@ class DM():
             adding = "\nThe action provide_list has greater priority than request_slot! Respect that!"
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}" 
 
-        if tracker.required_list_user or self.history.last_int == 'provide_list':
+        print('REQUIRED USER',  tracker.required_list_user)
+        print(last_action)
+
+        if tracker.required_list_user or last_action == 'provide_list':
             nba = PROMPTS['give_list']
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}"
         

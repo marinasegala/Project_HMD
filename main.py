@@ -26,6 +26,7 @@ class Dialogue:
         user_input = input(starting + '\n')
         self.history.add_msg(user_input, 'user', 'input')
         all_slots_filled = False
+        action = ''
         # exit the loop using CTRL+C
         while True:
             if all_slots_filled: self.history.update_number_last(2)
@@ -40,7 +41,7 @@ class Dialogue:
             can_search, _ = can_find_wines(self.tracker, self.history)
         
             # get the DM output
-            action, arg = self.dm(self.tracker, intent, can_search)
+            action, arg = self.dm(self.tracker, intent, can_search, action)
             self.logger.info(f'Action: {action}, Argument: {arg}')
             # print(f'Action: {action}, Argument: {arg}')
             
