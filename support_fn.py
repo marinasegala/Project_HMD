@@ -174,9 +174,10 @@ def compare_price_buget(quantity, budget, tracker):
     print(price, budget, quantity)
     if price*quantity > float(budget):
         print('The budget is not enough for the quantity requested')
+        print('The maximum quantity that can be purchased is: ', int(float(budget)/price))
     else:
         print('The budget is enough for the quantity requested')
-        setattr(intent_class, 'budget', budget)
+        setattr('wine_ordering', 'budget', budget)
 
 
 
