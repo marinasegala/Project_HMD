@@ -15,7 +15,7 @@ class NLG():
         nlg_text =  f"{action}({argument})\n" + last_int 
 
         #get the 
-        if slots_empty > 0 and action == 'request_info' and intent in ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food']:
+        if slots_empty and action == 'request_info' and intent in ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food']:
             nba_add = PROMPTS['knowing_title_nlg'] + PROMPTS['nba_nlg']
         else:
             nba_add = PROMPTS['request_info_nlg'] + PROMPTS['nba_nlg']

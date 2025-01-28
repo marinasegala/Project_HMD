@@ -35,7 +35,8 @@ class Dialogue:
             # get the NLU output
             infos = self.nlu(user_input, slots_empty)
 
-            intent, slots_empty = self.tracker.creation(infos, self.history, True)
+            intent, total_slots, full_slot = self.tracker.creation(infos, self.history, True)
+            slots_empty = total_slots - full_slot
 
             self.logger.info(intent)
             can_search, _ = can_find_wines(self.tracker, self.history)
@@ -48,14 +49,14 @@ class Dialogue:
             if action == 'delivery_info': #TODO DOMANDA
                 # print('in teoria creazione del Delivery')
                 intent = {'intent': action}
-                intent, _ = self.tracker.creation(intent, self.history, False)
+                intent, _, _= self.tracker.creation(intent, self.history, False)
                 can_search = False
 
             # get the NLG output + possible list 
 
             # pass to NLG the class of the last intent
 
-            nlg_output = self.nlg(action, arg, intent, can_search, slots_empty)
+            nlg_output = self.nlg(action, arg, intent, can_search, slots_empty == total_slots)
             self.history.add_msg(nlg_output, 'assistant', action)
             print(nlg_output)
 
