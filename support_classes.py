@@ -77,8 +77,8 @@ class Tracker():
                 self.wine_production = Wine_production()
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
-            elif 'having_food' in intent:
-                self.having_food = Food_paring()
+            elif 'choosing_food' in intent:
+                self.having_food = Wine_paring()
             elif 'ordering' in intent:
                 self.wine_ordering = Wine_ordering()
             elif 'delivery' in intent:
@@ -159,8 +159,6 @@ class Tracker():
             return self.wine_conservation.name(), len(self.wine_conservation.__dict__)
         elif 'choosing_food' in intent:
             return self.choosing_food.name(), len(self.choosing_food.__dict__)
-        elif 'having_food' in intent:
-            return self.having_food.name(), len(self.having_food.__dict__)
         elif 'ordering' in intent:
             return self.wine_ordering.name(), len(self.wine_ordering.__dict__)
         elif 'delivery' in intent:
