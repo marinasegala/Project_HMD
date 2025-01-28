@@ -31,7 +31,7 @@ The slots are: [fridge, cellar, temperature, typology, giving_list_wine].
 """,
 
     "wine-paring": """The intent extracted is 'choosing_food'. Extract the slots values from the input of the user.
-The slots are: [style, color, typology, food, giving_list_wine].
+The slots are: [color, style, typology, food, giving_list_wine].
 """,
 
     "food-paring": """The intent extracted is 'having_food'. Extract the slots values from the input of the user.

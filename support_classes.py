@@ -78,7 +78,7 @@ class Tracker():
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
             elif 'choosing_food' in intent:
-                self.having_food = Wine_paring()
+                self.choosing_food = Wine_paring()
             elif 'ordering' in intent:
                 self.wine_ordering = Wine_ordering()
             elif 'delivery' in intent:
@@ -93,7 +93,7 @@ class Tracker():
 
     def update(self, input: dict, total_slots: int):
         intent = input["intent"]
-        input = input["slots"] 
+        input = input["slots"]
         count = 0
         for field in input:
             if field == 'giving_list_wine' and (input[field] == 'true' or input[field] == 'True' or  input[field] == True or input[field] == 'yes' or input[field] == 'Yes'):
