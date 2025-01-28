@@ -46,19 +46,19 @@ class History():
     
 class Tracker():
     def __init__(self, logger):
-        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring', 'wine_ordering', 'delivery']
+        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'having_food', 'wine_ordering', 'delivery']
         self.intentions = []
         self.wine_details = None
         self.wine_origin = None
         self.wine_production = None
         self.wine_conservation = None
-        self.wine_paring = None
-        self.food_paring = None
+        self.choosing_food = None
+        self.having_food = None
         self.wine_ordering = None
         self.delivery = None
         self.logger = logger
         self.required_list_user = False
-        self.type_for_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'wine_paring', 'food_paring']
+        self.type_for_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'having_food']
     
     def creation (self, input: dict, history: History, update: bool):
         intent = input["intent"]
@@ -78,10 +78,10 @@ class Tracker():
                 self.wine_production = Wine_production()
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
-            elif 'wine_paring' in intent:
-                self.wine_paring = Wine_paring()
-            elif 'food_paring' in intent:
-                self.food_paring = Food_paring()
+            elif 'choosing_food' in intent:
+                self.choosing_food = Wine_paring()
+            elif 'having_food' in intent:
+                self.having_food = Food_paring()
             elif 'ordering' in intent:
                 self.wine_ordering = Wine_ordering()
             elif 'delivery' in intent:
@@ -110,10 +110,10 @@ class Tracker():
                     assign_field(self.wine_production, field, input[field], self)
                 elif 'conservation' in intent:
                     assign_field(self.wine_conservation, field, input[field], self)
-                elif 'wine_paring' in intent:
-                    assign_field(self.wine_paring, field, input[field], self)
-                elif 'food_paring' in intent:
-                    assign_field(self.food_paring, field, input[field], self)
+                elif 'choosing_food' in intent:
+                    assign_field(self.choosing_food, field, input[field], self)
+                elif 'having_food' in intent:
+                    assign_field(self.having_food, field, input[field], self)
                 elif 'ordering' in intent:
                     assign_field(self.wine_ordering, field, input[field], self)
                 elif 'delivery' in intent:
@@ -135,10 +135,10 @@ class Tracker():
                     dict_ret = { "intent": x, "slots": self.wine_production.__dict__}
                 elif 'conservation' in x:
                     dict_ret = { "intent": x, "slots": self.wine_conservation.__dict__}
-                elif 'wine_paring' in x:
-                    dict_ret = { "intent": x, "slots": self.wine_paring.__dict__}
-                elif 'food_paring' in x:
-                    dict_ret = { "intent": x, "slots": self.food_paring.__dict__}
+                elif 'choosing_food' in x:
+                    dict_ret = { "intent": x, "slots": self.choosing_food.__dict__}
+                elif 'having_food' in x:
+                    dict_ret = { "intent": x, "slots": self.having_food.__dict__}
                 elif 'ordering' in x:
                     dict_ret = { "intent": x, "slots": self.wine_ordering.__dict__}
                 elif 'delivery' in x:
@@ -161,10 +161,10 @@ class Tracker():
             return self.wine_production.name(), len(self.wine_production.__dict__)
         elif 'conservation' in intent:
             return self.wine_conservation.name(), len(self.wine_conservation.__dict__)
-        elif 'wine_paring' in intent:
-            return self.wine_paring.name(), len(self.wine_paring.__dict__)
-        elif 'food_paring' in intent:
-            return self.food_paring.name(), len(self.food_paring.__dict__)
+        elif 'choosing_food' in intent:
+            return self.choosing_food.name(), len(self.choosing_food.__dict__)
+        elif 'having_food' in intent:
+            return self.having_food.name(), len(self.having_food.__dict__)
         elif 'ordering' in intent:
             return self.wine_ordering.name(), len(self.wine_ordering.__dict__)
         elif 'delivery' in intent:

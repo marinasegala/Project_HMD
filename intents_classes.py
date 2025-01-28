@@ -151,6 +151,9 @@ class Wine_paring(ClassBase): # from the wine, suggest the best food
     
     def required(self):
         return [['style', 'color'], ['typology']]
+    
+    def name(self):
+        return 'choosing_food'
 
 class Food_paring(ClassBase): # from the food, suggest the best wine
     def __init__(self):
@@ -168,6 +171,9 @@ class Food_paring(ClassBase): # from the food, suggest the best wine
     
     def required(self):
         return ['food']
+    
+    def name(self):
+        return 'having_food'
 
 """
 classes for actions that can be grouped into 'ordering wine'
