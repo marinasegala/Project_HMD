@@ -114,19 +114,22 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
             # check if the value is in the possible values
             if possibilities[possible_field] == True:
                 setattr(intent_class, field, value)
+                return True
                 break
             if possibilities[possible_field] == False:
                 if getattr(intent_class, 'quantity') is not None:
                     quantity = int(getattr(intent_class, 'quantity'))
                     print('ok: ', quantity, value)
-                    compare_price_buget(quantity, value, tracker)
+                    return compare_price_buget(quantity, value, tracker)
                 break
             for v in possibilities[possible_field]:
                 if v == value or (v == value.lower()):
                     setattr(intent_class, field, value)
+                    return True
                     break
             # expanded_search(field, value, intent_class)
             #TODO - RETURN THE VALUE AND THE FIELD
+    return False
 
 
 # def expanded_search(field_to_exclude, value, intent):
@@ -175,9 +178,11 @@ def compare_price_buget(quantity, budget, tracker):
     if price*quantity > float(budget):
         print('The budget is not enough for the quantity requested')
         print('The maximum quantity that can be purchased is: ', int(float(budget)/price))
+        return False
     else:
         print('The budget is enough for the quantity requested')
         setattr('wine_ordering', 'budget', budget)
+        return True
 
 
 

@@ -46,19 +46,18 @@ class History():
     
 class Tracker():
     def __init__(self, logger):
-        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'having_food', 'wine_ordering', 'delivery']
+        self.possible_intent = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'wine_ordering', 'delivery']
         self.intentions = []
         self.wine_details = None
         self.wine_origin = None
         self.wine_production = None
         self.wine_conservation = None
         self.choosing_food = None
-        self.having_food = None
         self.wine_ordering = None
         self.delivery = None
         self.logger = logger
         self.required_list_user = False
-        self.type_for_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'having_food']
+        self.type_for_list = ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food']
     
     def creation (self, input: dict, history: History, update: bool):
         intent = input["intent"]
@@ -78,8 +77,6 @@ class Tracker():
                 self.wine_production = Wine_production()
             elif 'conservation' in intent:
                 self.wine_conservation = Wine_conservation()
-            elif 'choosing_food' in intent:
-                self.choosing_food = Wine_paring()
             elif 'having_food' in intent:
                 self.having_food = Food_paring()
             elif 'ordering' in intent:
@@ -103,22 +100,21 @@ class Tracker():
                 self.required_list_user = True
             elif input[field] != 'null' and input[field] != None and input[field] != 'None':
                 if 'details' in intent:
-                    assign_field(self.wine_details, field, input[field], self)
+                    assigned = assign_field(self.wine_details, field, input[field], self)
                 elif 'origin' in intent:
-                    assign_field(self.wine_origin, field, input[field], self)
+                    assigned = assign_field(self.wine_origin, field, input[field], self)
                 elif 'production' in intent:
-                    assign_field(self.wine_production, field, input[field], self)
+                    assigned = assign_field(self.wine_production, field, input[field], self)
                 elif 'conservation' in intent:
-                    assign_field(self.wine_conservation, field, input[field], self)
+                    assigned = assign_field(self.wine_conservation, field, input[field], self)
                 elif 'choosing_food' in intent:
-                    assign_field(self.choosing_food, field, input[field], self)
-                elif 'having_food' in intent:
-                    assign_field(self.having_food, field, input[field], self)
+                    assigned = assign_field(self.choosing_food, field, input[field], self)
                 elif 'ordering' in intent:
-                    assign_field(self.wine_ordering, field, input[field], self)
+                    assigned = assign_field(self.wine_ordering, field, input[field], self)
                 elif 'delivery' in intent:
-                    assign_field(self.delivery, field, input[field], self)
-                count += 1
+                    assigned = assign_field(self.delivery, field, input[field], self)
+                if assigned:
+                    count += 1
         self.logger.info(f"Tracker: {input}")
 
         return intent, total_slots - count 
