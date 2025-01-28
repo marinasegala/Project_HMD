@@ -64,8 +64,8 @@ class NLU():
         elif intent == "wine_origin": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-origin"]
         elif intent == "wine_production": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-production"]
         elif intent == "wine_conservation": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-conservation"]
-        elif intent == "wine_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
-        elif intent == "food_paring": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
+        elif intent == "choosing_food": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-paring"]
+        elif intent == "having_food": prompt = PROMPTS["NLU_slots"] + PROMPTS["food-paring"]
         elif intent == "wine_ordering": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-ordering"]
         elif intent == "delivery": prompt = PROMPTS["NLU_slots"] + PROMPTS["wine-delivery"]
         
