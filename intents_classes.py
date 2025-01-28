@@ -138,6 +138,7 @@ class Wine_paring(ClassBase): # from the wine, suggest the best food
         self.style = None
         self.color = None
         self.typology = None
+        self.food = None
 
         #TITLE??
     
@@ -145,12 +146,13 @@ class Wine_paring(ClassBase): # from the wine, suggest the best food
         values = {
             'style': possible_style,
             'color': possible_color,
-            'typology': possible_typology
+            'typology': possible_typology,
+            'food': possible_food
         }
         return values
     
     def required(self):
-        return [['style', 'color'], ['typology']]
+        return [['style', 'color'], ['typology'], ['food']]
     
     def name(self):
         return 'choosing_food'

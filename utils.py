@@ -31,7 +31,7 @@ The slots are: [fridge, cellar, temperature, typology, giving_list_wine].
 """,
 
     "wine-paring": """The intent extracted is 'choosing_food'. Extract the slots values from the input of the user.
-The slots are: [style, color, typology, giving_list_wine].
+The slots are: [style, color, typology, food, giving_list_wine].
 """,
 
     "food-paring": """The intent extracted is 'having_food'. Extract the slots values from the input of the user.
@@ -67,7 +67,6 @@ Return ONLY the list of intents, nothing more!
 - wine_production: if the user wants to know more about the production of a wine.
 - wine_conservation: if the user wants to know more about the conservation of a wine.
 - choosing_food: if the user has a wine and he wants to pair it with a food.
-- having_food: if the user has a dish and he wants to pair it with a wine.
 """,
     
     "order_nlu": """- wine_ordering: if the user wants to buy wine.""",
