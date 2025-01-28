@@ -66,6 +66,7 @@ class Tracker():
         if intent == 'out_of_domain' or intent == 'general_info':
             history.update_last_int('')
             return intent, False
+        
         if intent not in [x for x in self.intentions]:
             self.intentions.append(intent)
 

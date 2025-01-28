@@ -43,6 +43,8 @@ class Wine_details(ClassBase):
         self.abv = None
         self.year = None
         self.typology = None
+
+        #TITLE??
     
     def possibilities(self):
         values = {
@@ -91,6 +93,8 @@ class Wine_production(ClassBase):
         self.abv = None
         self.closure = None
         self.typology = None
+
+        #TITLE??
     
     def possibilities(self):
         values = {
@@ -110,6 +114,8 @@ class Wine_conservation(ClassBase):
         self.cellar = None
         self.temperature = None
         self.typology = None
+
+        #TITLE??
 
     def possibilities(self):
         values = {
@@ -132,6 +138,8 @@ class Wine_paring(ClassBase): # from the wine, suggest the best food
         self.style = None
         self.color = None
         self.typology = None
+
+        #TITLE??
     
     def possibilities(self):
         values = {
