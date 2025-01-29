@@ -26,6 +26,9 @@ class History():
     def clear(self):
         self.messages = []
         self.intent = []
+        self.roles = []
+        self.last_intent = ''
+        self.number_last = 5
     
     def get_history(self):
         return self.messages

@@ -63,49 +63,46 @@ class Dialogue:
         test_data = selection_phrase(test_data, "wine_details")
         test_data = selection_phrase(test_data, "wine_origin")
 
-        starting = PROMPTS["START"]
-        self.history.add_msg(starting, 'assistant', 'init')
+        # starting = PROMPTS["START"]
+        # self.history.add_msg(starting, 'assistant', 'init')
 #        user_input = input(starting + '\n')
 #        self.history.add_msg(user_input, 'user', 'input')
         slots_empty = 1
         action = ''
         # exit the loop using CTRL+C
-        while True:
-            if slots_empty == 0: self.history.update_number_last(2)
-            else: self.history.update_number_last(5)
-            
-            # get the NLU output
-            # infos = self.nlu(user_input, slots_empty)
-            for sample in test_data:
-                print(f"\n\n---------\n{sample}\n-------\n")
-                user_input = sample["user_input"]
-                ground_truth = sample["ground_truth"]
-                ground_truth_intent = ground_truth["intent"]
-                ground_truth_slots = ground_truth["slots"]
+        for sample in test_data:
+            print(f"\n\n---------\n{sample}\n-------\n")
+            user_input = sample["user_input"]
+            ground_truth = sample["ground_truth"]
+            ground_truth_intent = ground_truth["intent"]
+            ground_truth_slots = ground_truth["slots"]
 
-                prediction = self.nlu(user_input, 0)
-                # intent, total_slots, full_slot = self.tracker.creation(prediction, self.history, True)
-                # slots_empty = total_slots - full_slot  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
+            self.history.clear()
+            starting = PROMPTS["START"]
+            self.history.add_msg(starting, 'assistant', 'init')
+            prediction = self.nlu(user_input, 0)
+            # intent, total_slots, full_slot = self.tracker.creation(prediction, self.history, True)
+            # slots_empty = total_slots - full_slot  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
 
-                # Estrarre intent e slots previsti
-                predicted_intent = prediction.get("intent", "")
-                predicted_slots = prediction.get("slots", {})
+            # Estrarre intent e slots previsti
+            predicted_intent = prediction.get("intent", "")
+            predicted_slots = prediction.get("slots", {})
 
-                # Salvare per valutazione
-                intents_true.append(ground_truth_intent)
-                intents_pred.append(predicted_intent)
-                slots_true.append(ground_truth_slots)
-                slots_pred.append(predicted_slots)
+            # Salvare per valutazione
+            intents_true.append(ground_truth_intent)
+            intents_pred.append(predicted_intent)
+            slots_true.append(ground_truth_slots)
+            slots_pred.append(predicted_slots)
             # intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
 
             #save intents_true, intents_pred, slots_true, slots_pred in a file
-            with open("evaluation.txt", "w", encoding="utf-8") as f:
-                f.write(f"Intents True: {intents_true}\n")
-                f.write(f"Intents Predicted: {intents_pred}\n")
-                f.write(f"Slots True: {slots_true}\n")
-                f.write(f"Slots Predicted: {slots_pred}\n")
+        with open("evaluation.txt", "w", encoding="utf-8") as f:
+            f.write(f"Intents True: \n{intents_true}\n\n")
+            f.write(f"Intents Predicted: \n{intents_pred}\n\n")
+            f.write(f"Slots True:\n {slots_true}\n\n")
+            f.write(f"Slots Predicted: \n{slots_pred}")
 
-            print('OK')
+        print('OK')
 
             # Accuracy sugli intents
             # intent_accuracy = accuracy_score(intents_true, intents_pred)
