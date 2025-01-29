@@ -64,7 +64,7 @@ class Dialogue:
         test_data = selection_phrase(test_data, "wine_origin")
         test_data = selection_phrase(test_data, "wine_production")
         test_data = selection_phrase(test_data, "wine_conservation")
-        test_data = selection_phrase(test_data, "wine_pairing")
+        test_data = selection_phrase(test_data, "wine_paring")
         # test_data = selection_phrase(test_data, "wine_ordering")
         # test_data = selection_phrase(test_data, "delivery")
 

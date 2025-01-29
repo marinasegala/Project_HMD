@@ -1,19 +1,140 @@
-User inputs + json selected: 
-[{'user_input': "I want some information about a red wine. It is sparkling It's a Champagne  The grape is Chardonnay", 
-'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}}, 
-{'user_input': 'I want some information about a  wine.    The grape is Chardonnay', 
-'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}}, 
-{'user_input': 'Tell me about a wine Tuscany France.', 
-'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}, {'user_input': 'Tell me about a wine Champagne .', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}]
-
-Intents True: 
-['wine_details', 'wine_details', 'wine_origin', 'wine_origin']
+[
+    {
+        "user_input": "I want some information about a white wine. It is sparkling  Made in 2019 The grape is Valdobbiadene",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Valdobbiadene",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2019",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine.  It's a Primitivo Made in 2020 The grape is Valdobbiadene",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Valdobbiadene",
+                "color": "white",
+                "sparkling": "",
+                "abv": "",
+                "year": "2020",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know  wine from Tuscany , France.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Tuscany",
+                "country": "France",
+                "color": "",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know  wine from Champagne , France.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Champagne",
+                "country": "France",
+                "color": "",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Valdobbiadene grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Valdobbiad",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "",
+                "abv": "None",
+                "closure": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep not in the fridge not in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "no",
+                "celler": "no",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "How i can conserve a Primitivo wine?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to eat desser, tell me the wine to drink.",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": "desser"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Champagne wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Champagne",
+                "food": ""
+            }
+        }
+    }
+]Intents True: 
+['wine_details', 'wine_details', 'wine_origin', 'wine_origin', 'wine_production', 'wine_production', 'wine_conservation', 'wine_conservation', 'choosing_food', 'choosing_food']
 
 Intents Predicted: 
-['wine_details', 'wine_details', 'wine_details', 'wine_details']
+['wine_details', 'wine_details', 'wine_details', 'wine_details', 'wine_details', 'wine_details', 'wine_details', 'wine_details', 'choosing_food', 'choosing_food']
 
 Slots True:
- [{'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}, {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}, {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}, {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}]
+ [{'flavor': 'None', 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}, {'flavor': 'None', 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}, {'region': 'Tuscany', 'country': 'France', 'color': '', 'typology': '', 'title_bottle': 'None'}, {'region': 'Champagne', 'country': 'France', 'color': '', 'typology': '', 'title_bottle': 'None'}, {'grape': 'Valdobbiad', 'abv': 'None', 'closure': 'natural cork', 'typology': 'Primitivo'}, {'grape': '', 'abv': 'None', 'closure': '', 'typology': 'Primitivo'}, {'fridge': 'no', 'celler': 'no', 'temperature': '', 'typology': ''}, {'fridge': '', 'celler': '', 'temperature': '', 'typology': 'Primitivo'}, {'style': '', 'color': '', 'typology': 'rose', 'food': 'desser'}, {'style': '', 'color': '', 'typology': 'Champagne', 'food': ''}]
 
 Slots Predicted: 
-[{'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}, {'grape': 'Chardonnay', 'flavor': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': 'null', 'giving_list_wine': None}, {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}]
+[{'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}, {'typology': 'white', 'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': None, 'abv': None, 'year': '2020'}, {'typology': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}, {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'typology': 'Primitivo', 'grape': 'Valdobbiadene', 'cork': 'natural', 'giving_list_wine': 'null'}, {'flavor': None, 'grape': 'Primitivo', 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'typology': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}, {'typology': 'Primitivo', 'conservation': 'null'}, {'food': 'dessert', 'color': 'null', 'style': 'null', 'typology': 'null', 'giving_list_wine': 'null'}, {'color': 'null', 'style': 'null', 'typology': 'Champagne', 'food': 'null', 'giving_list_wine': 'null'}]
