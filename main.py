@@ -46,15 +46,13 @@ class Dialogue:
             self.logger.info(f'Action: {action}, Argument: {arg}')
             # print(f'Action: {action}, Argument: {arg}')
             
-            if action == 'delivery_info': #TODO DOMANDA
+            if action == 'delivery_info':
                 # print('in teoria creazione del Delivery')
                 intent = {'intent': action}
                 intent, _, _= self.tracker.creation(intent, self.history, False)
                 can_search = False
 
             # get the NLG output + possible list 
-
-            # pass to NLG the class of the last intent
 
             nlg_output = self.nlg(action, arg, intent, can_search, slots_empty == total_slots)
             self.history.add_msg(nlg_output, 'assistant', action)
@@ -65,9 +63,11 @@ class Dialogue:
                 list_wines = searching_wine(self.tracker, intent)
                 if len(list_wines) == 0:
                     print('No wine respects the characteristics you want')
+                    self.history.add_msg('No wine respects the characteristics you want', 'assistant', 'give_list')
                 else:
                     for value in list_wines:
                         print(value)
+                        self.history.add_msg(value, 'assistant', 'give_list')
 
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
