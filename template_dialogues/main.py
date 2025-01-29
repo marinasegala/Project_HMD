@@ -14,24 +14,18 @@ slots_true, slots_pred = [], []
 
 def selection_phrase(test_data, name_file):
 
-    with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
+    with open(f"{name_file}.txt", "r", encoding="utf-8") as f1, open(f"{name_file}_json.txt", "r", encoding="utf-8") as f2:
         lines1 = f1.readlines()
         lines2 = f2.readlines()
 
-    index = random.randint(0, len(lines1) - 1)
-    for i in range(0,2):  # Ogni esempio è su 2 righe consecutive
-        
-        user_input = lines1[index].strip()  # Prima riga: frase utente
-        phrase2 = lines2[index].strip()
+    for i in range(0, len(lines1), 2):  # Ogni esempio è su 2 righe consecutive
+        user_input = lines1[i].strip()  # Prima riga: frase utente
+        phrase2 = lines2[i].strip()
         phrase2 = phrase2.replace('None', "'None'")
-        ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
-        num = random.randint(0, len(lines1) - 1)
-        while num == index:
-            num = random.randint(0, len(lines1) - 1)
-        index = num
+        ground_truth = json.loads(lines1[i+1].strip().replace("'", "\""))  # Seconda riga: JSON
+
         test_data.append({"user_input": user_input, "ground_truth": ground_truth})
-        print(user_input)
-        print(ground_truth)
+    
     return test_data
 
 def evaluate_nlu(nlu, test_data):
@@ -83,8 +77,8 @@ class Dialogue:
 
         starting = PROMPTS["START"]
         self.history.add_msg(starting, 'assistant', 'init')
-#        user_input = input(starting + '\n')
-#        self.history.add_msg(user_input, 'user', 'input')
+        user_input = input(starting + '\n')
+        self.history.add_msg(user_input, 'user', 'input')
         slots_empty = 1
         action = ''
         # exit the loop using CTRL+C

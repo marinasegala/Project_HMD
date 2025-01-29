@@ -1,0 +1,42 @@
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "red", "year": "2019", "flavor": null, "grape": null, "color": null, "sparkling": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'red', 'year': '2019', 'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Pinot Noir", "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "null", "region": "null", "color": "null", "typology": "null", "title_bottle": "Primitivo", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'null', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'Primitivo', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "null", "grape": "null", "color": "null", "flavor": "null", "sparkling": "null", "abv": "null", "year": "null", "giving_list_wine": "Tuscany"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'null', 'grape': 'null', 'color': 'null', 'flavor': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'Tuscany'}}
