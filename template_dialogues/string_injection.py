@@ -26,7 +26,7 @@ from itertools import product
 temp2 = "I want some information about a {} wine. {} {} {} {}"
 
 ds2 = {
-    "intent": "wine_information",
+    "intent": "wine_details",
     "slots": {
         "flavor": None,
         "grape": "",
@@ -63,22 +63,23 @@ for c, s, t, g, y in product(color, sparkling, typology, grape, year):
         f.write(str(ds2) + "\n")
 '''
 # ORIGIN
-'''
+# '''
 temp2 = "Can you tell me the origin of a {} wine?"
-temp3 = "Tell me about a wine {} {}."
+temp3 = "I want to know {} wine from {} {}."
 ds3 = {
-    "intent": "wine_information",
+    "intent": "wine_origin",
     "slots": {
         "region": "",
         "country": "",
-        "color": None,
+        "color": "",
         "typology": "",
         "title_bottle": None
     }
 }
 
 region = ["Tuscany", "Champagne", ""]
-country = ["Italy", "France", ""]
+country = [", Italy", ", France", ""]
+color = ["white", "red", "rose", ""]
 #---
 typology = ["Primitivo", "Champagne", "Prosecco", ""]
 
@@ -92,11 +93,11 @@ for t in typology:
     with open("wine_origin_json.txt", "a") as f:
         f.write(str(ds3) + "\n")
 
-for c, r in product(country, region):
+for c, r, col in product(country, region, color):
     if c == "" and r == "":
         continue
-    filled_template = temp3.format(r, c)
-    ds3["slots"]["country"] = c
+    filled_template = temp3.format(col, r, c)
+    ds3["slots"]["country"] = c[2:]
     ds3["slots"]["region"] = r
 
     with open("wine_origin.txt", "a") as f:
@@ -104,7 +105,7 @@ for c, r in product(country, region):
     
     with open("wine_origin_json.txt", "a") as f:
         f.write(str(ds3) + "\n")
-'''
+# '''
 # PRODUCTION
 '''
 temp3 = "Can you tell me other info about the production of a wine? {} {} {}"
@@ -137,6 +138,7 @@ for c, g, t in product(closure, grape, typology):
 '''
 
 # CONSERVATION
+'''
 temp = 'Wine that to keep {} {}'
 temp2 = 'How i can conserve a {} wine?'
 ds = {
@@ -177,7 +179,7 @@ for c, f in product(fridge, celler):
         
         with open("wine_conservation_json.txt", "a") as f:
             f.write(str(ds) + "\n")
-
+'''
 # CHOOSING FOOD
 
 # temp = 'I want to drink a {} wine, which food should I choose?'

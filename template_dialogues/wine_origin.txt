@@ -2,11 +2,35 @@ Can you tell me the origin of a Primitivo wine?
 Can you tell me the origin of a Champagne wine?
 Can you tell me the origin of a Prosecco wine?
 Can you tell me the origin of a  wine?
-Tell me about a wine Tuscany Italy.
-Tell me about a wine Champagne Italy.
-Tell me about a wine  Italy.
-Tell me about a wine Tuscany France.
-Tell me about a wine Champagne France.
-Tell me about a wine  France.
-Tell me about a wine Tuscany .
-Tell me about a wine Champagne .
+I want to know white wine from Tuscany , Italy.
+I want to know red wine from Tuscany , Italy.
+I want to know rose wine from Tuscany , Italy.
+I want to know  wine from Tuscany , Italy.
+I want to know white wine from Champagne , Italy.
+I want to know red wine from Champagne , Italy.
+I want to know rose wine from Champagne , Italy.
+I want to know  wine from Champagne , Italy.
+I want to know white wine from  , Italy.
+I want to know red wine from  , Italy.
+I want to know rose wine from  , Italy.
+I want to know  wine from  , Italy.
+I want to know white wine from Tuscany , France.
+I want to know red wine from Tuscany , France.
+I want to know rose wine from Tuscany , France.
+I want to know  wine from Tuscany , France.
+I want to know white wine from Champagne , France.
+I want to know red wine from Champagne , France.
+I want to know rose wine from Champagne , France.
+I want to know  wine from Champagne , France.
+I want to know white wine from  , France.
+I want to know red wine from  , France.
+I want to know rose wine from  , France.
+I want to know  wine from  , France.
+I want to know white wine from Tuscany .
+I want to know red wine from Tuscany .
+I want to know rose wine from Tuscany .
+I want to know  wine from Tuscany .
+I want to know white wine from Champagne .
+I want to know red wine from Champagne .
+I want to know rose wine from Champagne .
+I want to know  wine from Champagne .

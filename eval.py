@@ -62,6 +62,11 @@ class Dialogue:
         test_data = []
         test_data = selection_phrase(test_data, "wine_details")
         test_data = selection_phrase(test_data, "wine_origin")
+        test_data = selection_phrase(test_data, "wine_production")
+        test_data = selection_phrase(test_data, "wine_conservation")
+        test_data = selection_phrase(test_data, "wine_pairing")
+        # test_data = selection_phrase(test_data, "wine_ordering")
+        # test_data = selection_phrase(test_data, "delivery")
 
         # starting = PROMPTS["START"]
         # self.history.add_msg(starting, 'assistant', 'init')
@@ -97,7 +102,7 @@ class Dialogue:
 
             #save intents_true, intents_pred, slots_true, slots_pred in a file
         with open("evaluation.txt", "w", encoding="utf-8") as f:
-            f.write(f"User inputs + json selected: \n{test_data}\n\n")
+            json.dump(test_data, f, ensure_ascii=False, indent=4)
             f.write(f"Intents True: \n{intents_true}\n\n")
             f.write(f"Intents Predicted: \n{intents_pred}\n\n")
             f.write(f"Slots True:\n {slots_true}\n\n")

@@ -1,5 +1,10 @@
 User inputs + json selected: 
-[{'user_input': "I want some information about a red wine. It is sparkling It's a Champagne  The grape is Chardonnay", 'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}}, {'user_input': 'I want some information about a  wine.    The grape is Chardonnay', 'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}}, {'user_input': 'Tell me about a wine Tuscany France.', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}, {'user_input': 'Tell me about a wine Champagne .', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}]
+[{'user_input': "I want some information about a red wine. It is sparkling It's a Champagne  The grape is Chardonnay", 
+'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}}, 
+{'user_input': 'I want some information about a  wine.    The grape is Chardonnay', 
+'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}}, 
+{'user_input': 'Tell me about a wine Tuscany France.', 
+'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}, {'user_input': 'Tell me about a wine Champagne .', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}]
 
 Intents True: 
 ['wine_details', 'wine_details', 'wine_origin', 'wine_origin']
