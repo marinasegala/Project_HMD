@@ -1,11 +1,11 @@
 Intents True: 
-['wine_information', 'wine_information', 'wine_information', 'wine_information']
+['wine_details', 'wine_details', 'wine_origin', 'wine_origin']
 
 Intents Predicted: 
-['wine_details', 'wine_details', 'wine_details', 'wine_details']
+['wine_details', 'wine_details', 'wine_details', 'wine_origin']
 
 Slots True:
- [{'flavor': 'None', 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}, {'flavor': 'None', 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}, {'region': 'Tuscany', 'country': 'Italy', 'color': 'None', 'typology': '', 'title_bottle': 'None'}, {'region': '', 'country': 'Italy', 'color': 'None', 'typology': '', 'title_bottle': 'None'}]
+ [{'flavor': 'None', 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}, {'flavor': 'None', 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}, {'region': '', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}, {'region': '', 'country': '', 'color': 'None', 'typology': 'Prosecco', 'title_bottle': 'None'}]
 
 Slots Predicted: 
-[{'typology': 'Champagne', 'year': '2021', 'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'giving_list_wine': None}, {'flavor': None, 'grape': None, 'color': 'red', 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': 'Prosecco', 'giving_list_wine': None}, {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': 'null', 'giving_list_wine': None}, {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': 'Italian', 'giving_list_wine': None}]
+[{'typology': 'null', 'flavor': 'null', 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'true', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}, {'year': '2021', 'grape': 'Pinot Noir', 'flavor': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'typology': 'null', 'giving_list_wine': 'null'}, {'country': 'France', 'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}]
