@@ -1,576 +1,576 @@
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
-{'intent': 'wine_information', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': 'red', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': 'no', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Champagne'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2019', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2020', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': '', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}
