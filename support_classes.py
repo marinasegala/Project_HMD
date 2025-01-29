@@ -64,7 +64,7 @@ class Tracker():
 
         if intent == 'out_of_domain' or intent == 'general_info':
             history.update_last_int('')
-            return intent, False
+            return intent, 1, 0 
         
         if intent not in [x for x in self.intentions]:
             self.intentions.append(intent)
@@ -133,8 +133,6 @@ class Tracker():
                     dict_ret = { "intent": x, "slots": self.wine_conservation.__dict__}
                 elif 'choosing_food' in x:
                     dict_ret = { "intent": x, "slots": self.choosing_food.__dict__}
-                elif 'having_food' in x:
-                    dict_ret = { "intent": x, "slots": self.having_food.__dict__}
                 elif 'ordering' in x:
                     dict_ret = { "intent": x, "slots": self.wine_ordering.__dict__}
                 elif 'delivery' in x:
