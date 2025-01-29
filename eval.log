@@ -40,3 +40,787 @@ INFO:Dialogue:Intents: ['wine_details']
 INFO:Dialogue:List intents: ['wine_details']
 INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "null", "grape": "null", "color": "null", "flavor": "null", "sparkling": "null", "abv": "null", "year": "null", "giving_list_wine": "Tuscany"}}
 INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'null', 'grape': 'null', 'color': 'null', 'flavor': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'Tuscany'}}
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "sparkling", "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'sparkling', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null", "abv": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null', 'abv': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "bubbly", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling wine", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'bubbly', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling wine', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "typology": "Primitivo", "year": "2019", "flavor": null, "color": null, "abv": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'typology': 'Primitivo', 'year': '2019', 'flavor': None, 'color': None, 'abv': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "yes", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'yes', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": true, "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': True, 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "color": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "bubbly", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'bubbly', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "typology": "Primitivo", "flavor": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'Primitivo', 'flavor': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "true", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "Veneto", "color": null, "typology": "Sparkling", "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Veneto', 'color': None, 'typology': 'Sparkling', 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "flavor": null, "grape": "Chardonnay", "color": "null", "sparkling": "true", "abv": null, "year": "2021", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'flavor': None, 'grape': 'Chardonnay', 'color': 'null', 'sparkling': 'true', 'abv': None, 'year': '2021', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "flavor": null, "color": null, "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'flavor': None, 'color': None, 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "bubbly", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'bubbly', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "color": "red", "flavor": null, "sparkling": "true", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'color': 'red', 'flavor': None, 'sparkling': 'true', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "grape": "Chardonnay", "year": "2021", "typology": "Champagne", "flavor": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'grape': 'Chardonnay', 'year': '2021', 'typology': 'Champagne', 'flavor': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "true", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "color": "null", "flavor": "null", "sparkling": "true", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'color': 'null', 'flavor': 'null', 'sparkling': 'true', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "typology": "Primitivo", "year": "2019"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'typology': 'Primitivo', 'year': '2019'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "flavor": "null", "color": "null", "abv": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "flavor": null, "color": null, "sparkling": "yes", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'flavor': None, 'color': None, 'sparkling': 'yes', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "true", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "flavor": "null", "color": "null", "sparkling": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "flavor": null, "color": null, "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'flavor': None, 'color': None, 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "color": "null", "giving_list_wine": "null", "abv": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'color': 'null', 'giving_list_wine': 'null', 'abv': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "null", "title_bottle": "Prosecco", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'Prosecco', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2021", "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "color": "red", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'color': 'red', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "sparkling", "sparkling": "yes", "abv": null, "year": null, "typology": "champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'sparkling', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "flavor": null, "grape": "Chardonnay", "color": null, "sparkling": null, "abv": null, "year": "2021", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': None, 'abv': None, 'year': '2021', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "color": "red", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'color': 'red', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "null", "title_bottle": "Prosecco", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'Prosecco', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "Veneto", "color": "white", "typology": "sparkling", "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Veneto', 'color': 'white', 'typology': 'sparkling', 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "Primitivo", "flavor": null, "color": null, "abv": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'Primitivo', 'flavor': None, 'color': None, 'abv': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": "null", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': 'null', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "color": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "yes", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'yes', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "null", "title_bottle": "Prosecco", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'Prosecco', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "grape": "Valdobbiadene", "year": "2019", "typology": "null", "flavor": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'grape': 'Valdobbiadene', 'year': '2019', 'typology': 'null', 'flavor': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "sparkling", "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'sparkling', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "Veneto", "color": "white", "typology": "sparkling", "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Veneto', 'color': 'white', 'typology': 'sparkling', 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "typology": "null", "flavor": "null", "grape": "Valdobbiadene", "color": "null", "abv": "null", "year": "2019", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'typology': 'null', 'flavor': 'null', 'grape': 'Valdobbiadene', 'color': 'null', 'abv': 'null', 'year': '2019', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "true", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "typology": "Primitivo", "year": "2019", "flavor": "null", "color": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'typology': 'Primitivo', 'year': '2019', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "flavor": null, "color": null, "sparkling": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'flavor': None, 'color': None, 'sparkling': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "typology": "null", "flavor": "null", "grape": "Valdobbiadene", "color": "null", "abv": "null", "year": "2019", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'typology': 'null', 'flavor': 'null', 'grape': 'Valdobbiadene', 'color': 'null', 'abv': 'null', 'year': '2019', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "true", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": true, "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': True, 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "true", "grape": "Valdobbiadene", "flavor": "null", "color": "null", "abv": "null", "year": "2019", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'true', 'grape': 'Valdobbiadene', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'year': '2019', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "true", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2021", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": "yes", "abv": null, "year": null, "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"color": "red", "sparkling": "true", "year": "2021", "grape": "Chardonnay", "flavor": "null", "abv": "null", "typology": "Champagne", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'color': 'red', 'sparkling': 'true', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'abv': 'null', 'typology': 'Champagne', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "typology": "null", "flavor": "null", "grape": "Valdobbiadene", "color": "null", "abv": "null", "year": "2019", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'typology': 'null', 'flavor': 'null', 'grape': 'Valdobbiadene', 'color': 'null', 'abv': 'null', 'year': '2019', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling wine", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling wine', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "year": "2021", "grape": "Chardonnay", "color": "null", "flavor": "null", "sparkling": "true", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'year': '2021', 'grape': 'Chardonnay', 'color': 'null', 'flavor': 'null', 'sparkling': 'true', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "true", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "Veneto", "color": null, "typology": "Sparkling", "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Veneto', 'color': None, 'typology': 'Sparkling', 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "flavor": "null", "grape": "Chardonnay", "color": "null", "sparkling": "null", "abv": "null", "year": "2021", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'flavor': 'null', 'grape': 'Chardonnay', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'year': '2021', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "sparkling": "true", "flavor": null, "grape": null, "color": null, "abv": null, "year": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Champagne", "color": "red", "year": "2021", "grape": "Chardonnay", "flavor": "null", "sparkling": "true", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Champagne', 'color': 'red', 'year': '2021', 'grape': 'Chardonnay', 'flavor': 'null', 'sparkling': 'true', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Valdobbiadene", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": "white", "sparkling": "yes", "abv": null, "year": null, "typology": "sparkling", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': 'white', 'sparkling': 'yes', 'abv': None, 'year': None, 'typology': 'sparkling', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "null", "color": "null", "typology": "Prosecco", "title_bottle": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "typology": "Prosecco", "grape": "Valdobbiadene", "flavor": "null", "color": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'typology': 'Prosecco', 'grape': 'Valdobbiadene', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "null", "grape": "Valdobbiadene", "flavor": "null", "color": "null", "sparkling": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'null', 'grape': 'Valdobbiadene', 'flavor': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "null", "flavor": "null", "grape": "null", "color": "null", "sparkling": "null", "abv": "null", "year": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": null, "color": null, "sparkling": null, "abv": null, "year": null, "typology": "null", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': 'null', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "yes", "typology": "Prosecco", "grape": "Valdobbiadene"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'yes', 'typology': 'Prosecco', 'grape': 'Valdobbiadene'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details']
+INFO:Dialogue:List intents: ['wine_details']

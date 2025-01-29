@@ -77,6 +77,7 @@ class Dialogue:
             # get the NLU output
             # infos = self.nlu(user_input, slots_empty)
             for sample in test_data:
+                print(f"\n\n---------\n{sample}\n-------\n")
                 user_input = sample["user_input"]
                 ground_truth = sample["ground_truth"]
                 ground_truth_intent = ground_truth["intent"]
@@ -103,6 +104,8 @@ class Dialogue:
                 f.write(f"Intents Predicted: {intents_pred}\n")
                 f.write(f"Slots True: {slots_true}\n")
                 f.write(f"Slots Predicted: {slots_pred}\n")
+
+            print('OK')
 
             # Accuracy sugli intents
             # intent_accuracy = accuracy_score(intents_true, intents_pred)
