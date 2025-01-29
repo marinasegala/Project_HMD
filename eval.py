@@ -97,6 +97,7 @@ class Dialogue:
 
             #save intents_true, intents_pred, slots_true, slots_pred in a file
         with open("evaluation.txt", "w", encoding="utf-8") as f:
+            f.write(f"User inputs + json selected: \n{test_data}\n\n")
             f.write(f"Intents True: \n{intents_true}\n\n")
             f.write(f"Intents Predicted: \n{intents_pred}\n\n")
             f.write(f"Slots True:\n {slots_true}\n\n")

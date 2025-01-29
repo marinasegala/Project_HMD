@@ -1,11 +1,14 @@
+User inputs + json selected: 
+[{'user_input': "I want some information about a red wine. It is sparkling It's a Champagne  The grape is Chardonnay", 'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}}}, {'user_input': 'I want some information about a  wine.    The grape is Chardonnay', 'ground_truth': {'intent': 'wine_details', 'slots': {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}}}, {'user_input': 'Tell me about a wine Tuscany France.', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}, {'user_input': 'Tell me about a wine Champagne .', 'ground_truth': {'intent': 'wine_origin', 'slots': {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}}}]
+
 Intents True: 
 ['wine_details', 'wine_details', 'wine_origin', 'wine_origin']
 
 Intents Predicted: 
-['wine_details', 'wine_details', 'wine_details', 'wine_origin']
+['wine_details', 'wine_details', 'wine_details', 'wine_details']
 
 Slots True:
- [{'flavor': 'None', 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': '', 'abv': '', 'year': '', 'typology': 'Prosecco'}, {'flavor': 'None', 'grape': 'Pinot Noir', 'color': '', 'sparkling': '', 'abv': '', 'year': '2021', 'typology': ''}, {'region': '', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}, {'region': '', 'country': '', 'color': 'None', 'typology': 'Prosecco', 'title_bottle': 'None'}]
+ [{'flavor': 'None', 'grape': 'Chardonnay', 'color': 'red', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Champagne'}, {'flavor': 'None', 'grape': 'Chardonnay', 'color': '', 'sparkling': '', 'abv': '', 'year': '', 'typology': ''}, {'region': 'Tuscany', 'country': 'France', 'color': 'None', 'typology': '', 'title_bottle': 'None'}, {'region': 'Champagne', 'country': '', 'color': 'None', 'typology': '', 'title_bottle': 'None'}]
 
 Slots Predicted: 
-[{'typology': 'null', 'flavor': 'null', 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'true', 'abv': 'null', 'year': 'null', 'giving_list_wine': 'null'}, {'year': '2021', 'grape': 'Pinot Noir', 'flavor': 'null', 'color': 'null', 'sparkling': 'null', 'abv': 'null', 'typology': 'null', 'giving_list_wine': 'null'}, {'country': 'France', 'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}]
+[{'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'true', 'abv': None, 'year': None, 'typology': 'Champagne', 'giving_list_wine': None}, {'grape': 'Chardonnay', 'flavor': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}, {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': 'null', 'giving_list_wine': None}, {'typology': 'Champagne', 'sparkling': 'true', 'flavor': None, 'grape': None, 'color': None, 'abv': None, 'year': None, 'giving_list_wine': None}]
