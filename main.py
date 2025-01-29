@@ -63,8 +63,11 @@ class Dialogue:
             if action == 'give_list':
                 # print('The top three choices I find are:\n')
                 list_wines = searching_wine(self.tracker, intent)
-                for value in list_wines:
-                    print(value)
+                if len(list_wines) == 0:
+                    print('No wine respects the characteristics you want')
+                else:
+                    for value in list_wines:
+                        print(value)
 
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')

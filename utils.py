@@ -60,8 +60,9 @@ Break the user input into multiple sentences based on the following intents:""",
 Return ONLY the list of intents, nothing more!
 """,
 
+    "prova": """- general_info: if the user wants general informations about a wine.""",
+
     "list_intents": """
-- general_info: if the user wants general informations about a wine.
 - wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
 - wine_origin: if the user wants to know more about the origin of a wine.
 - wine_production: if the user wants to know more about the production of a wine.
