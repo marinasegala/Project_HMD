@@ -63,11 +63,11 @@ Return ONLY the list of intents, nothing more!
     "prova": """- general_info: if the user wants general informations about a wine.""",
 
     "list_intents": """
-- wine_details: if the user wants to know more about the characteristics of a wine or he wants general informations about it.
-- wine_origin: if the user wants to know more about the origin of a wine.
+- wine_origin: if the user wants to know more about the origin of a wine or tells the origin of a wine.
 - wine_production: if the user wants to know more about the production of a wine.
 - wine_conservation: if the user wants to know more about the conservation of a wine.
 - choosing_food: if the user has a wine and he wants to pair it with a food.
+- wine_details: if the user wants to know general informations or details or characteristics of a wine.
 """,
     
     "order_nlu": """- wine_ordering: if the user wants to buy wine.""",

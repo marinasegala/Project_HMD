@@ -65,7 +65,7 @@ for c, s, t, g, y in product(color, sparkling, typology, grape, year):
 # ORIGIN
 # '''
 temp2 = "Can you tell me the origin of a {} wine?"
-temp3 = "I want to know {} wine from {} {}."
+temp3 = "I want to know a{} wine from {} {}."
 ds3 = {
     "intent": "wine_origin",
     "slots": {
@@ -79,7 +79,7 @@ ds3 = {
 
 region = ["Tuscany", "Champagne", ""]
 country = [", Italy", ", France", ""]
-color = ["white", "red", "rose", ""]
+color = [" white", " red", " rose", ""]
 #---
 typology = ["Primitivo", "Champagne", "Prosecco", ""]
 
