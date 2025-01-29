@@ -45,25 +45,7 @@ def evaluate_nlu(nlu, test_data):
     Returns:
         A dictionary with evaluation metrics for intents and slots.
     """
-    for sample in test_data:
-        user_input = sample["user_input"]
-        ground_truth = sample["ground_truth"]
-        ground_truth_intent = ground_truth["intent"]
-        ground_truth_slots = ground_truth["slots"]
-
-        # Ottenere la predizione del modello
-        slots_empty = not any(ground_truth_slots.values())  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
-        prediction = nlu(user_input, slots_empty)
-
-        # Estrarre intent e slots previsti
-        predicted_intent = prediction.get("intent", "")
-        predicted_slots = prediction.get("slots", {})
-
-        # Salvare per valutazione
-        intents_true.append(ground_truth_intent)
-        intents_pred.append(predicted_intent)
-        slots_true.append(ground_truth_slots)
-        slots_pred.append(predicted_slots)
+    
 
     return 
 
@@ -94,7 +76,26 @@ class Dialogue:
             
             # get the NLU output
             # infos = self.nlu(user_input, slots_empty)
-            intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
+            for sample in test_data:
+                user_input = sample["user_input"]
+                ground_truth = sample["ground_truth"]
+                ground_truth_intent = ground_truth["intent"]
+                ground_truth_slots = ground_truth["slots"]
+
+                prediction = self.nlu(user_input, 0)
+                # intent, total_slots, full_slot = self.tracker.creation(prediction, self.history, True)
+                # slots_empty = total_slots - full_slot  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
+
+                # Estrarre intent e slots previsti
+                predicted_intent = prediction.get("intent", "")
+                predicted_slots = prediction.get("slots", {})
+
+                # Salvare per valutazione
+                intents_true.append(ground_truth_intent)
+                intents_pred.append(predicted_intent)
+                slots_true.append(ground_truth_slots)
+                slots_pred.append(predicted_slots)
+            # intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
 
             #save intents_true, intents_pred, slots_true, slots_pred in a file
             with open("evaluation.txt", "w", encoding="utf-8") as f:
@@ -116,10 +117,7 @@ class Dialogue:
 
             # # Calcolare metriche sugli slots
             # precision, recall, f1 = calculate_slot_metrics(slots_true, slots_pred)
-            # print(f"Slot Extraction Metrics : Precision={precision:.2f}, Recall={recall:.2f}, F1 Score={f1:.2f}")
-
-
-            
+            # print(f"Slot Extraction Metrics : Precision={precision:.2f}, Recall={recall:.2f}, F1 Score={f1:.2f}") 
 
 def main():
     logging.basicConfig(filename="eval.log", encoding="utf-8", filemode="a", level=logging.DEBUG)

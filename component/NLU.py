@@ -16,7 +16,7 @@ class NLU():
         self.logger.info(f"List intents: {list_intents}")
         intent = list_intents[0]
         #TODO GESTIRE PIU INTENT
-        print(intent, slots_empty)
+        # print(intent, slots_empty)
         if intent == 'general_info':
             json_output = parsing_json('{"intent": "general_info"}')
         elif intent == 'out_of_domain':
