@@ -99,6 +99,7 @@ for c, r, col in product(country, region, color):
     filled_template = temp3.format(col, r, c)
     ds3["slots"]["country"] = c[2:]
     ds3["slots"]["region"] = r
+    ds3["slots"]["color"] = col[1:]
 
     with open("wine_origin.txt", "a") as f:
         f.write(filled_template + "\n")
