@@ -85,6 +85,7 @@ class Dialogue:
             self.history.clear()
             starting = PROMPTS["START"]
             self.history.add_msg(starting, 'assistant', 'init')
+            self.history.update_last_int('delivery')
             prediction = self.nlu(user_input, 0)
             # intent, total_slots, full_slot = self.tracker.creation(prediction, self.history, True)
             # slots_empty = total_slots - full_slot  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
