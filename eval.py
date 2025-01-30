@@ -17,16 +17,16 @@ def selection_phrase(test_data, name_file, num_phrases=14):
     with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
         lines1 = f1.readlines()
         lines2 = f2.readlines()
-
+    list_ind = []
     index = random.randint(0, len(lines1) - 1)
     for i in range(0,num_phrases):  # Ogni esempio è su 2 righe consecutive
-        
+        list_ind.append(index)
         user_input = lines1[index].strip()  # Prima riga: frase utente
         phrase2 = lines2[index].strip()
         phrase2 = phrase2.replace('None', "'None'")
         ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
         num = random.randint(0, len(lines1) - 1)
-        while num == index:
+        while num in list_ind:
             num = random.randint(0, len(lines1) - 1)
         index = num
         test_data.append({"user_input": user_input, "ground_truth": ground_truth})
