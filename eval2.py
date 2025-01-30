@@ -14,23 +14,22 @@ slots_true, slots_pred = [], []
 
 def selection_phrase(test_data, name_file, num_phrases=14):
 
-    with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1:
-#, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
+    with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
         lines1 = f1.readlines()
-#        lines2 = f2.readlines()
+        lines2 = f2.readlines()
     list_ind = []
 #    index = random.randint(0, len(lines1) - 1)
     for i in range(0,num_phrases):  # Ogni esempio è su 2 righe consecutive
         list_ind.append(i)
         user_input = lines1[i].strip()  # Prima riga: frase utente
-#        phrase2 = lines2[i].strip()
-#        phrase2 = phrase2.replace('None', "'None'")
-#        ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
+        phrase2 = lines2[i].strip()
+        phrase2 = phrase2.replace('None', "'None'")
+        ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
 #        num = random.randint(0, len(lines1) - 1)
 #        while num in list_ind:
 #            num = random.randint(0, len(lines1) - 1)
 #        index = num
-        test_data.append({"user_input": user_input}) #, "ground_truth": ground_truth})
+        test_data.append({"user_input": user_input, "ground_truth": ground_truth})
 #        print(user_input)
 #        print(ground_truth)
     return test_data
@@ -61,14 +60,13 @@ class Dialogue:
 
     def start(self):
         test_data = []
-        test_data = selection_phrase(test_data, "out_of_domain", 14)
-#        test_data = selection_phrase(test_data, "wine_details", 15)
-#        test_data = selection_phrase(test_data, "wine_origin", 14)
-#        test_data = selection_phrase(test_data, "wine_production", 15)
-#        test_data = selection_phrase(test_data, "wine_conservation", 14)
-#        test_data = selection_phrase(test_data, "wine_paring", 14)
-#        test_data = selection_phrase(test_data, "wine_ordering", 14)
-#        test_data = selection_phrase(test_data, "delivery", 14)
+        test_data = selection_phrase(test_data, "wine_details", 15)
+        test_data = selection_phrase(test_data, "wine_origin", 14)
+        test_data = selection_phrase(test_data, "wine_production", 15)
+        test_data = selection_phrase(test_data, "wine_conservation", 14)
+        test_data = selection_phrase(test_data, "wine_paring", 14)
+        test_data = selection_phrase(test_data, "wine_ordering", 14)
+        test_data = selection_phrase(test_data, "delivery", 14)
 
         # starting = PROMPTS["START"]
         # self.history.add_msg(starting, 'assistant', 'init')
@@ -82,9 +80,9 @@ class Dialogue:
             count += 1
             print(f"\n\n---------\n{count}\n-------\n")
             user_input = sample["user_input"]
-#            ground_truth = sample["ground_truth"]
-            ground_truth_intent = 'out_of_domain' #ground_truth["intent"]
-#            ground_truth_slots = ground_truth["slots"]
+            ground_truth = sample["ground_truth"]
+            ground_truth_intent = ground_truth["intent"]
+            ground_truth_slots = ground_truth["slots"]
 
             self.history.clear()
             starting = PROMPTS["START"]
@@ -102,18 +100,18 @@ class Dialogue:
             # Salvare per valutazione
             intents_true.append(ground_truth_intent)
             intents_pred.append(predicted_intent)
-#            slots_true.append(ground_truth_slots)
+            slots_true.append(ground_truth_slots)
             slots_pred.append(predicted_slots)
             # intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
 
         #save intents_true, intents_pred, slots_true, slots_pred in a file
-        with open("evaluation_domain.txt", "w", encoding="utf-8") as f:
+        with open("evaluation3.txt", "w", encoding="utf-8") as f:
             f.write(f"Intents True: \n{intents_true}\n\n")
             f.write(f"Intents Predicted: \n{intents_pred}\n\n")
             f.write(f"Slots True:\n {slots_true}\n\n")
             f.write(f"Slots Predicted: \n{slots_pred}")
 
-        with open("evaluation_domain.json", "w", encoding="utf-8") as f:
+        with open("evaluation3.json", "w", encoding="utf-8") as f:
             json.dump(test_data, f, ensure_ascii=False, indent=4)
 
         print('OK')
