@@ -1,0 +1,205 @@
+[
+    {
+        "user_input": "I want some information about a  wine.  It's a Prosecco Made in 2019",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "",
+                "color": "",
+                "sparkling": "",
+                "abv": "",
+                "year": "2019",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine.  It's a Champagne Made in 2019 The grape is Chardonnay",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "white",
+                "sparkling": "",
+                "abv": "",
+                "year": "2019",
+                "typology": "Champagne"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a  wine. It is still It's a Primitivo Made in 2020 The grape is Chardonnay",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "",
+                "sparkling": "no",
+                "abv": "",
+                "year": "2020",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a wine from Champagne .",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Champagne",
+                "country": "",
+                "color": "",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a red wine from Tuscany , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Tuscany",
+                "country": "Italy",
+                "color": "red",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in screwcap Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "screwcap",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco  Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep not in the fridge",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "no",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep in the fridge not in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "no",
+                "celler": "yes",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to eat fish, tell me the wine to drink.",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": "fish"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Champagne wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Champagne",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 1 bottles of  wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": 1,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 5,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me I want to pay by credit card",
+        "ground_truth": {
+            "intent": "delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "no",
+                "kind_pagament": "credit card"
+            }
+        }
+    },
+    {
+        "user_input": "My phone number is 333444555  I want to pay by credit card",
+        "ground_truth": {
+            "intent": "delivery",
+            "slots": {
+                "address": "",
+                "phone": "333444555",
+                "gift": "",
+                "kind_pagament": "credit card"
+            }
+        }
+    }
+]

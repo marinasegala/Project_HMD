@@ -102,13 +102,13 @@ class Dialogue:
             # intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
 
         #save intents_true, intents_pred, slots_true, slots_pred in a file
-        with open("evaluation.txt", "w", encoding="utf-8") as f:
+        with open("evaluation2.txt", "w", encoding="utf-8") as f:
             f.write(f"Intents True: \n{intents_true}\n\n")
             f.write(f"Intents Predicted: \n{intents_pred}\n\n")
             f.write(f"Slots True:\n {slots_true}\n\n")
             f.write(f"Slots Predicted: \n{slots_pred}")
 
-        with open("evaluation.json", "w", encoding="utf-8") as f:
+        with open("evaluation2.json", "w", encoding="utf-8") as f:
             json.dump(test_data, f, ensure_ascii=False, indent=4)
 
         print('OK')

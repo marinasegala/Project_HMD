@@ -1,0 +1,205 @@
+[
+    {
+        "user_input": "I want some information about a  wine. It is still It's a Primitivo",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "",
+                "color": "",
+                "sparkling": "no",
+                "abv": "",
+                "year": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a  wine. It is still   The grape is Chardonnay",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "",
+                "sparkling": "no",
+                "abv": "",
+                "year": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a red wine. It is still   The grape is Pinot Noir",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Pinot Noir",
+                "color": "red",
+                "sparkling": "no",
+                "abv": "",
+                "year": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a red wine from  , France.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "France",
+                "color": "red",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a rose wine from Champagne , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Champagne",
+                "country": "Italy",
+                "color": "rose",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in vinolok",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "",
+                "abv": "None",
+                "closure": "vinolok",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep in the fridge not in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "no",
+                "celler": "yes",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "How i can conserve a Primitivo wine?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Primitivo wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Primitivo",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a red wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "red",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 5,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy  bottles of  wine.",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": "",
+                "total_budget": "",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "My phone number is 333444555 This order is for me",
+        "ground_truth": {
+            "intent": "delivery",
+            "slots": {
+                "address": "",
+                "phone": "333444555",
+                "gift": "no",
+                "kind_pagament": ""
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift I want to pay by credit card",
+        "ground_truth": {
+            "intent": "delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "yes",
+                "kind_pagament": "credit card"
+            }
+        }
+    }
+]

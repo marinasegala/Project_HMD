@@ -1103,3 +1103,88 @@ INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help y
 INFO:Dialogue:Intents: ['out_of_domain']
 INFO:Dialogue:List intents: ['out_of_domain']
 INFO:Dialogue:NLU output: {'intent': 'out_of_domain'}
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"typology": "Prosecco", "year": "2019", "sparkling": "null", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'typology': 'Prosecco', 'year': '2019', 'sparkling': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin', 'wine_production']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": "yes", "abv": null, "year": "2019", "typology": "Champagne", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': 'Champagne', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:List intents: ['wine_details', 'wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"flavor": null, "grape": "Chardonnay", "color": null, "sparkling": null, "abv": null, "year": "2020", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': None, 'abv': None, 'year': '2020', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "France", "region": "Champagne", "color": null, "typology": null, "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'France', 'region': 'Champagne', 'color': None, 'typology': None, 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_origin']
+INFO:Dialogue:List intents: ['wine_origin']
+INFO:Dialogue:NLU output: {"intent": "wine_origin", "slots": {"country": "Italy", "region": "Tuscany", "color": "red", "typology": null, "title_bottle": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Tuscany', 'color': 'red', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_production', 'wine_details']
+INFO:Dialogue:List intents: ['wine_production', 'wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_production", "slots": {"grape": "Pinot Noir", "abv": null, "closure": "screwcap", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'screwcap', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_production', 'wine_details']
+INFO:Dialogue:List intents: ['wine_production', 'wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_production", "slots": {"grape": "Chardonnay"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_production', 'slots': {'grape': 'Chardonnay'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_production', 'wine_details']
+INFO:Dialogue:List intents: ['wine_production', 'wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_production", "slots": {"grape": "Pinot Noir", "abv": null, "closure": "natural cork", "typology": null, "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': None, 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['wine_conservation']
+INFO:Dialogue:List intents: ['wine_conservation']
+INFO:Dialogue:NLU output: {"intent": "wine_conservation", "slots": {"typology": "null", "fridge": "false", "cellar": "null", "temperature": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_conservation', 'slots': {'typology': 'null', 'fridge': 'false', 'cellar': 'null', 'temperature': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['delivery']
+INFO:Dialogue:List intents: ['delivery']
+INFO:Dialogue:NLU output: {"intent": "wine_delivery", "slots": {"address": null, "phone": null, "gift": null, "kind_pagament": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_delivery', 'slots': {'address': None, 'phone': None, 'gift': None, 'kind_pagament': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['choosing_food']
+INFO:Dialogue:List intents: ['choosing_food']
+INFO:Dialogue:NLU output: {"intent": "choosing_food", "slots": {"color": null, "style": null, "typology": null, "food": "fish", "giving_list_wine": null}}
+INFO:Dialogue:NLU output: {'intent': 'choosing_food', 'slots': {'color': None, 'style': None, 'typology': None, 'food': 'fish', 'giving_list_wine': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['choosing_food']
+INFO:Dialogue:List intents: ['choosing_food']
+INFO:Dialogue:NLU output: {"intent": "choosing_food", "slots": {"color": "null", "style": "null", "typology": "Champagne", "food": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'choosing_food', 'slots': {'color': 'null', 'style': 'null', 'typology': 'Champagne', 'food': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['delivery']
+INFO:Dialogue:List intents: ['delivery']
+INFO:Dialogue:NLU output: {"intent": "wine_delivery", "slots": {"address": "null", "phone": "null", "gift": "null", "kind_pagament": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_delivery', 'slots': {'address': 'null', 'phone': 'null', 'gift': 'null', 'kind_pagament': 'null'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['delivery']
+INFO:Dialogue:List intents: ['delivery']
+INFO:Dialogue:NLU output: {"intent": "wine_delivery", "slots": {"address": null, "phone": null, "gift": null, "kind_pagament": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_delivery', 'slots': {'address': None, 'phone': None, 'gift': None, 'kind_pagament': None}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['delivery']
+INFO:Dialogue:List intents: ['delivery']
+INFO:Dialogue:NLU output: {"intent": "wine_delivery", "slots": {"address": "Via Roma 1", "phone": "333444555", "gift": "null", "kind_pagament": "credit card"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'null', 'kind_pagament': 'credit card'}}
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+INFO:Dialogue:Intents: ['delivery']
+INFO:Dialogue:List intents: ['delivery']
+INFO:Dialogue:NLU output: {"intent": "wine_delivery", "slots": {"address": "null", "phone": "333444555", "gift": "null", "kind_pagament": "credit card"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_delivery', 'slots': {'address': 'null', 'phone': '333444555', 'gift': 'null', 'kind_pagament': 'credit card'}}
