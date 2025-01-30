@@ -1,5 +1,5 @@
 Intents True: 
-['wine_details', 'wine_details', 'wine_details', 'wine_origin', 'wine_origin', 'wine_production', 'wine_production', 'wine_production', 'wine_conservation', 'wine_conservation', 'choosing_food', 'choosing_food', 'wine_ordering', 'wine_ordering', 'delivery', 'delivery']
+['wine_details', 'wine_details', 'wine_details', 'wine_origin', 'wine_origin', 'wine_production', 'wine_production', 'wine_production', 'wine_conservation', 'wine_conservation', 'choosing_food', 'choosing_food', 'wine_ordering', 'wine_ordering', 'wine_delivery', 'wine_delivery']
 
 Intents Predicted: 
 ['wine_details', 'wine_details', 'wine_details', 'wine_origin', 'wine_origin', 'wine_production', 'wine_production', 'wine_production', 'wine_conservation', 'wine_delivery', 'choosing_food', 'choosing_food', 'wine_delivery', 'wine_delivery', 'wine_delivery', 'wine_delivery']
