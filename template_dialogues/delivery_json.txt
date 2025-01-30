@@ -1,48 +1,48 @@
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': ''}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': 'credit card'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': 'cash'}}
-{'intent': 'delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': 'no', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '', 'gift': '', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': 'no', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '333444555', 'gift': '', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'yes', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': 'no', 'kind_pagament': ''}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': 'credit card'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': 'cash'}}
+{'intent': 'wine_delivery', 'slots': {'address': '', 'phone': '', 'gift': '', 'kind_pagament': ''}}
