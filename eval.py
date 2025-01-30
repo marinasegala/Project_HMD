@@ -19,7 +19,7 @@ def selection_phrase(test_data, name_file, num_phrases=2):
         lines2 = f2.readlines()
 
     index = random.randint(0, len(lines1) - 1)
-    for i in range(0,2):  # Ogni esempio è su 2 righe consecutive
+    for i in range(0,num_phrases):  # Ogni esempio è su 2 righe consecutive
         
         user_input = lines1[index].strip()  # Prima riga: frase utente
         phrase2 = lines2[index].strip()
