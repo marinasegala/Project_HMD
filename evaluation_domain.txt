@@ -1,0 +1,11 @@
+Intents True: 
+['out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain']
+
+Intents Predicted: 
+['out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain', 'out_of_domain']
+
+Slots True:
+ []
+
+Slots Predicted: 
+[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
