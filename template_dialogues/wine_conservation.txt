@@ -10,3 +10,5 @@ Wine that to keep in the fridge in the celler
 Wine that to keep in the fridge 
 Wine that to keep  not in the celler
 Wine that to keep  in the celler
+Which wine need a temperature equal to 7?
+Which wine need a temperature equal to 17?

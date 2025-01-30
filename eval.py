@@ -18,20 +18,20 @@ def selection_phrase(test_data, name_file, num_phrases=14):
         lines1 = f1.readlines()
         lines2 = f2.readlines()
     list_ind = []
-    index = random.randint(0, len(lines1) - 1)
+#    index = random.randint(0, len(lines1) - 1)
     for i in range(0,num_phrases):  # Ogni esempio è su 2 righe consecutive
-        list_ind.append(index)
-        user_input = lines1[index].strip()  # Prima riga: frase utente
-        phrase2 = lines2[index].strip()
+        list_ind.append(i)
+        user_input = lines1[i].strip()  # Prima riga: frase utente
+        phrase2 = lines2[i].strip()
         phrase2 = phrase2.replace('None', "'None'")
         ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
-        num = random.randint(0, len(lines1) - 1)
-        while num in list_ind:
-            num = random.randint(0, len(lines1) - 1)
-        index = num
+#        num = random.randint(0, len(lines1) - 1)
+#        while num in list_ind:
+#            num = random.randint(0, len(lines1) - 1)
+#        index = num
         test_data.append({"user_input": user_input, "ground_truth": ground_truth})
-        print(user_input)
-        print(ground_truth)
+#        print(user_input)
+#        print(ground_truth)
     return test_data
 
 def evaluate_nlu(nlu, test_data):
@@ -75,8 +75,10 @@ class Dialogue:
         slots_empty = 1
         action = ''
         # exit the loop using CTRL+C
+        count = 0
         for sample in test_data:
-            print(f"\n\n---------\n{sample}\n-------\n")
+            count += 1
+            print(f"\n\n---------\n{count}\n-------\n")
             user_input = sample["user_input"]
             ground_truth = sample["ground_truth"]
             ground_truth_intent = ground_truth["intent"]
@@ -85,7 +87,8 @@ class Dialogue:
             self.history.clear()
             starting = PROMPTS["START"]
             self.history.add_msg(starting, 'assistant', 'init')
-            self.history.update_last_int('delivery')
+            if (ground_truth_intent == 'wine_delivery'):
+                self.history.update_last_int('delivery')
             prediction = self.nlu(user_input, 0)
             # intent, total_slots, full_slot = self.tracker.creation(prediction, self.history, True)
             # slots_empty = total_slots - full_slot  # Se tutti i valori sono vuoti, consideriamo slots_empty=True
