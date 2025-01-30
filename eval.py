@@ -12,7 +12,7 @@ logger.setLevel(logging.DEBUG)
 intents_true, intents_pred = [], []
 slots_true, slots_pred = [], []
 
-def selection_phrase(test_data, name_file, num_phrases=2):
+def selection_phrase(test_data, name_file, num_phrases=14):
 
     with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
         lines1 = f1.readlines()
@@ -60,13 +60,13 @@ class Dialogue:
 
     def start(self):
         test_data = []
-        test_data = selection_phrase(test_data, "wine_details", 3)
-        test_data = selection_phrase(test_data, "wine_origin", 2)
-        test_data = selection_phrase(test_data, "wine_production", 3)
-        test_data = selection_phrase(test_data, "wine_conservation", 2)
-        test_data = selection_phrase(test_data, "wine_paring", 2)
-        test_data = selection_phrase(test_data, "wine_ordering", 2)
-        test_data = selection_phrase(test_data, "delivery", 2)
+        test_data = selection_phrase(test_data, "wine_details", 15)
+        test_data = selection_phrase(test_data, "wine_origin", 14)
+        test_data = selection_phrase(test_data, "wine_production", 15)
+        test_data = selection_phrase(test_data, "wine_conservation", 14)
+        test_data = selection_phrase(test_data, "wine_paring", 14)
+        test_data = selection_phrase(test_data, "wine_ordering", 14)
+        test_data = selection_phrase(test_data, "delivery", 14)
 
         # starting = PROMPTS["START"]
         # self.history.add_msg(starting, 'assistant', 'init')
@@ -102,13 +102,13 @@ class Dialogue:
             # intents_true, intents_pred, slots_true, slots_pred = evaluate_nlu(self.nlu, test_data)
 
         #save intents_true, intents_pred, slots_true, slots_pred in a file
-        with open("evaluation2.txt", "w", encoding="utf-8") as f:
+        with open("evaluation3.txt", "w", encoding="utf-8") as f:
             f.write(f"Intents True: \n{intents_true}\n\n")
             f.write(f"Intents Predicted: \n{intents_pred}\n\n")
             f.write(f"Slots True:\n {slots_true}\n\n")
             f.write(f"Slots Predicted: \n{slots_pred}")
 
-        with open("evaluation2.json", "w", encoding="utf-8") as f:
+        with open("evaluation3.json", "w", encoding="utf-8") as f:
             json.dump(test_data, f, ensure_ascii=False, indent=4)
 
         print('OK')
