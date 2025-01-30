@@ -19,12 +19,15 @@ def selection_phrase(test_data, name_file, num_phrases=14):
         lines2 = f2.readlines()
     list_ind = []
 #    index = random.randint(0, len(lines1) - 1)
-    for i in range(0,num_phrases):  # Ogni esempio è su 2 righe consecutive
+    for i in range(0,100):  # Ogni esempio è su 2 righe consecutive
         list_ind.append(i)
         user_input = lines1[i].strip()  # Prima riga: frase utente
         phrase2 = lines2[i].strip()
         phrase2 = phrase2.replace('None', "'None'")
-        ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
+        if 'out_of_domain' in phrase2:
+            ground_truth = {"intent": "out_of_domain"}
+        else:
+            ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
 #        num = random.randint(0, len(lines1) - 1)
 #        while num in list_ind:
 #            num = random.randint(0, len(lines1) - 1)
@@ -60,13 +63,14 @@ class Dialogue:
 
     def start(self):
         test_data = []
-        test_data = selection_phrase(test_data, "wine_details", 15)
-        test_data = selection_phrase(test_data, "wine_origin", 14)
-        test_data = selection_phrase(test_data, "wine_production", 15)
-        test_data = selection_phrase(test_data, "wine_conservation", 14)
-        test_data = selection_phrase(test_data, "wine_paring", 14)
-        test_data = selection_phrase(test_data, "wine_ordering", 14)
-        test_data = selection_phrase(test_data, "delivery", 14)
+        test_data = selection_phrase(test_data, "intents")
+#        test_data = selection_phrase(test_data, "wine_details", 15)
+#        test_data = selection_phrase(test_data, "wine_origin", 14)
+#        test_data = selection_phrase(test_data, "wine_production", 15)
+#        test_data = selection_phrase(test_data, "wine_conservation", 14)
+#        test_data = selection_phrase(test_data, "wine_paring", 14)
+#        test_data = selection_phrase(test_data, "wine_ordering", 14)
+#        test_data = selection_phrase(test_data, "delivery", 14)
 
         # starting = PROMPTS["START"]
         # self.history.add_msg(starting, 'assistant', 'init')
@@ -82,7 +86,7 @@ class Dialogue:
             user_input = sample["user_input"]
             ground_truth = sample["ground_truth"]
             ground_truth_intent = ground_truth["intent"]
-            ground_truth_slots = ground_truth["slots"]
+            ground_truth_slots = ground_truth["slots"] if "slots" in ground_truth else []
 
             self.history.clear()
             starting = PROMPTS["START"]

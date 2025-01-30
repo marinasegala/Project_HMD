@@ -1,317 +1,31 @@
 [
     {
-        "user_input": "I want some information about a white wine, it is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay",
+        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Valdobbiadene grape",
         "ground_truth": {
-            "intent": "wine_details",
+            "intent": "wine_production",
             "slots": {
-                "flavor": "None",
-                "grape": "Chardonnay",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2019",
-                "typology": "Primitivo"
+                "grape": "Valdobbiad",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Champagne"
             }
         }
     },
     {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Chardonnay",
+        "user_input": "I have to go to the store",
         "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Chardonnay",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2020",
-                "typology": "Primitivo"
-            }
+            "intent": "out_of_domain"
         }
     },
     {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Chardonnay",
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is order is a gift",
         "ground_truth": {
-            "intent": "wine_details",
+            "intent": "wine_delivery",
             "slots": {
-                "flavor": "None",
-                "grape": "Chardonnay",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2021",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Chardonnay",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Chardonnay",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Pinot Noir",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Pinot Noir",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2019",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Pinot Noir",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Pinot Noir",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2020",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Pinot Noir",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Pinot Noir",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2021",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Pinot Noir",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Pinot Noir",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Valdobbiadene",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Valdobbiadene",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2019",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Valdobbiadene",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Valdobbiadene",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2020",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Valdobbiadene",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Valdobbiadene",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2021",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Valdobbiadene",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "Valdobbiadene",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2019",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2020",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021",
-        "ground_truth": {
-            "intent": "wine_details",
-            "slots": {
-                "flavor": "None",
-                "grape": "",
-                "color": "white",
-                "sparkling": "yes",
-                "abv": "",
-                "year": "2021",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me the origin of a Primitivo wine?",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "",
-                "country": "",
-                "color": "",
-                "typology": "Primitivo",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me the origin of a Champagne wine?",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "",
-                "country": "",
-                "color": "",
-                "typology": "Champagne",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me the origin of a Prosecco wine?",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "",
-                "country": "",
-                "color": "",
-                "typology": "Prosecco",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me the origin of a  wine?",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "",
-                "country": "",
-                "color": "",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a white wine from Tuscany , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "Tuscany",
-                "country": "Italy",
-                "color": "white",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a red wine from Tuscany , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "Tuscany",
-                "country": "Italy",
-                "color": "red",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a rose wine from Tuscany , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "Tuscany",
-                "country": "Italy",
-                "color": "rose",
-                "typology": "",
-                "title_bottle": "None"
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "yes",
+                "kind_pagament": ""
             }
         }
     },
@@ -323,32 +37,6 @@
                 "region": "Tuscany",
                 "country": "Italy",
                 "color": "",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a white wine from Champagne , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "Champagne",
-                "country": "Italy",
-                "color": "white",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a red wine from Champagne , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "Champagne",
-                "country": "Italy",
-                "color": "red",
                 "typology": "",
                 "title_bottle": "None"
             }
@@ -368,185 +56,29 @@
         }
     },
     {
-        "user_input": "I want to know a wine from Champagne , Italy.",
+        "user_input": "I want to buy 1 bottles of  wine.",
         "ground_truth": {
-            "intent": "wine_origin",
+            "intent": "wine_ordering",
             "slots": {
-                "region": "Champagne",
-                "country": "Italy",
-                "color": "",
                 "typology": "",
-                "title_bottle": "None"
+                "quantity": 1,
+                "total_budget": "",
+                "title_bottle": ""
             }
         }
     },
     {
-        "user_input": "I want to know a white wine from  , Italy.",
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Chardonnay",
         "ground_truth": {
-            "intent": "wine_origin",
+            "intent": "wine_details",
             "slots": {
-                "region": "",
-                "country": "Italy",
+                "flavor": "None",
+                "grape": "Chardonnay",
                 "color": "white",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "I want to know a red wine from  , Italy.",
-        "ground_truth": {
-            "intent": "wine_origin",
-            "slots": {
-                "region": "",
-                "country": "Italy",
-                "color": "red",
-                "typology": "",
-                "title_bottle": "None"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Chardonnay grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Chardonnay",
-                "abv": "None",
-                "closure": "natural cork",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2020",
                 "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Chardonnay grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Chardonnay",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Champagne"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Chardonnay grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Chardonnay",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Prosecco"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Chardonnay grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Chardonnay",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Pinot Noir grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Pinot Noir",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Pinot Noir grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Pinot Noir",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Champagne"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Pinot Noir grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Pinot Noir",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Prosecco"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Pinot Noir grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Pinot Noir",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Valdobbiadene grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Valdobbiad",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Valdobbiadene grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Valdobbiad",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Champagne"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Valdobbiadene grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Valdobbiad",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Prosecco"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Valdobbiadene grape",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "Valdobbiad",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": ""
             }
         }
     },
@@ -563,218 +95,14 @@
         }
     },
     {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork",
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me I want to pay by credit card",
         "ground_truth": {
-            "intent": "wine_production",
+            "intent": "wine_delivery",
             "slots": {
-                "grape": "",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Champagne"
-            }
-        }
-    },
-    {
-        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork",
-        "ground_truth": {
-            "intent": "wine_production",
-            "slots": {
-                "grape": "",
-                "abv": "None",
-                "closure": "natural cork",
-                "typology": "Prosecco"
-            }
-        }
-    },
-    {
-        "user_input": "How i can conserve a Primitivo wine?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "",
-                "typology": "Primitivo"
-            }
-        }
-    },
-    {
-        "user_input": "How i can conserve a Champagne wine?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "",
-                "typology": "Champagne"
-            }
-        }
-    },
-    {
-        "user_input": "How i can conserve a Prosecco wine?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "",
-                "typology": "Prosecco"
-            }
-        }
-    },
-    {
-        "user_input": "How i can conserve a  wine?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep not in the fridge not in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "no",
-                "celler": "no",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep not in the fridge in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "yes",
-                "celler": "no",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep not in the fridge",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "no",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep in the fridge not in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "no",
-                "celler": "yes",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep in the fridge in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "yes",
-                "celler": "yes",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep in the fridge",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "yes",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep  not in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "no",
-                "celler": "",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Wine that to keep  in the celler",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "yes",
-                "celler": "",
-                "temperature": "",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Which wine need a temperature equal to 7?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "7",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "Which wine need a temperature equal to 17?",
-        "ground_truth": {
-            "intent": "wine_conservation",
-            "slots": {
-                "fridge": "",
-                "celler": "",
-                "temperature": "17",
-                "typology": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a Primitivo wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "Primitivo",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a Champagne wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "Champagne",
-                "food": ""
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "no",
+                "kind_pagament": "credit card"
             }
         }
     },
@@ -787,186 +115,6 @@
                 "color": "",
                 "typology": "Prosecco",
                 "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a white wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "white",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a red wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "red",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a rose wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "rose",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to eat aperitif, tell me the wine to drink.",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "rose",
-                "food": "aperitif"
-            }
-        }
-    },
-    {
-        "user_input": "I want to eat fish, tell me the wine to drink.",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "rose",
-                "food": "fish"
-            }
-        }
-    },
-    {
-        "user_input": "I want to eat desser, tell me the wine to drink.",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "rose",
-                "food": "desser"
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a Primitivo wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "Primitivo",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a Champagne wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "Champagne",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a Prosecco wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "Prosecco",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a white wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "white",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to drink a red wine, which food should I choose?",
-        "ground_truth": {
-            "intent": "choosing_food",
-            "slots": {
-                "style": "",
-                "color": "",
-                "typology": "red",
-                "food": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 1 bottles of Prosecco wine. My total budget is 100",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 1,
-                "total_budget": "100",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 1 bottles of Prosecco wine. My total budget is 40",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 1,
-                "total_budget": "40",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 1 bottles of Prosecco wine.",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 1,
-                "total_budget": "",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 1 bottles of  wine. My total budget is 100",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "",
-                "quantity": 1,
-                "total_budget": "100",
-                "title_bottle": ""
             }
         }
     },
@@ -983,111 +131,15 @@
         }
     },
     {
-        "user_input": "I want to buy 1 bottles of  wine.",
+        "user_input": "I want to buy sushi",
         "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "",
-                "quantity": 1,
-                "total_budget": "",
-                "title_bottle": ""
-            }
+            "intent": "out_of_domain"
         }
     },
     {
-        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 100",
+        "user_input": "I have to study",
         "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 5,
-                "total_budget": "100",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 40",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 5,
-                "total_budget": "40",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 5 bottles of Prosecco wine.",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": 5,
-                "total_budget": "",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 5 bottles of  wine. My total budget is 100",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "",
-                "quantity": 5,
-                "total_budget": "100",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 5 bottles of  wine. My total budget is 40",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "",
-                "quantity": 5,
-                "total_budget": "40",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy 5 bottles of  wine.",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "",
-                "quantity": 5,
-                "total_budget": "",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy  bottles of Prosecco wine. My total budget is 100",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": "",
-                "total_budget": "100",
-                "title_bottle": ""
-            }
-        }
-    },
-    {
-        "user_input": "I want to buy  bottles of Prosecco wine. My total budget is 40",
-        "ground_truth": {
-            "intent": "wine_ordering",
-            "slots": {
-                "typology": "Prosecco",
-                "quantity": "",
-                "total_budget": "40",
-                "title_bottle": ""
-            }
+            "intent": "out_of_domain"
         }
     },
     {
@@ -1115,98 +167,90 @@
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is order is a gift",
+        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 100",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "wine_ordering",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "yes",
-                "kind_pagament": ""
+                "typology": "Prosecco",
+                "quantity": 5,
+                "total_budget": "100",
+                "title_bottle": ""
             }
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift I want to pay by credit card",
+        "user_input": "Wine that to keep not in the fridge not in the celler",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "wine_conservation",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "yes",
-                "kind_pagament": "credit card"
+                "fridge": "no",
+                "celler": "no",
+                "temperature": "",
+                "typology": ""
             }
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift I want to pay by cash",
+        "user_input": "I want a pizza",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "I want to know a red wine from Champagne , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "yes",
-                "kind_pagament": "cash"
+                "region": "Champagne",
+                "country": "Italy",
+                "color": "red",
+                "typology": "",
+                "title_bottle": "None"
             }
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift",
+        "user_input": "I want to buy a house",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "I want to drink a rose wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "yes",
-                "kind_pagament": ""
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": ""
             }
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me I want to pay by credit card",
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Chardonnay",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "wine_details",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "no",
-                "kind_pagament": "credit card"
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2021",
+                "typology": "Primitivo"
             }
         }
     },
     {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me I want to pay by cash",
+        "user_input": "Wine that to keep not in the fridge in the celler",
         "ground_truth": {
-            "intent": "wine_delivery",
+            "intent": "wine_conservation",
             "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "no",
-                "kind_pagament": "cash"
-            }
-        }
-    },
-    {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me",
-        "ground_truth": {
-            "intent": "wine_delivery",
-            "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "no",
-                "kind_pagament": ""
-            }
-        }
-    },
-    {
-        "user_input": "My address is Via Roma 1 My phone number is 333444555  I want to pay by credit card",
-        "ground_truth": {
-            "intent": "wine_delivery",
-            "slots": {
-                "address": "Via Roma 1",
-                "phone": "333444555",
-                "gift": "",
-                "kind_pagament": "credit card"
+                "fridge": "yes",
+                "celler": "no",
+                "temperature": "",
+                "typology": ""
             }
         }
     },
@@ -1223,6 +267,157 @@
         }
     },
     {
+        "user_input": "Wine that to keep in the fridge",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "yes",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of  wine.",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": 5,
+                "total_budget": "",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Now I am doing a nap",
+        "ground_truth": {
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "I want to buy  bottles of Prosecco wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": "",
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a white wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "white",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a white wine from Tuscany , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Tuscany",
+                "country": "Italy",
+                "color": "white",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep  in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "yes",
+                "celler": "",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "How i can conserve a Prosecco wine?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 1 bottles of Prosecco wine. My total budget is 100",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 1,
+                "total_budget": "100",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "Which wine need a temperature equal to 7?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "7",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Champagne wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Champagne",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Champagne"
+            }
+        }
+    },
+    {
         "user_input": "My address is Via Roma 1 My phone number is 333444555",
         "ground_truth": {
             "intent": "wine_delivery",
@@ -1232,6 +427,82 @@
                 "gift": "",
                 "kind_pagament": ""
             }
+        }
+    },
+    {
+        "user_input": "How i can conserve a Champagne wine?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "",
+                "typology": "Champagne"
+            }
+        }
+    },
+    {
+        "user_input": "I am tired",
+        "ground_truth": {
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Valdobbiadene grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Valdobbiad",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me the origin of a Champagne wine?",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "",
+                "color": "",
+                "typology": "Champagne",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 1 bottles of Prosecco wine.",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 1,
+                "total_budget": "",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Valdobbiadene",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Valdobbiadene",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you suggest me a tv show to watch?",
+        "ground_truth": {
+            "intent": "out_of_domain"
         }
     },
     {
@@ -1247,6 +518,99 @@
         }
     },
     {
+        "user_input": "Wine that to keep  not in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "no",
+                "celler": "",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a red wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "red",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep in the fridge not in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "no",
+                "celler": "yes",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "Tomorrow I have to wake up early",
+        "ground_truth": {
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "I want to eat aperitif, tell me the wine to drink.",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": "aperitif"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Champagne wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Champagne",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2020",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
         "user_input": "My address is Via Roma 1  This is order is a gift I want to pay by cash",
         "ground_truth": {
             "intent": "wine_delivery",
@@ -1255,6 +619,560 @@
                 "phone": "",
                 "gift": "yes",
                 "kind_pagament": "cash"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a red wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "red",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Valdobbiadene grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Valdobbiad",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift",
+        "ground_truth": {
+            "intent": "wine_delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "yes",
+                "kind_pagament": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to eat desser, tell me the wine to drink.",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": "desser"
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me",
+        "ground_truth": {
+            "intent": "wine_delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "no",
+                "kind_pagament": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Primitivo wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Primitivo",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep in the fridge in the celler",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "yes",
+                "celler": "yes",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a red wine from  , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "Italy",
+                "color": "red",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Valdobbiadene",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Valdobbiadene",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2021",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of Prosecco wine.",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 5,
+                "total_budget": "",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Chardonnay grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Chardonnay",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Valdobbiadene",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Valdobbiadene",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2020",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Champagne"
+            }
+        }
+    },
+    {
+        "user_input": "I need water",
+        "ground_truth": {
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "Can you tell me the origin of a Primitivo wine?",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "",
+                "color": "",
+                "typology": "Primitivo",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Pinot Noir",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Pinot Noir",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2020",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy  bottles of Prosecco wine. My total budget is 100",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": "",
+                "total_budget": "100",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This is not a gift I want to pay by cash",
+        "ground_truth": {
+            "intent": "wine_delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "yes",
+                "kind_pagament": "cash"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Prosecco conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Prosecco"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 1 bottles of  wine. My total budget is 100",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": 1,
+                "total_budget": "100",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "Wine that to keep not in the fridge",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "no",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine, it is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2019",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a red wine from Tuscany , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Tuscany",
+                "country": "Italy",
+                "color": "red",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Chardonnay",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Chardonnay",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 1 bottles of Prosecco wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 1,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me the origin of a  wine?",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "",
+                "color": "",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Primitivo conserved in natural cork Valdobbiadene grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Valdobbiad",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Prosecco wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Prosecco",
+                "food": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of  wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": 5,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "My address is Via Roma 1 My phone number is 333444555 This order is for me I want to pay by cash",
+        "ground_truth": {
+            "intent": "wine_delivery",
+            "slots": {
+                "address": "Via Roma 1",
+                "phone": "333444555",
+                "gift": "no",
+                "kind_pagament": "cash"
+            }
+        }
+    },
+    {
+        "user_input": "I want to eat fish, tell me the wine to drink.",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "rose",
+                "food": "fish"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine?  conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "Is the wine shop open?",
+        "ground_truth": {
+            "intent": "out_of_domain"
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of Prosecco wine. My total budget is 40",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "Prosecco",
+                "quantity": 5,
+                "total_budget": "40",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a white wine from Champagne , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Champagne",
+                "country": "Italy",
+                "color": "white",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Pinot Noir grape",
+        "ground_truth": {
+            "intent": "wine_production",
+            "slots": {
+                "grape": "Pinot Noir",
+                "abv": "None",
+                "closure": "natural cork",
+                "typology": "Champagne"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a rose wine from Tuscany , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "Tuscany",
+                "country": "Italy",
+                "color": "rose",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Pinot Noir",
+        "ground_truth": {
+            "intent": "wine_details",
+            "slots": {
+                "flavor": "None",
+                "grape": "Pinot Noir",
+                "color": "white",
+                "sparkling": "yes",
+                "abv": "",
+                "year": "2019",
+                "typology": "Primitivo"
+            }
+        }
+    },
+    {
+        "user_input": "Which wine need a temperature equal to 17?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "17",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "Can you tell me the origin of a Prosecco wine?",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "",
+                "color": "",
+                "typology": "Prosecco",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "I want to know a white wine from  , Italy.",
+        "ground_truth": {
+            "intent": "wine_origin",
+            "slots": {
+                "region": "",
+                "country": "Italy",
+                "color": "white",
+                "typology": "",
+                "title_bottle": "None"
+            }
+        }
+    },
+    {
+        "user_input": "How i can conserve a  wine?",
+        "ground_truth": {
+            "intent": "wine_conservation",
+            "slots": {
+                "fridge": "",
+                "celler": "",
+                "temperature": "",
+                "typology": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to buy 5 bottles of  wine. My total budget is 100",
+        "ground_truth": {
+            "intent": "wine_ordering",
+            "slots": {
+                "typology": "",
+                "quantity": 5,
+                "total_budget": "100",
+                "title_bottle": ""
+            }
+        }
+    },
+    {
+        "user_input": "I want to drink a Primitivo wine, which food should I choose?",
+        "ground_truth": {
+            "intent": "choosing_food",
+            "slots": {
+                "style": "",
+                "color": "",
+                "typology": "Primitivo",
+                "food": ""
             }
         }
     }
