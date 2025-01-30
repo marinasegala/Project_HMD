@@ -63,7 +63,7 @@ for c, s, t, g, y in product(color, sparkling, typology, grape, year):
         f.write(str(ds2) + "\n")
 '''
 # ORIGIN
-# '''
+'''
 temp2 = "Can you tell me the origin of a {} wine?"
 temp3 = "I want to know a{} wine from {} {}."
 ds3 = {
@@ -106,7 +106,7 @@ for c, r, col in product(country, region, color):
     
     with open("wine_origin_json.txt", "a") as f:
         f.write(str(ds3) + "\n")
-# '''
+'''
 # PRODUCTION
 '''
 temp3 = "Can you tell me other info about the production of a wine? {} {} {}"
@@ -236,23 +236,58 @@ for c, f in product(fridge, celler):
 #     with open("wine_conservation_json.txt", "a") as f:
 #         f.write(str(ds) + "\n")
 
+#ORDERING   
 
-# ORDERING (+ DELIVERY)
+temp = 'I want to buy {} bottles of {} wine. {}'
+ds = {
+    "intent": "wine_ordering",
+    "slots": {
+        "typology": "",
+        "quantity": "",
+        "total_budget": "", 
+        "title_bottle": ""
+    }
+}
+qnt = [1, 5, '']
+typology = ["Prosecco", ""]
+total_budget = ['My total budget is 100', 'My total budget is 40', '']
+for q, t, b in product(qnt, typology, total_budget):
+    filled_template = temp.format(q, t, b)
+    ds["slots"]["typology"] = t
+    ds["slots"]["quantity"] = q
+    ds["slots"]["total_budget"] = b[19:]
 
-# temp = 'I want to order {} {} bottles of wine. {}'
-
-# qnt = [1, 3, 5]
-# typology = ["Primitivo", "Champagne", "Prosecco", ""]
-# budget = ['My total budget is 100', 'My total budget is 40', '']
-
-# for q, t, b in product(qnt, typology, budget):
-#     filled_template = temp.format(q, t, b)
-#     ds["slots"]["typology"] = t
-#     ds["slots"]["quantity"] = q
-#     ds["slots"]["total_budget"] = b[19:]
-
-#     with open("wine_ordering.txt", "a") as f:
-#         f.write(filled_template + "\n")
+    with open("wine_ordering.txt", "a") as f:
+        f.write(filled_template + "\n")
     
-#     with open("wine_ordering_json.txt", "a") as f:
-#         f.write(str(ds) + "\n")
+    with open("wine_ordering_json.txt", "a") as f:
+        f.write(str(ds) + "\n")
+
+#DELIVERY
+temp = '{} {} {} {}'
+ds = {
+    "intent": "delivery",
+    "slots": {
+        "address": "",
+        "phone": "",
+        "gift": "",
+        "kind_pagament": ""
+    }
+}
+address = ["My address is Via Roma 1", ""]
+phone = ["My phone number is 333444555", ""]
+gift = ["This is order is a gift", "This is not a gift", "This order is for me", ""]
+kind_pagament = ["I want to pay by credit card", "I want to pay by cash", ""]
+
+for a, p, g, k in product(address, phone, gift, kind_pagament):
+    filled_template = temp.format(a, p, g, k)
+    ds["slots"]["address"] = a[14:]
+    ds["slots"]["phone"] = p[19:]
+    ds["slots"]["gift"] = 'yes' if "gift" in g else 'no' if ("not" in g or 'me' in g) else ''
+    ds["slots"]["kind_pagament"] = k[17:]
+
+    with open("delivery.txt", "a") as f:
+        f.write(filled_template + "\n")
+    
+    with open("delivery_json.txt", "a") as f:
+        f.write(str(ds) + "\n")

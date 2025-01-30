@@ -1,36 +1,18 @@
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 1, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 1, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 1, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 1, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 1, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 1, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 1, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 1, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 1, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 1, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 1, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 1, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 3, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 3, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 3, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 3, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 3, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 3, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 3, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 3, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 3, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 3, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 3, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 3, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 5, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 5, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Primitivo', 'food': 'desser', 'quantity': 5, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 5, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 5, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Champagne', 'food': 'desser', 'quantity': 5, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 5, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 5, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': 'Prosecco', 'food': 'desser', 'quantity': 5, 'total_budget': ''}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 5, 'total_budget': '100'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 5, 'total_budget': '40'}}
-{'intent': 'choosing_food', 'slots': {'style': '', 'color': '', 'typology': '', 'food': 'desser', 'quantity': 5, 'total_budget': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 1, 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 1, 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 1, 'total_budget': '', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 1, 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 1, 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 1, 'total_budget': '', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': '', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 5, 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 5, 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': 5, 'total_budget': '', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '', 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '', 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '', 'total_budget': '', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': '', 'total_budget': '100', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': '', 'total_budget': '40', 'title_bottle': ''}}
+{'intent': 'wine_ordering', 'slots': {'typology': '', 'quantity': '', 'total_budget': '', 'title_bottle': ''}}
