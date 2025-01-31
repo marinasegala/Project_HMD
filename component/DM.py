@@ -29,7 +29,7 @@ class DM():
         if tracker.required_list_user or last_action == 'provide_list':
             nba = PROMPTS['give_list']
             dm_text = str(info_text)[:-2] + ", 'provide_list' = True}}"
-        
+        ret = dm_text
         adding = adding + PROMPTS["DM_end"]
 
         if 'ordering' in intent:
@@ -48,4 +48,4 @@ class DM():
         
         self.logger.debug(f"DM output: {dm_output}")
         action, argument = extract_action_and_argument(dm_output)
-        return action, argument
+        return action, argument, ret

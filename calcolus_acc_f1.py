@@ -49,7 +49,7 @@ def calculate_overall_accuracy(intents_true, intents_pred, slots_true, slots_pre
 
 # Read the text file
 
-name = 'evaluation3'
+name = 'evaluation5'
 
 with open(f"{name}.txt", "r", encoding="utf-8") as file:
     data = file.read()
@@ -66,8 +66,9 @@ slots_pred = extract_list("Slots Predicted:", data)
 # slots_true = slots_true[:-2]
 # slots_pred = slots_pred[:-2]
 
-slots_true = [normalize_slots(s) for s in slots_true]
-slots_pred = [normalize_slots(s) for s in slots_pred]
+slots_true = [normalize_slots(s) if s != {} else {} for s in slots_true]
+slots_pred = [normalize_slots(s) if s != {} else {} for s in slots_pred]
+
 
 
 for x in slots_pred:
