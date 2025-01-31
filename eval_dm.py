@@ -86,11 +86,12 @@ class Dialogue:
         
             # get the DM output
             action, arg, ret = self.dm(self.tracker, intent, can_search, action)
-            with open("action_predict.txt", "a") as f:
+            with open("action_predict1.txt", "a") as f:
                 f.write(f"{action}({arg})\n")
-            with open("json_after_dm.txt", "a") as f:
+            with open("json_after_dm1.txt", "a") as f:
                 f.write(f"{ret}\n")
-            
+            with open("saving_nlu_dm.txt", "a") as f:
+                f.write(f"{infos}\n")
             # Estrarre intent e slots previsti
         #     predicted_intent = prediction.get("intent", "")
         #     predicted_slots = prediction.get("slots", {})

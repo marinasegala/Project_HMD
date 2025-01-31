@@ -118,3 +118,13 @@
 {'intent': 'wine_production', 'slots': {'grape': 'Primitivo', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne', 'provide_list' = True}}
 {'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': None, 'kind_pagament': 'credit card'}}
 {'intent': 'choosing_food', 'slots': {'style': None, 'color': None, 'typology': 'Prosecco', 'food': None, 'provide_list' = True}}
+{'intent': 'wine_production', 'slots': {'grape': None, 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne', 'provide_list' = True}}
+{'intent': 'out_of_domain, 'provide_list' = True}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': None, 'kind_pagament': None}}
+{'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Tuscany', 'color': None, 'typology': None, 'title_bottle': None, 'provide_list' = True}}
+{'intent': 'wine_origin', 'slots': {'country': 'Italy', 'region': 'Champagne', 'color': 'rose', 'typology': None, 'title_bottle': None, 'provide_list' = True}}
+{'intent': 'wine_ordering', 'slots': {'typology': None, 'quantity': '1', 'total_budget': None, 'title_bottle': None}}
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': None, 'abv': None, 'year': '2020', 'typology': None, 'provide_list' = True}}
+{'intent': 'wine_production', 'slots': {'grape': 'Primitivo', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne', 'provide_list' = True}}
+{'intent': 'wine_delivery', 'slots': {'address': 'Via Roma 1', 'phone': '333444555', 'gift': None, 'kind_pagament': 'credit card', 'provide_list' = True}}
+{'intent': 'choosing_food', 'slots': {'style': None, 'color': None, 'typology': 'Prosecco', 'food': None, 'provide_list' = True}}

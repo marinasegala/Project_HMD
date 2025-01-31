@@ -115,20 +115,20 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
             if possibilities[possible_field] == True:
                 setattr(intent_class, field, value)
                 return True, 1
-                break
             if possibilities[possible_field] == False:
                 if getattr(intent_class, 'quantity') is not None and value is not None:
                     quantity = int(getattr(intent_class, 'quantity'))
                     print('ok: ', quantity, value)
                     return compare_price_buget(quantity, value, tracker, intent_class)
-                break
             for v in possibilities[possible_field]:
+                if type(value) == bool:
+                    if (v == 'yes' and value == True) or (v == 'no' and value == False):
+                        setattr(intent_class, field, value)
+                        return True, 1
                 if v == value or (v == value.lower()):
                     setattr(intent_class, field, value)
                     return True, 1
-                    break
-            # expanded_search(field, value, intent_class)
-            #TODO - RETURN THE VALUE AND THE FIELD
+                
     return False, 0
 
 
@@ -161,7 +161,7 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
 
     print(fields)
     if len(fields) == 0:
-        return
+        return False, 0
     
     price = 0.0
     name = ''
