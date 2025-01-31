@@ -114,22 +114,22 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
             # check if the value is in the possible values
             if possibilities[possible_field] == True:
                 setattr(intent_class, field, value)
-                return True
+                return True, 1
                 break
             if possibilities[possible_field] == False:
-                if getattr(intent_class, 'quantity') is not None:
+                if getattr(intent_class, 'quantity') is not None and value is not None:
                     quantity = int(getattr(intent_class, 'quantity'))
                     print('ok: ', quantity, value)
-                    return compare_price_buget(quantity, value, tracker)
+                    return compare_price_buget(quantity, value, tracker, intent_class)
                 break
             for v in possibilities[possible_field]:
                 if v == value or (v == value.lower()):
                     setattr(intent_class, field, value)
-                    return True
+                    return True, 1
                     break
             # expanded_search(field, value, intent_class)
             #TODO - RETURN THE VALUE AND THE FIELD
-    return False
+    return False, 0
 
 
 # def expanded_search(field_to_exclude, value, intent):
@@ -142,7 +142,7 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
 #                 setattr(intent, new_field, value)
 #                 break
 
-def compare_price_buget(quantity, budget, tracker):
+def compare_price_buget(quantity, budget, tracker, intent_class):
     """
     check if the budget is enough for the quantity
     """
@@ -153,21 +153,31 @@ def compare_price_buget(quantity, budget, tracker):
     with open('WineDataset.json', 'r') as file:
         data = json.load(file)
 
-    fields = ['typology', 'title_bottle']
-    for f in fields:
-        if slots[f] is None:
-            fields.remove(f)
+    fields = []
+    if slots['typology'] is not None:
+        fields.append('typology')
+    if slots['title_bottle'] is not None:
+        fields.append('title_bottle')
 
+    print(fields)
     if len(fields) == 0:
         return
     
     price = 0.0
+    name = ''
+    typ = ''
     ids = []
     for index, item in enumerate(data):
         if slots[fields[0]] in item[fields[0].capitalize()]:
             ids.append(index)
+            prev_price = price
             price = float(item['Price']) if price > float(item['Price']) else price
-   
+            if len(fields) == 1:
+                if fields[0] == 'typology':
+                    typ = item['Typology'] if prev_price != price else ''
+                if fields[0] == 'title_bottle':
+                    name = item['Title_bottle'] if prev_price != price else ''
+
     if len(fields) == 2:
         for index, item in enumerate(data):
             if index in ids and slots[fields[1]] in item[fields[1].capitalize()]:
@@ -178,11 +188,18 @@ def compare_price_buget(quantity, budget, tracker):
     if price*quantity > float(budget):
         print('The budget is not enough for the quantity requested')
         print('The maximum quantity that can be purchased is: ', int(float(budget)/price))
-        return False
+        return False, 0
     else:
+        count = 1
         print('The budget is enough for the quantity requested')
-        setattr('wine_ordering', 'budget', budget)
-        return True
+        setattr(intent_class, 'total_budget', budget)
+        if typ != '':
+            setattr(intent_class, 'typology', typ)
+            count = 2
+        if name != '':
+            setattr(intent_class, 'title_bottle', name)
+            count = 2
+        return True, count
 
 
 

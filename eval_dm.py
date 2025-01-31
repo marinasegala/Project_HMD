@@ -16,7 +16,7 @@ slots_true, slots_pred = [], []
 
 def selection_phrase(test_data, name_file):
 
-    with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
+    with open(f"template_dialogues/nlu/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/nlu/{name_file}_json.txt", "r", encoding="utf-8") as f2:
         lines1 = f1.readlines()
         lines2 = f2.readlines()
     list_ind = []

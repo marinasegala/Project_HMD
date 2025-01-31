@@ -103,21 +103,21 @@ class Tracker():
                 self.required_list_user = True
             elif input[field] != 'null' and input[field] != None and input[field] != 'None':
                 if 'details' in intent:
-                    assigned = assign_field(self.wine_details, field, input[field], self)
+                    assigned, up_num = assign_field(self.wine_details, field, input[field], self)
                 elif 'origin' in intent:
-                    assigned = assign_field(self.wine_origin, field, input[field], self)
+                    assigned, up_num = assign_field(self.wine_origin, field, input[field], self)
                 elif 'production' in intent:
-                    assigned = assign_field(self.wine_production, field, input[field], self)
+                    assigned, up_num = assign_field(self.wine_production, field, input[field], self)
                 elif 'conservation' in intent:
-                    assigned = assign_field(self.wine_conservation, field, input[field], self)
+                    assigned, up_num = assign_field(self.wine_conservation, field, input[field], self)
                 elif 'choosing_food' in intent:
-                    assigned = assign_field(self.choosing_food, field, input[field], self)
+                    assigned, up_num = assign_field(self.choosing_food, field, input[field], self)
                 elif 'ordering' in intent:
-                    assigned = assign_field(self.wine_ordering, field, input[field], self)
+                    assigned, up_num = assign_field(self.wine_ordering, field, input[field], self)
                 elif 'delivery' in intent:
-                    assigned = assign_field(self.delivery, field, input[field], self)
+                    assigned, up_num = assign_field(self.delivery, field, input[field], self)
                 if assigned:
-                    count += 1
+                    count += up_num
         self.logger.info(f"Tracker: {input}")
 
         return intent, total_slots, count 
