@@ -70,7 +70,14 @@ def searching_wine(tracker, intent):
                 break
             field = slot if 'sparkling' not in slot else 'sparkling_still'
             if slots[slot] is not None:
-                search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
+                # se slot = fridge o cellar, allora il valore è True o False
+                if slot == 'fridge' or slot == 'cellar' or slot == 'gift':
+                    if (slots[slot] == 'true' or slots[slot] == True or slots[slot] == 'yes' or slots[slot] == 'Yes'):
+                        search = 'yes'
+                    if (slots[slot] == 'false' or slots[slot] == False or slots[slot] == 'no' or slots[slot] == 'No'):
+                        search = 'no'
+                else:    
+                    search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
                 multiple_search = search.split(',') if ',' in search else [search]
                 for s in multiple_search:
                     if s not in item[field.capitalize()]:
@@ -118,7 +125,7 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
             if possibilities[possible_field] == False:
                 if getattr(intent_class, 'quantity') is not None and value is not None:
                     quantity = int(getattr(intent_class, 'quantity'))
-                    print('ok: ', quantity, value)
+                    # print('ok: ', quantity, value)
                     return compare_price_buget(quantity, value, tracker, intent_class)
             for v in possibilities[possible_field]:
                 if type(value) == bool:
@@ -130,17 +137,6 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
                     return True, 1
                 
     return False, 0
-
-
-# def expanded_search(field_to_exclude, value, intent):
-#     for new_field in intent.possibilities:
-#         if field_to_exclude in new_field:
-#             continue
-
-#         for ins in intent.possibilities[new_field]:
-#             if ins == value:
-#                 setattr(intent, new_field, value)
-#                 break
 
 def compare_price_buget(quantity, budget, tracker, intent_class):
     """
@@ -159,7 +155,7 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
     if slots['title_bottle'] is not None:
         fields.append('title_bottle')
 
-    print(fields)
+    # print(fields)
     if len(fields) == 0:
         return False, 0
     
@@ -184,7 +180,7 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
                 price = float(item['Price'])
                 break
 
-    print(price, budget, quantity)
+    # print(price, budget, quantity)
     if price*quantity > float(budget):
         print('The budget is not enough for the quantity requested')
         print('The maximum quantity that can be purchased is: ', int(float(budget)/price))
@@ -200,25 +196,6 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
             setattr(intent_class, 'title_bottle', name)
             count = 2
         return True, count
-
-
-
-    # id_wine = [x for x in range(1, len(data)+1)]
-    # for index, item in enumerate(data):
-    #     for field in fields:
-    #         if index+1 not in id_wine:
-    #             break
-    #         slot = field
-    #         search = slots[slot].capitalize() if isinstance(slots[slot], str) else slots[slot]
-    #         multiple_search = search.split(',') if ',' in search else [search]
-    #         for s in multiple_search:
-    #             if s not in item[field.capitalize()]:
-    #                 id_wine.remove(index+1)
-    #                 break
-    
-        
-                    
-
 
 def extract_action_and_argument(input_string):
     """
