@@ -159,8 +159,7 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
         fields.append('typology')
     else:
         none_item.append('typology')
-    else:
-        none_item.append('typology')
+        
     if slots['title_bottle'] is not None:
         fields.append('title_bottle')
     else:
