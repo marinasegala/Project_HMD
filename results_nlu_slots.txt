@@ -1,0 +1,50 @@
+{'typology': 'Champagne', 'closure': 'natural cork', 'grape': 'Valdobbiadene', 'abv': None, 'giving_list_wine': None}
+{}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'true', 'kind_pagament': 'null'}
+{'country': 'Italy', 'region': 'Tuscany', 'color': None, 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'country': 'Italy', 'region': 'Champagne', 'color': 'rose', 'typology': 'null', 'title_bottle': 'null', 'giving_list_wine': 'null'}
+{'typology': None, 'quantity': '1', 'total_budget': None, 'title_bottle': None}
+{'sparkling': 'yes', 'flavor': None, 'grape': 'Chardonnay', 'color': None, 'abv': None, 'year': '2020', 'typology': None, 'giving_list_wine': None}
+{'grape': 'Primitivo', 'closure': 'natural cork', 'typology': None, 'giving_list_wine': None}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'null', 'kind_pagament': 'credit card'}
+{'typology': 'Prosecco', 'color': None, 'style': None, 'food': None, 'giving_list_wine': None}
+{'typology': 'null', 'quantity': '1', 'total_budget': '40', 'title_bottle': 'null'}
+{}
+{}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'true', 'kind_pagament': 'credit card'}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'cash'}
+{'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}
+{'fridge': 'false', 'cellar': 'false', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+{}
+{'country': 'Italy', 'region': 'Champagne', 'color': 'red', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{}
+{'color': 'rose', 'style': None, 'typology': None, 'food': None, 'giving_list_wine': None}
+{'sparkling': 'yes', 'typology': 'Primitivo', 'year': '2021', 'grape': 'Chardonnay', 'flavor': None, 'color': None, 'abv': None, 'giving_list_wine': None}
+{'fridge': 'false', 'cellar': 'true', 'temperature': None, 'typology': None, 'giving_list_wine': None}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': None, 'kind_pagament': 'cash'}
+{'fridge': True, 'cellar': None, 'temperature': None, 'typology': None, 'giving_list_wine': None}
+{'quantity': 5, 'typology': None, 'total_budget': None, 'title_bottle': None}
+{'grape': 'Primitivo', 'abv': 'null', 'closure': 'natural cork', 'typology': 'null', 'giving_list_wine': 'null'}
+{}
+{'typology': 'Prosecco', 'quantity': 'bottles', 'total_budget': 40, 'title_bottle': 'null'}
+{'color': 'white', 'style': None, 'typology': None, 'food': None, 'giving_list_wine': None}
+{'country': 'Italy', 'region': 'Tuscany', 'color': 'white', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'cellar': True, 'fridge': None, 'temperature': None, 'typology': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'fridge': None, 'cellar': None, 'temperature': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'quantity': '1', 'total_budget': '100', 'title_bottle': 'null'}
+{'temperature': '7', 'typology': 'null', 'fridge': 'null', 'cellar': 'null', 'giving_list_wine': 'null'}
+{'color': 'null', 'style': 'null', 'typology': 'Champagne', 'food': 'null', 'giving_list_wine': 'null'}
+{'typology': 'Champagne', 'grape': 'Chardonnay', 'closure': 'natural cork', 'abv': None, 'giving_list_wine': None}
+{}
+{'typology': 'Champagne', 'fridge': None, 'cellar': None, 'temperature': None, 'giving_list_wine': None}
+{}
+{'typology': 'Prosecco', 'grape': 'Valdobbiadene', 'closure': 'natural cork', 'abv': None, 'giving_list_wine': None}
+{'country': 'France', 'region': 'Champagne', 'color': None, 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'quantity': 1, 'total_budget': None, 'title_bottle': None}
+{'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}
+{}
+{'address': 'Via Roma 1', 'phone': 'null', 'gift': 'true', 'kind_pagament': 'credit card'}
+{'fridge': None, 'cellar': False, 'temperature': None, 'typology': None, 'giving_list_wine': None}
+{'color': 'red', 'style': None, 'typology': None, 'food': None, 'giving_list_wine': None}
+{'fridge': True, 'cellar': False, 'typology': 'null', 'giving_list_wine': 'null'}
+{}

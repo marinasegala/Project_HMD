@@ -50,7 +50,7 @@ def can_find_wines(tracker, history):
     
     return False, []
 
-def searching_wine(tracker, intent):
+def searching_wine(tracker, intent, to_save):
     """
     according to the slots, search the wine in the dataset
     """
@@ -88,9 +88,11 @@ def searching_wine(tracker, intent):
     # fill the fields with slots
 
     full_slots = [field for field in slots if slots[field] is not None] #TODO - field + values
+    to_save = to_save + '\nGiven this information:'
     print('Given this information:')
     for slot in full_slots:
         print(f'\t\t{slot}: {slots[slot]}')
+        to_save = to_save + f'\n\t\t{slot}: {slots[slot]}'
 
     # fields the ListWines class with slots exept the one in full_slots
     for index, item in enumerate(data):
@@ -107,7 +109,7 @@ def searching_wine(tracker, intent):
     if len(list_wines) > 3:
         rand_int = random.sample(range(0, len(list_wines)), 3)
         list_wines = [list_wines[i] for i in rand_int]
-    return list_wines
+    return list_wines, to_save
 
 def assign_field (intent_class: object, field: str, value: str, tracker: object):
     """
@@ -128,11 +130,11 @@ def assign_field (intent_class: object, field: str, value: str, tracker: object)
                     # print('ok: ', quantity, value)
                     return compare_price_buget(quantity, value, tracker, intent_class)
             for v in possibilities[possible_field]:
-                if type(value) == bool:
+                if (value == True or value == False):
                     if (v == 'yes' and value == True) or (v == 'no' and value == False):
                         setattr(intent_class, field, value)
                         return True, 1
-                if v == value or (v == value.lower()):
+                elif v == value or (v == value.lower()):
                     setattr(intent_class, field, value)
                     return True, 1
                 
