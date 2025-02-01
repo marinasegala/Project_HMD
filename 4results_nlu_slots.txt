@@ -1,0 +1,5 @@
+{'typology': 'null', 'quantity': 'null', 'total_budget': 'null', 'title_bottle': 'null'}
+{'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}
+{'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+{'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}
+{'country': 'null', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'null', 'giving_list_wine': 'null'}

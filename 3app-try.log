@@ -1717,3 +1717,279 @@ Possible next best actions are:
 give_list(wine_list)
 assistant: Hi, I am your wine assistant. How can I help you?
 user: My address is Via Roma 1 My phone number is 333444555  I want to pay by cash<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": 5, "total_budget": 100, "title_bottle": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}}
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": 5, "total_budget": 100, "title_bottle": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}}
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): huggingface.co:443
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": 5, "total_budget": 100, "title_bottle": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}}
+INFO:Dialogue:Tracker: {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(title_bottle)
+INFO:Dialogue:Action: request_info, Argument: title_bottle
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(title_bottle)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": "5", "total_budget": "100", "title_bottle": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': None}}
+INFO:Dialogue:Tracker: {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': None}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(title_bottle)
+INFO:Dialogue:Action: request_info, Argument: title_bottle
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(title_bottle)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": "5", "total_budget": "100", "title_bottle": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'null'}}
+INFO:Dialogue:Tracker: {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'null'}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(title_bottle)
+INFO:Dialogue:Action: request_info, Argument: title_bottle
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(title_bottle)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": 5, "total_budget": 100, "title_bottle": null}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}}
+INFO:Dialogue:Tracker: {'typology': 'Prosecco', 'quantity': 5, 'total_budget': 100, 'title_bottle': None}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'La Gioiosa Prosecco DOC'}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: delivery_info(wine_ordering)
+INFO:Dialogue:Action: delivery_info, Argument: wine_ordering
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- delivery_info(intent): generate an appropriate message for confirming the delivery informationDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+delivery_info(wine_ordering)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of Prosecco wine. My total budget is 100<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of La Gioiosa Prosecco DOC. My total budget is 100
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "La Gioiosa Prosecco DOC", "quantity": "5", "total_budget": "100", "title_bottle": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'La Gioiosa Prosecco DOC', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'null'}}
+INFO:Dialogue:Tracker: {'typology': 'La Gioiosa Prosecco DOC', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'null'}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': None, 'quantity': '5', 'total_budget': None, 'title_bottle': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(typology)
+INFO:Dialogue:Action: request_info, Argument: typology
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(typology)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of La Gioiosa Prosecco DOC. My total budget is 100<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of La Gioiosa Prosecco DOC. My total budget is 100
+assistant: I'd be happy to help you with that! Can you please confirm that you would like to purchase 5 bottles of La Gioiosa Prosecco DOC, and that your total budget for this purchase is 100?
+user: yes
+INFO:Dialogue:Intents: ['wine_ordering']
+INFO:Dialogue:List intents: ['wine_ordering']
+INFO:Dialogue:NLU output: {"intent": "wine_ordering", "slots": {"typology": "Prosecco", "quantity": "5", "total_budget": "100", "title_bottle": "La Gioiosa"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'La Gioiosa'}}
+INFO:Dialogue:Tracker: {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'La Gioiosa'}
+INFO:Dialogue:wine_ordering
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- delivery_info(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_ordering', 'slots': {'typology': 'Prosecco', 'quantity': '5', 'total_budget': '100', 'title_bottle': 'La Gioiosa Prosecco DOC'}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: delivery_info(wine_ordering)
+INFO:Dialogue:Action: delivery_info, Argument: wine_ordering
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- delivery_info(intent): generate an appropriate message for confirming the delivery informationDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+delivery_info(wine_ordering)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: I want to buy 5 bottles of La Gioiosa Prosecco DOC. My total budget is 100
+assistant: I'd be happy to help you with that! Can you please confirm that you would like to purchase 5 bottles of La Gioiosa Prosecco DOC, and that your total budget for this purchase is 100?
+user: yes<|eot_id|><|start_header_id|>assistant<|end_header_id|>

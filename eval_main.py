@@ -17,20 +17,20 @@ def selection_phrase(test_data, name_file, num_phrases=14):
         lines2 = f2.readlines()
     list_ind = []
 #    index = random.randint(0, len(lines1) - 1)
-    for i in range(50, 100):  # Ogni esempio è su 2 righe consecutive
+    for i in range(0, 5):  # Ogni esempio è su 2 righe consecutive
         list_ind.append(i)
         user_input = lines1[i].strip()  # Prima riga: frase utente
         phrase2 = lines2[i].strip()
         phrase2 = phrase2.replace('None', "'None'")
         if 'out_of_domain' in phrase2:
             ground_truth = {"intent": "out_of_domain"}
-        else:
-            ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
+ #       else:
+#            ground_truth = json.loads(phrase2.replace("'", "\""))  # Seconda riga: JSON
 #        num = random.randint(0, len(lines1) - 1)
 #        while num in list_ind:
 #            num = random.randint(0, len(lines1) - 1)
 #        index = num
-        test_data.append({"user_input": user_input, "ground_truth": ground_truth})
+        test_data.append({"user_input": user_input}) #, "ground_truth": ground_truth})
 
     return test_data
 
@@ -51,7 +51,7 @@ class Dialogue:
         intents_nl_pred = []
         action_dm_pred = []
         outputs_nlg = []
-        test_data = selection_phrase(test_data, "intents")
+        test_data = selection_phrase(test_data, "input2")
         count = 0   
         for data in test_data:
             self.history.clear()
@@ -63,8 +63,8 @@ class Dialogue:
             self.history.add_msg(starting, 'assistant', 'init')
             print(data['user_input'])
             user_input = data['user_input']
-            ground_truth = data["ground_truth"]
-            ground_truth_intent = ground_truth["intent"]
+#            ground_truth = data["ground_truth"]
+#            ground_truth_intent = ground_truth["intent"]
             self.history.add_msg(user_input, 'user', 'input')
             slots_empty = 1
             action = ''
@@ -72,8 +72,8 @@ class Dialogue:
             if slots_empty == 0: self.history.update_number_last(2)
             else: self.history.update_number_last(5)
             
-            if (ground_truth_intent == 'wine_delivery'):
-                self.history.update_last_int('delivery')
+#            if (ground_truth_intent == 'wine_delivery'):
+#                self.history.update_last_int('delivery')
             # get the NLU output
             infos = self.nlu(user_input, slots_empty)
 
@@ -123,24 +123,24 @@ class Dialogue:
                         self.history.add_msg(value, 'assistant', 'give_list')
             outputs_nlg.append(to_save)
             self.history.clear()
-        with open('2results_nlu_intents.txt', 'w') as f:
+        with open('4results_nlu_intents.txt', 'w') as f:
             #write items of intents_nl_pred and slots_nlu_pred: one item per line
             for i in range(len(intents_nl_pred)):
                 f.write(f"{intents_nl_pred[i]}\n")
-        with open('2results_nlu_slots.txt', 'w') as f:
+        with open('4results_nlu_slots.txt', 'w') as f:
             for i in range(len(slots_nlu_pred)):
                 f.write(f"{slots_nlu_pred[i]}\n")
 
-        with open('2results_dm.txt', 'w') as f:
+        with open('4results_dm.txt', 'w') as f:
             for i in range(len(action_dm_pred)):
                 f.write(f"{action_dm_pred[i]}\n")
         
-        with open('2results_nlg.txt', 'w') as f:
+        with open('4results_nlg.txt', 'w') as f:
             for i in range(len(outputs_nlg)):
                 f.write(f"{outputs_nlg[i]}\n")
 
 def main():
-    logging.basicConfig(filename="app-eval-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
+    logging.basicConfig(filename="app1-eval-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")
 
     args = get_args()

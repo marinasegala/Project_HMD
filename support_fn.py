@@ -152,30 +152,27 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
         data = json.load(file)
 
     fields = []
+    none_item = [] 
     if slots['typology'] is not None:
         fields.append('typology')
+    else:
+        none_item.append('typology')
     if slots['title_bottle'] is not None:
         fields.append('title_bottle')
-
+    else:
+        none_item.append('title_bottle')
     # print(fields)
     if len(fields) == 0:
         return False, 0
     
+    to_insert = []
     price = 0.0
-    name = ''
-    typ = ''
     ids = []
     for index, item in enumerate(data):
         if slots[fields[0]] in item[fields[0].capitalize()]:
             ids.append(index)
-            prev_price = price
-            price = float(item['Price']) if price > float(item['Price']) else price
-            if len(fields) == 1:
-                if fields[0] == 'typology':
-                    typ = item['Typology'] if prev_price != price else ''
-                if fields[0] == 'title_bottle':
-                    name = item['Title_bottle'] if prev_price != price else ''
-
+            if price > float(item['Price']):
+                price = float(item['Price'])
     if len(fields) == 2:
         for index, item in enumerate(data):
             if index in ids and slots[fields[1]] in item[fields[1].capitalize()]:
@@ -191,14 +188,17 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
         count = 1
         print('The budget is enough for the quantity requested')
         setattr(intent_class, 'total_budget', budget)
-        if typ != '':
-            setattr(intent_class, 'typology', typ)
-            count = 2
-        if name != '':
-            setattr(intent_class, 'title_bottle', name)
-            count = 2
+        if none_item != []:
+            auto_complete(slots, data, none_item[0], fields[0], intent_class)
+            count += 1
         return True, count
-
+    
+def auto_complete(slots, data, none_item, having_field, intent_class):
+    for index, item in enumerate(data):
+        if slots[having_field] in item[having_field.capitalize()]:
+            setattr(intent_class, none_item, item[none_item.capitalize()])
+            # setattr(intent_class, field, item[field.capitalize()])
+            break
 def extract_action_and_argument(input_string):
     """
     used by the DM component, extract the action and the argument from the output string
