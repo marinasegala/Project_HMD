@@ -42,7 +42,7 @@ class Dialogue:
             can_search, _ = can_find_wines(self.tracker, self.history)
         
             # get the DM output
-            action, arg = self.dm(self.tracker, intent, can_search, action)
+            action, arg, _ = self.dm(self.tracker, intent, can_search, action)
             self.logger.info(f'Action: {action}, Argument: {arg}')
             # print(f'Action: {action}, Argument: {arg}')
             
@@ -73,7 +73,7 @@ class Dialogue:
             self.history.add_msg(user_input, 'user', 'input')
 
 def main():
-    logging.basicConfig(filename="app-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
+    logging.basicConfig(filename="3app-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")
 
     args = get_args()

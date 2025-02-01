@@ -10,13 +10,13 @@ possible_typology = extract_db_init('typology')
 possible_country = ['italy', 'france']
 possible_region = extract_db_init('region')
 possible_closure = ['natural cork', 'screwcap', 'synthetic cork']
-possible_fridge = ['yes', 'no'] # True, False
+possible_fridge = ['yes', 'no', 'true', 'false'] # True, False
 possible_cellar = ['yes', 'no'] # True, False
 possible_temperature = extract_db_init('temperature') #int
 possible_style = extract_db_init('style')
 possible_food = extract_db_init('food')
 possible_quantity = [str(x) for x in range(1, 20)] #int
-possible_gift = ['yes', 'no'] # True, False
+possible_gift = ['yes', 'no', 'true', 'false'] # True, False
 possible_pagament = ['credit card', 'paypal', 'cash', 'revolut']
 possible_title = extract_db_init('title_bottle')
 

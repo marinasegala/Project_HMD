@@ -27,7 +27,7 @@ The slots are: [grape, abv, closure, typology, giving_list_wine].
 """,
 
     "wine-conservation": """The intent extracted is 'wine_conservation'. Extract the slots values from the input of the user.
-The slots are: [fridge, cellar, temperature, typology, giving_list_wine].
+The slots are: [fridge, cellar, temperature, typology, giving_list_wine]. Fridge and celler are boolean
 """,
 
     "wine-paring": """The intent extracted is 'choosing_food'. Extract the slots values from the input of the user.
@@ -65,7 +65,7 @@ Return ONLY the list of intents, nothing more!
     "list_intents": """
 - wine_origin: if the user wants to know more about the origin of a wine or tells the origin of a wine.
 - wine_production: if the user wants to know more about the production of a wine.
-- wine_conservation: if the user wants to know more about the conservation of a wine.
+- wine_conservation: if the user wants to know more about the conservation of a wine: need to be in the fridge, celler or temperature needed.
 - choosing_food: if the user has a wine and he wants to pair it with a food.
 - wine_details: if the user wants to know general informations or details or characteristics of a wine.
 """,
@@ -114,7 +114,7 @@ Possible next best actions are:
 - repeat(slot): generate a message to ask the user to repeat the information""",
 
     "knowing_title_nlg": """
-- request_info(slot): generate an appropriate question to have the title or topology of the wine, or if the user does not know and prefer to say the missing slot value. DO NOT give suggestions """,
+- request_info(slot): generate an appropriate question to have the title or topology of the wine, or if the user does not know and prefer to say the missing slot value (slot). DO NOT give suggestions.""",
     
     "confermation_nlg": """
 - confermation(intent): generate an appropriate confirmation message for the user intent""",

@@ -1920,3 +1920,156 @@ assistant: Hi, I am your wine assistant. How can I help you?
 user: I want some information about a white wine, it is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay
 assistant: Can I suggest some wine?
 user: yes<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: Wine that to keep not in the fridge not in the celler
+INFO:Dialogue:Intents: ['wine_conservation']
+INFO:Dialogue:List intents: ['wine_conservation']
+INFO:Dialogue:NLU output: {"intent": "wine_conservation", "slots": {"fridge": "null", "cellar": "null", "temperature": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_conservation', 'slots': {'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:Tracker: {'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+INFO:Dialogue:wine_conservation
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- confermation(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_conservation', 'slots': {'fridge': None, 'cellar': None, 'temperature': None, 'typology': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(fridge)
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: Can you suggest me a wine that does not go in the fridge or in the celler?
+INFO:Dialogue:Intents: ['wine_details', 'wine_details']
+INFO:Dialogue:List intents: ['wine_details', 'wine_details']
+INFO:Dialogue:NLU output: {"intent": "wine_details", "slots": {"sparkling": "null", "flavor": "null", "grape": "null", "color": "null", "abv": "null", "year": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_details', 'slots': {'sparkling': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:Tracker: {'sparkling': 'null', 'flavor': 'null', 'grape': 'null', 'color': 'null', 'abv': 'null', 'year': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+INFO:Dialogue:wine_details
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- confermation(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_details', 'slots': {'flavor': None, 'grape': None, 'color': None, 'sparkling': None, 'abv': None, 'year': None, 'typology': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(flavor)
+INFO:Dialogue:Action: request_info, Argument: flavor
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(flavor)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: Can you suggest me a wine that does not go in the fridge or in the celler?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+INFO:Dialogue:Starting the dialogue
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/generation_config.json HTTP/11" 401 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-8B-Instruct/resolve/main/tokenizer_config.json HTTP/11" 401 0
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: Wine that to keep not in the fridge not in the celler
+INFO:Dialogue:Intents: ['wine_conservation']
+INFO:Dialogue:List intents: ['wine_conservation']
+INFO:Dialogue:NLU output: {"intent": "wine_conservation", "slots": {"fridge": "null", "cellar": "null", "temperature": "null", "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_conservation', 'slots': {'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:Tracker: {'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+INFO:Dialogue:wine_conservation
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- confermation(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_conservation', 'slots': {'fridge': None, 'cellar': None, 'temperature': None, 'typology': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(fridge)
+INFO:Dialogue:Action: request_info, Argument: fridge
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(fridge)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: Wine that to keep not in the fridge not in the celler<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+INFO:Dialogue:History: assistant: Hi, I am your wine assistant. How can I help you?
+user: Wine that to keep not in the fridge not in the celler
+assistant: I'd be happy to help you with that! Can you please specify which type of wine you're looking for that doesn't require refrigeration or cellaring?
+user: i don't know. it is sufficient to not put it in the fridge
+INFO:Dialogue:Intents: ['wine_conservation']
+INFO:Dialogue:List intents: ['wine_conservation']
+INFO:Dialogue:NLU output: {"intent": "wine_conservation", "slots": {"fridge": "null", "cellar": "null", "temperature": null, "typology": "null", "giving_list_wine": "null"}}
+INFO:Dialogue:NLU output: {'intent': 'wine_conservation', 'slots': {'fridge': 'null', 'cellar': 'null', 'temperature': None, 'typology': 'null', 'giving_list_wine': 'null'}}
+INFO:Dialogue:Tracker: {'fridge': 'null', 'cellar': 'null', 'temperature': None, 'typology': 'null', 'giving_list_wine': 'null'}
+INFO:Dialogue:wine_conservation
+DEBUG:Dialogue:DM input: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the Dialogue Manager of a wine bot assistent.
+Given the output of the NLU component, you should ONLY generate the next best action from this list: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value
+- confermation(intent), if all slots have been filled
+You need to write the name of the action with also the correspondings parameters.
+Return ONLY the next best action! Nothing more!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{'intent': 'wine_conservation', 'slots': {'fridge': None, 'cellar': None, 'temperature': None, 'typology': None}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+DEBUG:Dialogue:DM output: request_info(fridge)
+INFO:Dialogue:Action: request_info, Argument: fridge
+INFO:Dialogue:NLG: <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are the NLG component of a wine bot assistent: you must be very polite.
+Given the next best action classified by the Dialogue Manager (DM), you should only generate a lexicalized response for the user.
+The response has to match the next best action of the DM.
+Possible next best actions are:
+
+- goal_assistant(intent): generate an appropriate message with the domain of the bot
+- repeat(slot): generate a message to ask the user to repeat the information
+- confermation(intent): generate an appropriate confirmation message for the user intentDO NOT give suggestions! Return ONLY the message to the user!<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+request_info(fridge)
+assistant: Hi, I am your wine assistant. How can I help you?
+user: Wine that to keep not in the fridge not in the celler
+assistant: I'd be happy to help you with that! Can you please specify which type of wine you're looking for that doesn't require refrigeration or cellaring?
+user: i don't know. it is sufficient to not put it in the fridge<|eot_id|><|start_header_id|>assistant<|end_header_id|>
