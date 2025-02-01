@@ -146,15 +146,19 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
     """
     # retrieve the price of the wine
     dict_info = tracker.dictionary('wine_ordering')
-    slots = dict_info["slots"]
+    slots = dict_info["slots"] # what the user has said
+
     # search for the wine in the dataset
     with open('WineDataset.json', 'r') as file:
         data = json.load(file)
 
     fields = []
     none_item = [] 
+    none_item = [] 
     if slots['typology'] is not None:
         fields.append('typology')
+    else:
+        none_item.append('typology')
     else:
         none_item.append('typology')
     if slots['title_bottle'] is not None:
@@ -173,6 +177,9 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
             ids.append(index)
             if price > float(item['Price']):
                 price = float(item['Price'])
+            if price > float(item['Price']):
+                price = float(item['Price'])
+
     if len(fields) == 2:
         for index, item in enumerate(data):
             if index in ids and slots[fields[1]] in item[fields[1].capitalize()]:
@@ -191,6 +198,9 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
         if none_item != []:
             auto_complete(slots, data, none_item[0], fields[0], intent_class)
             count += 1
+        if none_item != []:
+            auto_complete(slots, data, none_item[0], fields[0], intent_class)
+            count += 1
         return True, count
     
 def auto_complete(slots, data, none_item, having_field, intent_class):
@@ -199,6 +209,14 @@ def auto_complete(slots, data, none_item, having_field, intent_class):
             setattr(intent_class, none_item, item[none_item.capitalize()])
             # setattr(intent_class, field, item[field.capitalize()])
             break
+    
+def auto_complete(slots, data, none_item, having_field, intent_class):
+    for index, item in enumerate(data):
+        if slots[having_field] in item[having_field.capitalize()]:
+            setattr(intent_class, none_item, item[none_item.capitalize()])
+            # setattr(intent_class, field, item[field.capitalize()])
+            break
+
 def extract_action_and_argument(input_string):
     """
     used by the DM component, extract the action and the argument from the output string

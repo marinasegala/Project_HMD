@@ -1,0 +1,57 @@
+Action: provide_list
+Action: goal_assistant
+Action: request_info, Argument: kind_pagament
+Action: provide_list
+Action: provide_list
+Action: request_info, Argument: typology
+Action: provide_list
+Action: provide_list
+Action: request_info, Argument: gift
+Action: provide_list
+Action: request_info, Argument: typology
+Action: 
+Action: 
+Action: confermation, Argument: wine_delivery
+Action: confermation, Argument: wine_delivery
+Action: request_info, Argument: title_bottle
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+Action: 
+- request_info(slot), if a slot value is missing (null)
+- goal_assistant(intent), if the intent is equal to out_of_domain
+- repeat(slot), if the system needs clarification on a slot value""",
+- give_list(intent), if the field provide_list in NLU output is True""",
+- confermation(intent), if all slots have been filled""",
+- provide_list(intent), if the field provide_list in NLU output is True""",
+- delivery_info(intent), if all slots have been filled""",
