@@ -1,0 +1,19 @@
+Action Accuracy: 0.87
+Argument Accuracy: 0.57
+Overall Accuracy (Action + Argument): 0.33
+Action Precision: 0.92
+Action Recall: 0.87
+Action F1-score: 0.86
+
+Action Classification Report:
+                precision    recall  f1-score   support
+
+  confirmation       0.56      0.83      0.67         6
+ delivery_info       0.45      1.00      0.62         5
+goal_assistant       0.92      1.00      0.96        11
+  provide_list       0.97      1.00      0.98        57
+  request_info       1.00      0.43      0.60        21
+
+      accuracy                           0.87       100
+     macro avg       0.78      0.85      0.77       100
+  weighted avg       0.92      0.87      0.86       100

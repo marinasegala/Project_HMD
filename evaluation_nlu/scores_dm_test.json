@@ -1,0 +1,12 @@
+{
+    "actions": {
+        "accuracy": 0.87,
+        "precision": 0.9175719054956343,
+        "recall": 0.87,
+        "f1": 0.8626398050974512
+    },
+    "arguments": {
+        "accuracy": 0.57
+    },
+    "overall_accuracy": 0.33
+}

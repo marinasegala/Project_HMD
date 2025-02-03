@@ -1,0 +1,100 @@
+Action: request_info, Argument: typology
+Action: request_info, Argument: flavor
+Action: request_info, Argument: fridge
+Action: request_info, Argument: flavor
+Action: request_info, Argument: country
+Action: provide_list, Argument: wine_production
+Action: goal_assistant, Argument: out_of_domain
+Action: request_info, Argument: kind_pagament
+Action: provide_list, Argument: wine_origin
+Action: provide_list, Argument: 
+Action: request_info, Argument: typology
+Action: provide_list, Argument: wine_details
+Action: provide_list, Argument: 
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: 
+Action: request_info, Argument: typology
+Action: goal_assistant, Argument: out_of_domain
+Action: goal_assistant, Argument: out_of_domain
+Action: confirmation, Argument: wine_delivery
+Action: confirmation, Argument: wine_delivery
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: 
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: wine_list
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_conservation
+Action: request_info, Argument: gift
+Action: provide_list, Argument: wine_conservation
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: 
+Action: goal_assistant, Argument: out_of_domain
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: wine_origin
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_conservation
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: 
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: wine_production
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: 
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: wine_production
+Action: provide_list, Argument: 
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: wine_details
+Action: goal_assistant, Argument: out_of_domain
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: 
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: 
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: wine_details
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_production
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: wine_production
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: choosing_food
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_origin
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_details
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: wine_production
+Action: provide_list, Argument: wine_origin
+Action: provide_list, Argument: wine_production
+Action: goal_assistant, Argument: out_of_domain
+Action: provide_list, Argument: 
+Action: provide_list, Argument: 
+Action: delivery_info, Argument: wine_ordering
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: wine_production
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: wine_conservation
+Action: provide_list, Argument: wine_details
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_details
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_production
+Action: provide_list, Argument: choosing_food
+Action: delivery_info, Argument: wine_ordering
+Action: confirmation, Argument: wine_delivery
+Action: provide_list, Argument: choosing_food
+Action: provide_list, Argument: wine_production
+Action: goal_assistant, Argument: out_of_domain
+Action: delivery_info, Argument: wine_ordering
+Action: provide_list, Argument: 
+Action: provide_list, Argument: wine_production
+Action: provide_list, Argument: wine_origin
+Action: provide_list, Argument: wine_details
+Action: provide_list, Argument:
