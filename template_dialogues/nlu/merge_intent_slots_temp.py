@@ -1,40 +1,16 @@
-# names = ['out_of_domain', 'wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food', 'wine_ordering', 'delivery']
-
-# list1 = []
-# list2 = []
-# list3 = []
-# list4 = []
-# list5 = []
-# list6 = []
-# list7 = []
-# list8 = []
-
-# for index, name_file in enumerate(names):
-#     with open(f"template_dialogues/{name_file}.txt", "r", encoding="utf-8") as f1, open(f"template_dialogues/{name_file}_json.txt", "r", encoding="utf-8") as f2:
-#         lines1 = f1.readlines()
-#         lines2 = f2.readlines()
-
-
 import os
 import random
 
-# Cartella contenente i file
-folder_path = "."  # Modifica se i file si trovano in un'altra cartella
+folder_path = "ground_samples"  
 
-# Lista dei file di testo e JSON
 txt_files = [f for f in os.listdir(folder_path) if f.endswith(".txt") and "_json" not in f]
 json_files = [f for f in os.listdir(folder_path) if f.endswith(".txt") and "_json" in f]
 
-
-
-# Controllo che i file JSON corrispondenti esistano
+#check if JSON file corresponds to txt and exist
 txt_files = [f for f in txt_files if f.replace(".txt", "_json.txt") in json_files]
 
-# Liste per contenere tutte le righe estratte
 intents = []
 intents_json = []
-
-# Leggere le prime 14 righe di ogni coppia di file
 for txt_file in txt_files:
     # Trovare il file JSON corrispondente
     json_file = txt_file.replace(".txt", "_json.txt")

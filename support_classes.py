@@ -4,6 +4,8 @@ from support_fn import assign_field
 class History():
     def __init__(self):
         self.messages = []
+        self.list_wine = []
+        self.index_list = []
         self.intent = []
         self.roles = []
         self.last_intent = ''
@@ -23,6 +25,10 @@ class History():
         self.messages.append(msg)
         self.intent.append(intent)
 
+    def add_msg_complete(self, msg):
+        self.index_list.append(len(self.messages))
+        self.list_wine.append(msg)
+
     def clear(self):
         self.messages = []
         self.intent = []
@@ -31,6 +37,10 @@ class History():
         self.number_last = 5
     
     def get_history(self):
+        # add to msg the list of wines
+        for i in range(len(self.index_list)):
+            # insert the msg in the index specified by index_list
+            self.messages.insert(self.index_list[i], self.list_wine[i])
         return self.messages
     
     def intent_history(self):

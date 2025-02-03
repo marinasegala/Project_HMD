@@ -1,0 +1,19 @@
+Intent Accuracy: 0.96
+Intent Classification Report:
+                   precision    recall  f1-score   support
+
+    choosing_food       1.00      0.85      0.92        13
+    out_of_domain       0.92      1.00      0.96        11
+wine_conservation       1.00      1.00      1.00        13
+    wine_delivery       1.00      0.92      0.96        12
+     wine_details       0.83      0.91      0.87        11
+    wine_ordering       1.00      1.00      1.00        14
+      wine_origin       0.92      1.00      0.96        12
+  wine_production       1.00      1.00      1.00        14
+
+         accuracy                           0.96       100
+        macro avg       0.96      0.96      0.96       100
+     weighted avg       0.96      0.96      0.96       100
+Slot Extraction Metrics : Precision=0.76, Recall=0.87, F1 Score=0.81
+Overall Accuracy (Intent + Slots): 0.12
+Slot Accuracy Parziale (≥80% slot corretti): 0.35

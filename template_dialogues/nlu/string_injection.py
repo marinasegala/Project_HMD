@@ -1,26 +1,5 @@
 from itertools import product
 
-# pizza-count, pizza-type
-# template1 = "I would like to order {} {} pizza."
-# ds = {
-#     "intent": "pizza_ordering",
-#     "slots": {
-#         "pizza_type": "",
-#         "pizza_size": None,
-#         "pizza_count": ""
-#     },
-# }
-# pizza_count = ["a", "1", "2"]
-# pizza_type = ["salamino", "margherita", "capricciosa", "vegetariana", ""]
-
-# for c, t in product(pizza_count, pizza_type):
-#     filled_template = template1.format(c, t)
-#     ds["slots"]["pizza_type"] = t
-#     ds["slots"]["pizza_count"] = int(c) if c.isdigit() else 1
-#     print(filled_template)
-#     print(ds)
-#     print()
-
 # DETAILS
 '''
 temp2 = "I want some information about a {} wine. {} {} {} {}"

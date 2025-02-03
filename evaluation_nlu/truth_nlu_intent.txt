@@ -1,3 +1,8 @@
+wine_ordering
+wine_details
+wine_conservation
+choosing_food 
+wine_origin
 wine_production
 out_of_domain
 wine_delivery
@@ -98,14 +103,3 @@ wine_origin
 wine_conservation
 wine_ordering
 choosing_food
-wine_delivery
-choosing_food
-wine_details
-wine_origin
-wine_conservation
-wine_details
-wine_details
-wine_details
-out_of_domain
-out_of_domain
-wine_delivery

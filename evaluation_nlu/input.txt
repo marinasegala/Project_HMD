@@ -1,3 +1,8 @@
+I want to order some bottles of wine
+I want to know some deatils about a wine
+I want to know how i can conserve wine
+I want to open some bottles of wine while I am having lunch 
+Can you tell me the origin of a wine?
 Can you tell me other info about the production of a wine? It is a Champagne conserved in natural cork Valdobbiadene grape
 I have to go to the store
 My address is Via Roma 1 My phone number is 333444555 This is order is a gift 
@@ -98,14 +103,3 @@ I want to know a white wine from  , Italy.
 How i can conserve a  wine?
 I want to buy 5 bottles of  wine. My total budget is 100
 I want to drink a Primitivo wine, which food should I choose?
-My address is Via Roma 1 My phone number is 333444555  I want to pay by credit card
-I want to drink a white wine, which food should I choose?
-I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Valdobbiadene
-I want to know a wine from Champagne , Italy.
-How i can conserve a Primitivo wine?
-I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Pinot Noir
-I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Pinot Noir
-I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 
-I want to go to the gim
-where i can buy a pc?
-My address is Via Roma 1 My phone number is 333444555 This is not a gift I want to pay by credit card

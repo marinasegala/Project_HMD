@@ -1,3 +1,8 @@
+{'typology': 'None', 'quantity': 'None', 'total_budget': 'None', 'title_bottle': 'None'}
+{'flavor': 'None', 'grape': 'None', 'color': 'None', 'sparkling': 'None', 'abv': 'None', 'year': 'None', 'typology': 'None'}
+{'fridge': 'None', 'celler': 'None', 'temperature': 'None', 'typology': 'None'}
+{'style': 'None', 'color': 'None', 'typology': 'None', 'food': 'None'}
+{'region': 'None', 'country': 'None', 'color': 'None', 'typology': 'None', 'title_bottle': }
 {'grape': 'Valdobbiadene', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne'}
 {}
 {'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': ''}
@@ -98,14 +103,3 @@
 {'fridge': '', 'celler': '', 'temperature': '', 'typology': ''}
 {'typology': '', 'quantity': 5, 'total_budget': '100', 'title_bottle': ''}
 {'style': '', 'color': '', 'typology': 'Primitivo', 'food': ''}
-{'address': 'Via Roma 1', 'phone': '333444555', 'gift': '', 'kind_pagament': 'credit card'}
-{'style': '', 'color': '', 'typology': 'white', 'food': ''}
-{'flavor': None, 'grape': 'Valdobbiadene', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}
-{'region': 'Champagne', 'country': 'Italy', 'color': '', 'typology': '', 'title_bottle': None}
-{'fridge': '', 'celler': '', 'temperature': '', 'typology': 'Primitivo'}
-{'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '', 'typology': 'Primitivo'}
-{'flavor': None, 'grape': 'Pinot Noir', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2021', 'typology': 'Primitivo'}
-{'flavor': None, 'grape': '', 'color': 'white', 'sparkling': 'yes', 'abv': '', 'year': '2019', 'typology': 'Primitivo'}
-{}
-{}
-{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'yes', 'kind_pagament': 'credit card'}
