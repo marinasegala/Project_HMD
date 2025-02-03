@@ -71,6 +71,17 @@ class Dialogue:
                         to_save = to_save + '\n' + value.convert_to_string()
                     self.history.add_msg_complete(to_save)
 
+            other_int = self.history.get_other_int()
+            if other_int > 0 and (slots_empty == 0 or action == 'give_list'):
+                action = 'new_intent'
+                arg = other_int[0]
+                slots_empty = 0
+                #remove other_int[0] from the list
+                self.history.remove_other_int()
+                nlg_output = self.nlg(action, arg, '', False, False)
+                self.history.add_msg(nlg_output, 'assistant', action)
+                print(nlg_output)
+    
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
 

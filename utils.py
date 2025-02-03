@@ -15,7 +15,7 @@ PROMPTS = {
     "START": """Hi, I am your wine assistant. How can I help you?""",
 
     "wine-details": """The intent extracted is 'wine_details'. Extract the slots values from the input of the user.
-The slots are: [flavor, grape, color, sparkling, abv, year, typology, giving_list_wine].
+The slots are: [flavor, grape, color, sparkling, abv, year, typology, title_bottle, giving_list_wine].
 """,
 
     "wine-origin": """The intent extracted is 'wine_origin'. Extract the slots values from the input of the user.
@@ -23,19 +23,15 @@ The slots are: [country, region, color, typology, title_bottle, giving_list_wine
 """,
 
     "wine-production": """The intent extracted is 'wine_production'. Extract the slots values from the input of the user.
-The slots are: [grape, abv, closure, typology, giving_list_wine].
+The slots are: [grape, abv, closure, typology, title_bottle, giving_list_wine].
 """,
 
     "wine-conservation": """The intent extracted is 'wine_conservation'. Extract the slots values from the input of the user.
-The slots are: [fridge, cellar, temperature, typology, giving_list_wine]. Fridge and celler are boolean
+The slots are: [fridge, cellar, temperature, typology, title_bottle, giving_list_wine]. Fridge and celler are boolean
 """,
 
     "wine-paring": """The intent extracted is 'choosing_food'. Extract the slots values from the input of the user.
-The slots are: [color, style, typology, food, giving_list_wine].
-""",
-
-    "food-paring": """The intent extracted is 'having_food'. Extract the slots values from the input of the user.
-The slots are: [food, style, abv, giving_list_wine].
+The slots are: [color, style, typology, food, title_bottle, giving_list_wine].
 """,
 
     "wine-ordering": """The intent extracted is 'wine_ordering'. Extract the slots values from the input of the user.
@@ -59,8 +55,6 @@ Break the user input into multiple sentences based on the following intents:""",
     "NLU_intents_end":"""Provide a list of intents as follow: ["intent1", "intent2", ...].
 Return ONLY the list of intents, nothing more! DO NOT focus on un-necessary details!
 """,
-
-    "prova": """- general_info: if the user wants general informations about a wine.""",
 
     "list_intents": """
 - wine_origin: if the user wants to know more about the origin of a wine or tells the origin of a wine.
@@ -120,7 +114,7 @@ Possible next best actions are:
 - confermation(intent): generate an appropriate confirmation message for the user intent""",
 
     "listing_wine_nlg": """
-- provide_list(intent): generate an appropriate question for propose a list of wine. Only the question: Can i suggest some wine?""",
+- provide_list(intent): generate an appropriate question for propose a list of wine. For example only the question: Okat, can i suggest some wine?""",
 
     "give_list_nlg": """
 - give_list(intent): generate an appropriate message for present a list of wine. Only the message: The top three choices I find are:""",
@@ -128,6 +122,9 @@ Possible next best actions are:
 
     "delivery_nlg": """
 - delivery_info(intent): generate an appropriate message for confirming the delivery information""",
+
+    "new_intent_nlg": """
+- new_intent(intent): generate an appropriate question for asking if the user still wants to proceed with that intent""",
 
     "NLG_end": """DO NOT give suggestions! DO NOT chitchat! DO NOT focus on un-necessary details! \n  Return ONLY the message to the user!""",
 

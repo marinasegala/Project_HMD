@@ -15,11 +15,10 @@ class NLU():
         list_intents = self.extract_intents_list(user_input, slots_empty) 
         self.logger.info(f"List intents: {list_intents}")
         intent = list_intents[0]
-        #TODO GESTIRE PIU INTENT
-#        print(intent)
-        if intent == 'general_info':
-            json_output = parsing_json('{"intent": "general_info"}')
-        elif intent == 'out_of_domain':
+        for i in range(1, len(list_intents)):    
+            self.history.insert_other_int(list_intents[i])
+            
+        if intent == 'out_of_domain':
             json_output = parsing_json('{"intent": "out_of_domain"}')
         else:
             json_output = self.extract_slots(user_input, intent)
@@ -57,6 +56,9 @@ class NLU():
             intents = []
             print("No list found in the text.")
 
+        intents = list(set(intents))
+        if len(intents) > 1 and 'out_of_domain' in intents: 
+            intents.remove('out_of_domain')
         return intents
     
     def extract_slots(self, user_input, intent):

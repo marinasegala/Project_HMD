@@ -10,26 +10,31 @@ class NLG():
         pass
 
     def __call__(self, action, argument, intent, possible_list, slots_empty):
-        last_int = self.history.last_iterations()
-        
-        nlg_text =  f"{action}({argument})\n" + last_int 
+        nlg_text =  f"{action}({argument})\n"
 
-        #get the 
-        if slots_empty and action == 'request_info' and intent in ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food']:
-            nba_add = PROMPTS['knowing_title_nlg'] + PROMPTS['nba_nlg']
+        if action == 'new_intent':
+            prompt = PROMPTS["NLG"] + PROMPTS['new_intent_nlg'] + '\n' + PROMPTS["NLG_end"]
         else:
-            nba_add = PROMPTS['request_info_nlg'] + PROMPTS['nba_nlg']
+            last_int = self.history.last_iterations()
+            
+            nlg_text =  nlg_text + last_int 
 
-        if intent == "delivery_info": nba_add = PROMPTS['nba_nlg'] + PROMPTS['delivery_nlg']
-        else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation_nlg']
+            #get the 
+            if slots_empty and action == 'request_info' and intent in ['wine_details', 'wine_origin', 'wine_production', 'wine_conservation', 'choosing_food']:
+                nba_add = PROMPTS['knowing_title_nlg'] + PROMPTS['nba_nlg']
+            else:
+                nba_add = PROMPTS['request_info_nlg'] + PROMPTS['nba_nlg']
 
-        if possible_list:
-            nba_add = PROMPTS['listing_wine_nlg'] + nba_add
+            if intent == "delivery_info": nba_add = PROMPTS['nba_nlg'] + PROMPTS['delivery_nlg']
+            else: nba_add = PROMPTS['nba_nlg'] + PROMPTS['confermation_nlg']
 
-        if action == 'give_list':
-            nba_add = PROMPTS['give_list_nlg']
-         
-        prompt = PROMPTS["NLG"] + nba_add + '\n' + PROMPTS["NLG_end"]
+            if possible_list:
+                nba_add = PROMPTS['listing_wine_nlg'] + nba_add
+
+            if action == 'give_list':
+                nba_add = PROMPTS['give_list_nlg']
+            
+            prompt = PROMPTS["NLG"] + nba_add + '\n' + PROMPTS["NLG_end"]
 
         nlg_text = self.args.chat_template.format(prompt, nlg_text)
         nlg_input = self.tokenizer(nlg_text, return_tensors="pt").to(self.model.device)

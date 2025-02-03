@@ -19,6 +19,8 @@ def calculate_dm_metrics(true_actions, pred_actions):
     
     action_true_labels = []
     action_pred_labels = []
+    argument_true_labels = []
+    argument_pred_labels = []
     index = 0
     for true_line, pred_line in zip(true_actions, pred_actions):
         true_action, true_argument = normalize_action(true_line)
@@ -27,6 +29,8 @@ def calculate_dm_metrics(true_actions, pred_actions):
         # 📌 Valutazione delle azioni
         action_true_labels.append(true_action)
         action_pred_labels.append(pred_action)
+        argument_true_labels.append(true_argument)
+        argument_pred_labels.append(pred_argument)
 
         if true_action == pred_action:
             print(f"Index: {index}")
@@ -43,6 +47,9 @@ def calculate_dm_metrics(true_actions, pred_actions):
 
     precision, recall, f1, _ = precision_recall_fscore_support(action_true_labels, action_pred_labels, average="weighted")
 
+    #calculate precision, recall, f1 for the arguments
+    argument_precision, argument_recall, argument_f1, _ = precision_recall_fscore_support(argument_true_labels, argument_pred_labels, average="weighted")
+
     # Genera il classification report per le azioni
     action_classification_report = classification_report(action_true_labels, action_pred_labels)
 
@@ -55,6 +62,9 @@ def calculate_dm_metrics(true_actions, pred_actions):
         f.write(f"Action F1-score: {f1:.2f}\n")
         f.write("\nAction Classification Report:\n")
         f.write(action_classification_report)  # Aggiungi il classification report delle azioni
+        f.write(f"\nArgument Precision: {argument_precision:.2f}\n")
+        f.write(f"Argument Recall: {argument_recall:.2f}\n")
+        f.write(f"Argument F1-score: {argument_f1:.2f}\n")
 
     with open(f"score/scores_dm_test.json", "w", encoding="utf-8") as f:
         json.dump({
@@ -67,6 +77,9 @@ def calculate_dm_metrics(true_actions, pred_actions):
             },
             "arguments": {
                 "accuracy": argument_accuracy,
+                "precision": argument_precision,
+                "recall": argument_recall,
+                "f1": argument_f1,
             },
             "overall_accuracy": overall_accuracy,
         }, f, ensure_ascii=False, indent=4)

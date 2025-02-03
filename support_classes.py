@@ -10,6 +10,7 @@ class History():
         self.roles = []
         self.last_intent = ''
         self.number_last = 5
+        self.other_int = []
 
     def update_number_last(self, num: int):
         self.number_last = num
@@ -19,6 +20,18 @@ class History():
 
     def get_last_int(self):
         return self.last_intent
+    
+    def insert_other_int(self, intent):
+        last_int = self.get_last_int()
+        if intent not in self.other_int and intent != last_int:
+            self.other_int.append(intent)
+
+    def get_other_int(self):
+        return self.other_int
+    
+    def remove_other_int(self):
+        if len(self.other_int) > 0:
+            self.other_int = self.other_int[1:]
 
     def add_msg(self, msg, role, intent):
         self.roles.append(role)
@@ -35,6 +48,7 @@ class History():
         self.roles = []
         self.last_intent = ''
         self.number_last = 5
+        self.other_int = []
     
     def get_history(self):
         # add to msg the list of wines
@@ -75,7 +89,7 @@ class Tracker():
     def creation (self, input: dict, history: History, update: bool):
         intent = input["intent"]
 
-        if intent == 'out_of_domain' or intent == 'general_info':
+        if intent == 'out_of_domain':
             history.update_last_int('')
             return intent, 1, 0 
         
@@ -156,8 +170,6 @@ class Tracker():
             
         if intent_ret == 'out_of_domain':
             return {"intent": "out_of_domain"}
-        if intent_ret == 'general_info':
-            return {"intent": "general_info"}
         
     def name_slot_current_intent(self, intent):
         if 'details' in intent:

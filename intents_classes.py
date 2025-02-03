@@ -43,8 +43,7 @@ class Wine_details(ClassBase):
         self.abv = None
         self.year = None
         self.typology = None
-
-        #TITLE??
+        self.title_bottle = None
     
     def possibilities(self):
         values = {
@@ -54,12 +53,13 @@ class Wine_details(ClassBase):
             'sparkling': possible_sparkling,
             'abv': possible_abv,
             'year': possible_year,
-            'typology': possible_typology
+            'typology': possible_typology, 
+            'title_bottle': possible_title
         }
         return values
     
     def required(self):
-        return [['flavor', 'grape', 'color', 'sparkling', 'abv', 'year'], ['typology']]
+        return [['flavor', 'grape', 'color', 'sparkling', 'abv', 'year'], ['typology', 'title_bottle']]
 
 class Wine_origin(ClassBase):
     def __init__(self):
@@ -93,6 +93,7 @@ class Wine_production(ClassBase):
         self.abv = None
         self.closure = None
         self.typology = None
+        self.title_bottle = None
 
         #TITLE??
     
@@ -101,12 +102,13 @@ class Wine_production(ClassBase):
             'grape': possible_grape,
             'abv': possible_abv,
             'closure': possible_closure,
-            'typology': possible_typology
+            'typology': possible_typology, 
+            'title_bottle': possible_title
         }
         return values
     
     def required(self):
-        return [['grape', 'abv', 'closure'], ['typology']]
+        return [['grape', 'abv', 'closure'], ['typology', 'title_bottle']]
 
 class Wine_conservation(ClassBase):
     def __init__(self):
@@ -114,6 +116,7 @@ class Wine_conservation(ClassBase):
         self.cellar = None
         self.temperature = None
         self.typology = None
+        self.title_bottle = None
 
         #TITLE??
 
@@ -122,12 +125,13 @@ class Wine_conservation(ClassBase):
             'fridge': possible_fridge,
             'cellar': possible_cellar,
             'temperature': possible_temperature, 
-            'typology': possible_typology
+            'typology': possible_typology, 
+            'title_bottle': possible_title
         }
         return values
     
     def required(self):
-        return [['fridge', 'cellar', 'temperature'], ['typology']]
+        return [['fridge', 'cellar', 'temperature'], ['typology', 'title_bottle']]
 
 """
 classes for actions that can be grouped into 'paring the correct wine with food'
@@ -139,43 +143,23 @@ class Wine_paring(ClassBase): # from the wine, suggest the best food
         self.color = None
         self.typology = None
         self.food = None
-
-        #TITLE??
+        self.title_bottle = None
     
     def possibilities(self):
         values = {
             'style': possible_style,
             'color': possible_color,
             'typology': possible_typology,
-            'food': possible_food
+            'food': possible_food, 
+            'title_bottle': possible_title
         }
         return values
     
     def required(self):
-        return [['style', 'color'], ['typology'], ['food']]
+        return [['style', 'color'], ['typology', 'title_bottle'], ['food']]
     
     def name(self):
         return 'choosing_food'
-
-class Food_paring(ClassBase): # from the food, suggest the best wine
-    def __init__(self):
-        self.food = None
-        self.style = None
-        self.abv = None
-    
-    def possibilities(self):
-        values = {
-            'food': possible_food,
-            'style': possible_style,
-            'abv': possible_abv
-        }
-        return values
-    
-    def required(self):
-        return ['food']
-    
-    def name(self):
-        return 'having_food'
 
 """
 classes for actions that can be grouped into 'ordering wine'
@@ -203,6 +187,24 @@ class Wine_ordering(ClassBase):
 """
 classes used ONLY by the systems 
 """
+class Delivery(ClassBase):
+    def __init__(self):
+        self.address = None
+        self.phone = None
+        self.gift = None
+        self.kind_pagament = None
+    
+    def possibilities(self):
+        values = {
+            'gift': possible_gift,
+            'kind_pagament': possible_pagament, 
+            'address': True,
+            'phone': True
+        }
+        return values
+    
+    def required(self):
+        return ['address', 'phone', 'gift', 'kind_pagament']
 
 class Wine_Bottle():
     def __init__(self):
@@ -248,22 +250,3 @@ class Wine_Bottle():
         for field in fields:
             ret += f"\t{field}: {getattr(self, field)}\n"
         return ret
-
-class Delivery(ClassBase):
-    def __init__(self):
-        self.address = None
-        self.phone = None
-        self.gift = None
-        self.kind_pagament = None
-    
-    def possibilities(self):
-        values = {
-            'gift': possible_gift,
-            'kind_pagament': possible_pagament, 
-            'address': True,
-            'phone': True
-        }
-        return values
-    
-    def required(self):
-        return ['address', 'phone', 'gift', 'kind_pagament']

@@ -6,7 +6,10 @@
         "f1": 0.8626398050974512
     },
     "arguments": {
-        "accuracy": 0.57
+        "accuracy": 0.57,
+        "precision": 0.46432683982683975,
+        "recall": 0.34,
+        "f1": 0.3790328247410997
     },
     "overall_accuracy": 0.33
 }
