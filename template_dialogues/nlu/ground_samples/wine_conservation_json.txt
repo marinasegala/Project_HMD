@@ -1,0 +1,14 @@
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '', 'typology': 'Champagne'}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'no', 'celler': 'no', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'yes', 'celler': 'no', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': 'no', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'no', 'celler': 'yes', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'yes', 'celler': 'yes', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': 'yes', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'no', 'celler': '', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': 'yes', 'celler': '', 'temperature': '', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '7', 'typology': ''}}
+{'intent': 'wine_conservation', 'slots': {'fridge': '', 'celler': '', 'temperature': '17', 'typology': ''}}

@@ -1,0 +1,18 @@
+I want to drink a Primitivo wine, which food should I choose?
+I want to drink a Champagne wine, which food should I choose?
+I want to drink a Prosecco wine, which food should I choose?
+I want to drink a white wine, which food should I choose?
+I want to drink a red wine, which food should I choose?
+I want to drink a rose wine, which food should I choose?
+I want to eat aperitif, tell me the wine to drink.
+I want to eat fish, tell me the wine to drink.
+I want to eat desser, tell me the wine to drink.
+I want to drink a Primitivo wine, which food should I choose?
+I want to drink a Champagne wine, which food should I choose?
+I want to drink a Prosecco wine, which food should I choose?
+I want to drink a white wine, which food should I choose?
+I want to drink a red wine, which food should I choose?
+I want to drink a rose wine, which food should I choose?
+I want to eat aperitif, tell me the wine to drink.
+I want to eat fish, tell me the wine to drink.
+I want to eat desser, tell me the wine to drink.
