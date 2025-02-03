@@ -59,21 +59,23 @@ class Dialogue:
             print(nlg_output)
 
             if action == 'give_list':
+                to_save = ''
                 # print('The top three choices I find are:\n')
-                list_wines = searching_wine(self.tracker, intent)
+                list_wines,to_save = searching_wine(self.tracker, intent, to_save)
                 if len(list_wines) == 0:
                     print('No wine respects the characteristics you want')
-                    self.history.add_msg('No wine respects the characteristics you want', 'assistant', 'give_list')
+                    self.history.add_msg_complete('No wine respects the characteristics you want')
                 else:
                     for value in list_wines:
                         print(value)
-                        self.history.add_msg(value, 'assistant', 'give_list')
+                        to_save = to_save + '\n' + value.convert_to_string()
+                    self.history.add_msg_complete(to_save)
 
             user_input = input()
             self.history.add_msg(user_input, 'user', 'input')
 
 def main():
-    logging.basicConfig(filename="3app-try.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
+    logging.basicConfig(filename="prova2.log", encoding="utf-8", filemode="a", level=logging.DEBUG)
     logger.info("Starting the dialogue")
 
     args = get_args()

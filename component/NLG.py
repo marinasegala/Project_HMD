@@ -29,7 +29,7 @@ class NLG():
         if action == 'give_list':
             nba_add = PROMPTS['give_list_nlg']
          
-        prompt = PROMPTS["NLG"] + nba_add + PROMPTS["NLG_end"]
+        prompt = PROMPTS["NLG"] + nba_add + '\n' + PROMPTS["NLG_end"]
 
         nlg_text = self.args.chat_template.format(prompt, nlg_text)
         nlg_input = self.tokenizer(nlg_text, return_tensors="pt").to(self.model.device)

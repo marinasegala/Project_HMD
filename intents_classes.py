@@ -242,6 +242,12 @@ class Wine_Bottle():
             return "There are no wines that match the information you provided"
         return ret 
 
+    def convert_to_string(self):
+        fields = [field for field in self.__dict__ if getattr(self, field) is not None]
+        ret = ''
+        for field in fields:
+            ret += f"\t{field}: {getattr(self, field)}\n"
+        return ret
 
 class Delivery(ClassBase):
     def __init__(self):

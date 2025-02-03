@@ -57,7 +57,7 @@ Return ONLY the json
 Break the user input into multiple sentences based on the following intents:""",
 
     "NLU_intents_end":"""Provide a list of intents as follow: ["intent1", "intent2", ...].
-Return ONLY the list of intents, nothing more!
+Return ONLY the list of intents, nothing more! DO NOT focus on un-necessary details!
 """,
 
     "prova": """- general_info: if the user wants general informations about a wine.""",
@@ -129,7 +129,7 @@ Possible next best actions are:
     "delivery_nlg": """
 - delivery_info(intent): generate an appropriate message for confirming the delivery information""",
 
-    "NLG_end": """DO NOT give suggestions! Return ONLY the message to the user!""",
+    "NLG_end": """DO NOT give suggestions! DO NOT chitchat! DO NOT focus on un-necessary details! \n  Return ONLY the message to the user!""",
 
 }
 

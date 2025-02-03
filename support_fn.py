@@ -50,7 +50,7 @@ def can_find_wines(tracker, history):
     
     return False, []
 
-def searching_wine(tracker, intent, to_save):
+def searching_wine(tracker, intent, to_save=''):
     """
     according to the slots, search the wine in the dataset
     """
@@ -109,6 +109,8 @@ def searching_wine(tracker, intent, to_save):
     if len(list_wines) > 3:
         rand_int = random.sample(range(0, len(list_wines)), 3)
         list_wines = [list_wines[i] for i in rand_int]
+
+    tracker.logger.info(list_wines)
     return list_wines, to_save
 
 def assign_field (intent_class: object, field: str, value: str, tracker: object):
@@ -186,11 +188,13 @@ def compare_price_buget(quantity, budget, tracker, intent_class):
         return False, 0
     else:
         count = 1
-        print('The budget is enough for the quantity requested')
         setattr(intent_class, 'total_budget', budget)
+        to_print = 'The budget is enough for the quantity requested '
         if none_item != []:
             auto_complete(slots, data, none_item[0], fields[0], intent_class)
             count += 1
+        to_print = to_print + "of " +slots['typology'] + " - " + slots['title_bottle']
+        print(to_print)
         return True, count
     
 def auto_complete(slots, data, none_item, having_field, intent_class):
