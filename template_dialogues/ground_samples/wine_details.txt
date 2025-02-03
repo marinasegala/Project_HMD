@@ -1,0 +1,577 @@
+I want to know some deatils about a wine
+I want some information about a white wine, it is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Primitivo  The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2019 
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2020 
+I want some information about a white wine. It is sparkling It's a Primitivo Made in 2021 
+I want some information about a white wine. It is sparkling It's a Primitivo  
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Champagne  The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Champagne  The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Champagne  The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2019 
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2020 
+I want some information about a white wine. It is sparkling It's a Champagne Made in 2021 
+I want some information about a white wine. It is sparkling It's a Champagne  
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Prosecco  The grape is Chardonnay
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Prosecco  The grape is Pinot Noir
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Prosecco  The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2019 
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2020 
+I want some information about a white wine. It is sparkling It's a Prosecco Made in 2021 
+I want some information about a white wine. It is sparkling It's a Prosecco  
+I want some information about a white wine. It is sparkling  Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is sparkling  Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is sparkling  Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is sparkling   The grape is Chardonnay
+I want some information about a white wine. It is sparkling  Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling  Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling  Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is sparkling   The grape is Pinot Noir
+I want some information about a white wine. It is sparkling  Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling  Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling  Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling   The grape is Valdobbiadene
+I want some information about a white wine. It is sparkling  Made in 2019 
+I want some information about a white wine. It is sparkling  Made in 2020 
+I want some information about a white wine. It is sparkling  Made in 2021 
+I want some information about a white wine. It is sparkling   
+I want some information about a white wine. It is still It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Primitivo  The grape is Chardonnay
+I want some information about a white wine. It is still It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Primitivo  The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Primitivo  The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Primitivo Made in 2019 
+I want some information about a white wine. It is still It's a Primitivo Made in 2020 
+I want some information about a white wine. It is still It's a Primitivo Made in 2021 
+I want some information about a white wine. It is still It's a Primitivo  
+I want some information about a white wine. It is still It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Champagne  The grape is Chardonnay
+I want some information about a white wine. It is still It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Champagne  The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Champagne  The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Champagne Made in 2019 
+I want some information about a white wine. It is still It's a Champagne Made in 2020 
+I want some information about a white wine. It is still It's a Champagne Made in 2021 
+I want some information about a white wine. It is still It's a Champagne  
+I want some information about a white wine. It is still It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is still It's a Prosecco  The grape is Chardonnay
+I want some information about a white wine. It is still It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Prosecco  The grape is Pinot Noir
+I want some information about a white wine. It is still It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Prosecco  The grape is Valdobbiadene
+I want some information about a white wine. It is still It's a Prosecco Made in 2019 
+I want some information about a white wine. It is still It's a Prosecco Made in 2020 
+I want some information about a white wine. It is still It's a Prosecco Made in 2021 
+I want some information about a white wine. It is still It's a Prosecco  
+I want some information about a white wine. It is still  Made in 2019 The grape is Chardonnay
+I want some information about a white wine. It is still  Made in 2020 The grape is Chardonnay
+I want some information about a white wine. It is still  Made in 2021 The grape is Chardonnay
+I want some information about a white wine. It is still   The grape is Chardonnay
+I want some information about a white wine. It is still  Made in 2019 The grape is Pinot Noir
+I want some information about a white wine. It is still  Made in 2020 The grape is Pinot Noir
+I want some information about a white wine. It is still  Made in 2021 The grape is Pinot Noir
+I want some information about a white wine. It is still   The grape is Pinot Noir
+I want some information about a white wine. It is still  Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine. It is still  Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine. It is still  Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine. It is still   The grape is Valdobbiadene
+I want some information about a white wine. It is still  Made in 2019 
+I want some information about a white wine. It is still  Made in 2020 
+I want some information about a white wine. It is still  Made in 2021 
+I want some information about a white wine. It is still   
+I want some information about a white wine.  It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a white wine.  It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a white wine.  It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a white wine.  It's a Primitivo  The grape is Chardonnay
+I want some information about a white wine.  It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a white wine.  It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a white wine.  It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a white wine.  It's a Primitivo  The grape is Pinot Noir
+I want some information about a white wine.  It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Primitivo  The grape is Valdobbiadene
+I want some information about a white wine.  It's a Primitivo Made in 2019 
+I want some information about a white wine.  It's a Primitivo Made in 2020 
+I want some information about a white wine.  It's a Primitivo Made in 2021 
+I want some information about a white wine.  It's a Primitivo  
+I want some information about a white wine.  It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a white wine.  It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a white wine.  It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a white wine.  It's a Champagne  The grape is Chardonnay
+I want some information about a white wine.  It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a white wine.  It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a white wine.  It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a white wine.  It's a Champagne  The grape is Pinot Noir
+I want some information about a white wine.  It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Champagne  The grape is Valdobbiadene
+I want some information about a white wine.  It's a Champagne Made in 2019 
+I want some information about a white wine.  It's a Champagne Made in 2020 
+I want some information about a white wine.  It's a Champagne Made in 2021 
+I want some information about a white wine.  It's a Champagne  
+I want some information about a white wine.  It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a white wine.  It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a white wine.  It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a white wine.  It's a Prosecco  The grape is Chardonnay
+I want some information about a white wine.  It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a white wine.  It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a white wine.  It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a white wine.  It's a Prosecco  The grape is Pinot Noir
+I want some information about a white wine.  It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine.  It's a Prosecco  The grape is Valdobbiadene
+I want some information about a white wine.  It's a Prosecco Made in 2019 
+I want some information about a white wine.  It's a Prosecco Made in 2020 
+I want some information about a white wine.  It's a Prosecco Made in 2021 
+I want some information about a white wine.  It's a Prosecco  
+I want some information about a white wine.   Made in 2019 The grape is Chardonnay
+I want some information about a white wine.   Made in 2020 The grape is Chardonnay
+I want some information about a white wine.   Made in 2021 The grape is Chardonnay
+I want some information about a white wine.    The grape is Chardonnay
+I want some information about a white wine.   Made in 2019 The grape is Pinot Noir
+I want some information about a white wine.   Made in 2020 The grape is Pinot Noir
+I want some information about a white wine.   Made in 2021 The grape is Pinot Noir
+I want some information about a white wine.    The grape is Pinot Noir
+I want some information about a white wine.   Made in 2019 The grape is Valdobbiadene
+I want some information about a white wine.   Made in 2020 The grape is Valdobbiadene
+I want some information about a white wine.   Made in 2021 The grape is Valdobbiadene
+I want some information about a white wine.    The grape is Valdobbiadene
+I want some information about a white wine.   Made in 2019 
+I want some information about a white wine.   Made in 2020 
+I want some information about a white wine.   Made in 2021 
+I want some information about a white wine.    
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Primitivo  The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Primitivo  The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Primitivo  The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2019 
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2020 
+I want some information about a red wine. It is sparkling It's a Primitivo Made in 2021 
+I want some information about a red wine. It is sparkling It's a Primitivo  
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Champagne  The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Champagne  The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Champagne  The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2019 
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2020 
+I want some information about a red wine. It is sparkling It's a Champagne Made in 2021 
+I want some information about a red wine. It is sparkling It's a Champagne  
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Prosecco  The grape is Chardonnay
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Prosecco  The grape is Pinot Noir
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Prosecco  The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2019 
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2020 
+I want some information about a red wine. It is sparkling It's a Prosecco Made in 2021 
+I want some information about a red wine. It is sparkling It's a Prosecco  
+I want some information about a red wine. It is sparkling  Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is sparkling  Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is sparkling  Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is sparkling   The grape is Chardonnay
+I want some information about a red wine. It is sparkling  Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling  Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling  Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is sparkling   The grape is Pinot Noir
+I want some information about a red wine. It is sparkling  Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling  Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling  Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling   The grape is Valdobbiadene
+I want some information about a red wine. It is sparkling  Made in 2019 
+I want some information about a red wine. It is sparkling  Made in 2020 
+I want some information about a red wine. It is sparkling  Made in 2021 
+I want some information about a red wine. It is sparkling   
+I want some information about a red wine. It is still It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Primitivo  The grape is Chardonnay
+I want some information about a red wine. It is still It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Primitivo  The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Primitivo  The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Primitivo Made in 2019 
+I want some information about a red wine. It is still It's a Primitivo Made in 2020 
+I want some information about a red wine. It is still It's a Primitivo Made in 2021 
+I want some information about a red wine. It is still It's a Primitivo  
+I want some information about a red wine. It is still It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Champagne  The grape is Chardonnay
+I want some information about a red wine. It is still It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Champagne  The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Champagne  The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Champagne Made in 2019 
+I want some information about a red wine. It is still It's a Champagne Made in 2020 
+I want some information about a red wine. It is still It's a Champagne Made in 2021 
+I want some information about a red wine. It is still It's a Champagne  
+I want some information about a red wine. It is still It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is still It's a Prosecco  The grape is Chardonnay
+I want some information about a red wine. It is still It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Prosecco  The grape is Pinot Noir
+I want some information about a red wine. It is still It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Prosecco  The grape is Valdobbiadene
+I want some information about a red wine. It is still It's a Prosecco Made in 2019 
+I want some information about a red wine. It is still It's a Prosecco Made in 2020 
+I want some information about a red wine. It is still It's a Prosecco Made in 2021 
+I want some information about a red wine. It is still It's a Prosecco  
+I want some information about a red wine. It is still  Made in 2019 The grape is Chardonnay
+I want some information about a red wine. It is still  Made in 2020 The grape is Chardonnay
+I want some information about a red wine. It is still  Made in 2021 The grape is Chardonnay
+I want some information about a red wine. It is still   The grape is Chardonnay
+I want some information about a red wine. It is still  Made in 2019 The grape is Pinot Noir
+I want some information about a red wine. It is still  Made in 2020 The grape is Pinot Noir
+I want some information about a red wine. It is still  Made in 2021 The grape is Pinot Noir
+I want some information about a red wine. It is still   The grape is Pinot Noir
+I want some information about a red wine. It is still  Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine. It is still  Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine. It is still  Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine. It is still   The grape is Valdobbiadene
+I want some information about a red wine. It is still  Made in 2019 
+I want some information about a red wine. It is still  Made in 2020 
+I want some information about a red wine. It is still  Made in 2021 
+I want some information about a red wine. It is still   
+I want some information about a red wine.  It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a red wine.  It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a red wine.  It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a red wine.  It's a Primitivo  The grape is Chardonnay
+I want some information about a red wine.  It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a red wine.  It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a red wine.  It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a red wine.  It's a Primitivo  The grape is Pinot Noir
+I want some information about a red wine.  It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Primitivo  The grape is Valdobbiadene
+I want some information about a red wine.  It's a Primitivo Made in 2019 
+I want some information about a red wine.  It's a Primitivo Made in 2020 
+I want some information about a red wine.  It's a Primitivo Made in 2021 
+I want some information about a red wine.  It's a Primitivo  
+I want some information about a red wine.  It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a red wine.  It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a red wine.  It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a red wine.  It's a Champagne  The grape is Chardonnay
+I want some information about a red wine.  It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a red wine.  It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a red wine.  It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a red wine.  It's a Champagne  The grape is Pinot Noir
+I want some information about a red wine.  It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Champagne  The grape is Valdobbiadene
+I want some information about a red wine.  It's a Champagne Made in 2019 
+I want some information about a red wine.  It's a Champagne Made in 2020 
+I want some information about a red wine.  It's a Champagne Made in 2021 
+I want some information about a red wine.  It's a Champagne  
+I want some information about a red wine.  It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a red wine.  It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a red wine.  It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a red wine.  It's a Prosecco  The grape is Chardonnay
+I want some information about a red wine.  It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a red wine.  It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a red wine.  It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a red wine.  It's a Prosecco  The grape is Pinot Noir
+I want some information about a red wine.  It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine.  It's a Prosecco  The grape is Valdobbiadene
+I want some information about a red wine.  It's a Prosecco Made in 2019 
+I want some information about a red wine.  It's a Prosecco Made in 2020 
+I want some information about a red wine.  It's a Prosecco Made in 2021 
+I want some information about a red wine.  It's a Prosecco  
+I want some information about a red wine.   Made in 2019 The grape is Chardonnay
+I want some information about a red wine.   Made in 2020 The grape is Chardonnay
+I want some information about a red wine.   Made in 2021 The grape is Chardonnay
+I want some information about a red wine.    The grape is Chardonnay
+I want some information about a red wine.   Made in 2019 The grape is Pinot Noir
+I want some information about a red wine.   Made in 2020 The grape is Pinot Noir
+I want some information about a red wine.   Made in 2021 The grape is Pinot Noir
+I want some information about a red wine.    The grape is Pinot Noir
+I want some information about a red wine.   Made in 2019 The grape is Valdobbiadene
+I want some information about a red wine.   Made in 2020 The grape is Valdobbiadene
+I want some information about a red wine.   Made in 2021 The grape is Valdobbiadene
+I want some information about a red wine.    The grape is Valdobbiadene
+I want some information about a red wine.   Made in 2019 
+I want some information about a red wine.   Made in 2020 
+I want some information about a red wine.   Made in 2021 
+I want some information about a red wine.    
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Primitivo  The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Primitivo  The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Primitivo  The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2019 
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2020 
+I want some information about a  wine. It is sparkling It's a Primitivo Made in 2021 
+I want some information about a  wine. It is sparkling It's a Primitivo  
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Champagne  The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Champagne  The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Champagne  The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2019 
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2020 
+I want some information about a  wine. It is sparkling It's a Champagne Made in 2021 
+I want some information about a  wine. It is sparkling It's a Champagne  
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Prosecco  The grape is Chardonnay
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Prosecco  The grape is Pinot Noir
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Prosecco  The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2019 
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2020 
+I want some information about a  wine. It is sparkling It's a Prosecco Made in 2021 
+I want some information about a  wine. It is sparkling It's a Prosecco  
+I want some information about a  wine. It is sparkling  Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is sparkling  Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is sparkling  Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is sparkling   The grape is Chardonnay
+I want some information about a  wine. It is sparkling  Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling  Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling  Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is sparkling   The grape is Pinot Noir
+I want some information about a  wine. It is sparkling  Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling  Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling  Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling   The grape is Valdobbiadene
+I want some information about a  wine. It is sparkling  Made in 2019 
+I want some information about a  wine. It is sparkling  Made in 2020 
+I want some information about a  wine. It is sparkling  Made in 2021 
+I want some information about a  wine. It is sparkling   
+I want some information about a  wine. It is still It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Primitivo  The grape is Chardonnay
+I want some information about a  wine. It is still It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Primitivo  The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Primitivo  The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Primitivo Made in 2019 
+I want some information about a  wine. It is still It's a Primitivo Made in 2020 
+I want some information about a  wine. It is still It's a Primitivo Made in 2021 
+I want some information about a  wine. It is still It's a Primitivo  
+I want some information about a  wine. It is still It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Champagne  The grape is Chardonnay
+I want some information about a  wine. It is still It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Champagne  The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Champagne  The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Champagne Made in 2019 
+I want some information about a  wine. It is still It's a Champagne Made in 2020 
+I want some information about a  wine. It is still It's a Champagne Made in 2021 
+I want some information about a  wine. It is still It's a Champagne  
+I want some information about a  wine. It is still It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is still It's a Prosecco  The grape is Chardonnay
+I want some information about a  wine. It is still It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Prosecco  The grape is Pinot Noir
+I want some information about a  wine. It is still It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Prosecco  The grape is Valdobbiadene
+I want some information about a  wine. It is still It's a Prosecco Made in 2019 
+I want some information about a  wine. It is still It's a Prosecco Made in 2020 
+I want some information about a  wine. It is still It's a Prosecco Made in 2021 
+I want some information about a  wine. It is still It's a Prosecco  
+I want some information about a  wine. It is still  Made in 2019 The grape is Chardonnay
+I want some information about a  wine. It is still  Made in 2020 The grape is Chardonnay
+I want some information about a  wine. It is still  Made in 2021 The grape is Chardonnay
+I want some information about a  wine. It is still   The grape is Chardonnay
+I want some information about a  wine. It is still  Made in 2019 The grape is Pinot Noir
+I want some information about a  wine. It is still  Made in 2020 The grape is Pinot Noir
+I want some information about a  wine. It is still  Made in 2021 The grape is Pinot Noir
+I want some information about a  wine. It is still   The grape is Pinot Noir
+I want some information about a  wine. It is still  Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine. It is still  Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine. It is still  Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine. It is still   The grape is Valdobbiadene
+I want some information about a  wine. It is still  Made in 2019 
+I want some information about a  wine. It is still  Made in 2020 
+I want some information about a  wine. It is still  Made in 2021 
+I want some information about a  wine. It is still   
+I want some information about a  wine.  It's a Primitivo Made in 2019 The grape is Chardonnay
+I want some information about a  wine.  It's a Primitivo Made in 2020 The grape is Chardonnay
+I want some information about a  wine.  It's a Primitivo Made in 2021 The grape is Chardonnay
+I want some information about a  wine.  It's a Primitivo  The grape is Chardonnay
+I want some information about a  wine.  It's a Primitivo Made in 2019 The grape is Pinot Noir
+I want some information about a  wine.  It's a Primitivo Made in 2020 The grape is Pinot Noir
+I want some information about a  wine.  It's a Primitivo Made in 2021 The grape is Pinot Noir
+I want some information about a  wine.  It's a Primitivo  The grape is Pinot Noir
+I want some information about a  wine.  It's a Primitivo Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Primitivo Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Primitivo Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Primitivo  The grape is Valdobbiadene
+I want some information about a  wine.  It's a Primitivo Made in 2019 
+I want some information about a  wine.  It's a Primitivo Made in 2020 
+I want some information about a  wine.  It's a Primitivo Made in 2021 
+I want some information about a  wine.  It's a Primitivo  
+I want some information about a  wine.  It's a Champagne Made in 2019 The grape is Chardonnay
+I want some information about a  wine.  It's a Champagne Made in 2020 The grape is Chardonnay
+I want some information about a  wine.  It's a Champagne Made in 2021 The grape is Chardonnay
+I want some information about a  wine.  It's a Champagne  The grape is Chardonnay
+I want some information about a  wine.  It's a Champagne Made in 2019 The grape is Pinot Noir
+I want some information about a  wine.  It's a Champagne Made in 2020 The grape is Pinot Noir
+I want some information about a  wine.  It's a Champagne Made in 2021 The grape is Pinot Noir
+I want some information about a  wine.  It's a Champagne  The grape is Pinot Noir
+I want some information about a  wine.  It's a Champagne Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Champagne Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Champagne Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Champagne  The grape is Valdobbiadene
+I want some information about a  wine.  It's a Champagne Made in 2019 
+I want some information about a  wine.  It's a Champagne Made in 2020 
+I want some information about a  wine.  It's a Champagne Made in 2021 
+I want some information about a  wine.  It's a Champagne  
+I want some information about a  wine.  It's a Prosecco Made in 2019 The grape is Chardonnay
+I want some information about a  wine.  It's a Prosecco Made in 2020 The grape is Chardonnay
+I want some information about a  wine.  It's a Prosecco Made in 2021 The grape is Chardonnay
+I want some information about a  wine.  It's a Prosecco  The grape is Chardonnay
+I want some information about a  wine.  It's a Prosecco Made in 2019 The grape is Pinot Noir
+I want some information about a  wine.  It's a Prosecco Made in 2020 The grape is Pinot Noir
+I want some information about a  wine.  It's a Prosecco Made in 2021 The grape is Pinot Noir
+I want some information about a  wine.  It's a Prosecco  The grape is Pinot Noir
+I want some information about a  wine.  It's a Prosecco Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Prosecco Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Prosecco Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine.  It's a Prosecco  The grape is Valdobbiadene
+I want some information about a  wine.  It's a Prosecco Made in 2019 
+I want some information about a  wine.  It's a Prosecco Made in 2020 
+I want some information about a  wine.  It's a Prosecco Made in 2021 
+I want some information about a  wine.  It's a Prosecco  
+I want some information about a  wine.   Made in 2019 The grape is Chardonnay
+I want some information about a  wine.   Made in 2020 The grape is Chardonnay
+I want some information about a  wine.   Made in 2021 The grape is Chardonnay
+I want some information about a  wine.    The grape is Chardonnay
+I want some information about a  wine.   Made in 2019 The grape is Pinot Noir
+I want some information about a  wine.   Made in 2020 The grape is Pinot Noir
+I want some information about a  wine.   Made in 2021 The grape is Pinot Noir
+I want some information about a  wine.    The grape is Pinot Noir
+I want some information about a  wine.   Made in 2019 The grape is Valdobbiadene
+I want some information about a  wine.   Made in 2020 The grape is Valdobbiadene
+I want some information about a  wine.   Made in 2021 The grape is Valdobbiadene
+I want some information about a  wine.    The grape is Valdobbiadene
+I want some information about a  wine.   Made in 2019 
+I want some information about a  wine.   Made in 2020 
+I want some information about a  wine.   Made in 2021 
+I want some information about a  wine.

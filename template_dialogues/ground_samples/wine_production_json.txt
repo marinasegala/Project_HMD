@@ -1,0 +1,65 @@
+{'intent': 'wine_production', 'slots': {'grape': 'None', 'abv': None, 'closure': 'None', 'typology': 'None'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'natural cork', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'natural cork', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'natural cork', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'natural cork', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'natural cork', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'natural cork', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'natural cork', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'natural cork', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'natural cork', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'screwcap', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'screwcap', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'screwcap', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'screwcap', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'screwcap', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'screwcap', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'screwcap', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'screwcap', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'screwcap', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'screwcap', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'screwcap', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'screwcap', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'screwcap', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'screwcap', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'screwcap', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'screwcap', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'vinolok', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'vinolok', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'vinolok', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': 'vinolok', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'vinolok', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'vinolok', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'vinolok', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': 'vinolok', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'vinolok', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'vinolok', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'vinolok', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': 'vinolok', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'vinolok', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'vinolok', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'vinolok', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': 'vinolok', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': '', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Chardonnay', 'abv': None, 'closure': '', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': '', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Pinot Noir', 'abv': None, 'closure': '', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': '', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': 'Valdobbiad', 'abv': None, 'closure': '', 'typology': ''}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': '', 'typology': 'Primitivo'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': '', 'typology': 'Champagne'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': '', 'typology': 'Prosecco'}}
+{'intent': 'wine_production', 'slots': {'grape': '', 'abv': None, 'closure': '', 'typology': ''}}
