@@ -1,0 +1,50 @@
+{'typology': 'aperitif'}
+{'color': 'null', 'style': 'null', 'typology': 'Champagne', 'food': 'null', 'giving_list_wine': 'null'}
+{'sparkling': 'yes', 'grape': 'null', 'flavor': 'null', 'color': 'null', 'abv': 'null', 'year': '2020', 'typology': 'null', 'giving_list_wine': 'null'}
+{'typology': 'Prosecco', 'grape': 'Chardonnay', 'closure': 'natural cork', 'abv': None, 'giving_list_wine': None}
+{'address': 'Via Roma 1', 'gift': 'yes', 'kind_pagament': 'cash'}
+{'color': 'red', 'typology': None, 'food': None, 'style': None, 'giving_list_wine': None}
+{'grape': 'Valdobbiadene', 'closure': 'natural cork', 'typology': None, 'giving_list_wine': None}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'no', 'kind_pagament': 'null'}
+{'typology': 'dessert', 'food': 'null', 'color': 'null', 'style': 'null', 'giving_list_wine': 'null'}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'null', 'kind_pagament': 'null'}
+{'color': 'null', 'style': 'null', 'typology': 'Primitivo', 'food': 'null', 'giving_list_wine': 'null'}
+{'fridge': True, 'cellar': True, 'temperature': None, 'typology': None, 'giving_list_wine': None}
+{'country': 'Italy', 'color': 'red', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'grape': 'Chardonnay', 'closure': 'natural cork', 'typology': 'null', 'giving_list_wine': 'null'}
+{'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2021', 'typology': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'quantity': 5, 'total_budget': None, 'title_bottle': None}
+{'grape': 'Primitivo', 'typology': 'null', 'abv': 'null', 'closure': 'natural cork', 'giving_list_wine': 'null'}
+{'flavor': None, 'grape': 'Valdobbiadene', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2020', 'typology': None, 'giving_list_wine': None}
+{'grape': None, 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne', 'giving_list_wine': None}
+{}
+{'country': 'null', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'Primitivo', 'giving_list_wine': 'null'}
+{'flavor': None, 'grape': 'Pinot Noir', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2020', 'typology': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'quantity': 'bottles', 'total_budget': 100, 'title_bottle': 'null'}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'false', 'kind_pagament': 'cash'}
+{'typology': 'Prosecco', 'grape': 'Pinot Noir', 'closure': 'natural cork', 'abv': None, 'giving_list_wine': None}
+{'typology': None, 'quantity': '1', 'total_budget': '100', 'title_bottle': None}
+{'fridge': 'false', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+{'flavor': None, 'grape': 'Chardonnay', 'color': None, 'sparkling': 'yes', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}
+{'country': 'Italy', 'region': 'Tuscany', 'color': 'red', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'sparkling': 'true', 'grape': 'Chardonnay', 'flavor': None, 'color': None, 'abv': None, 'year': None, 'typology': None, 'giving_list_wine': None}
+{'typology': 'Prosecco', 'quantity': '1', 'total_budget': '40', 'title_bottle': None}
+{'country': 'null', 'region': 'null', 'color': 'null', 'typology': 'null', 'title_bottle': 'null', 'giving_list_wine': 'null'}
+{'grape': 'Valdobbiadene Primitivo', 'abv': None, 'closure': 'natural cork', 'typology': None, 'giving_list_wine': None}
+{'color': 'null', 'style': 'null', 'typology': 'Prosecco', 'food': 'null', 'giving_list_wine': 'null'}
+{'quantity': 5, 'total_budget': 40, 'typology': None, 'title_bottle': None}
+{'address': 'Via Roma 1', 'phone': '333444555', 'gift': 'null', 'kind_pagament': 'cash'}
+{'color': None, 'style': None, 'typology': None, 'food': 'fish', 'giving_list_wine': None}
+{'grape': 'Pinot Noir', 'closure': 'natural cork', 'typology': 'null', 'giving_list_wine': 'null'}
+{}
+{'typology': 'Prosecco', 'quantity': 5, 'total_budget': 40, 'title_bottle': None}
+{'country': 'Italy', 'region': 'Champagne', 'color': 'white', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'grape': 'Pinot Noir', 'abv': None, 'closure': 'natural cork', 'typology': 'Champagne', 'giving_list_wine': None}
+{'country': 'Italy', 'region': 'Tuscany', 'color': 'rosé', 'typology': None, 'title_bottle': None, 'giving_list_wine': None}
+{'flavor': None, 'grape': 'Pinot Noir', 'color': None, 'sparkling': 'true', 'abv': None, 'year': '2019', 'typology': None, 'giving_list_wine': None}
+{'temperature': 17, 'typology': None, 'fridge': None, 'cellar': None, 'giving_list_wine': None}
+{'country': 'Italy', 'region': 'null', 'color': 'null', 'typology': 'Prosecco', 'title_bottle': 'null', 'giving_list_wine': 'null'}
+{'country': 'Italy', 'typology': 'white wine', 'title_bottle': None, 'giving_list_wine': None, 'region': None}
+{'fridge': 'null', 'cellar': 'null', 'temperature': 'null', 'typology': 'null', 'giving_list_wine': 'null'}
+{'quantity': '5', 'total_budget': '100', 'typology': 'null', 'title_bottle': 'null'}
+{'color': 'null', 'style': 'null', 'typology': 'Primitivo', 'food': 'null', 'giving_list_wine': 'null'}
